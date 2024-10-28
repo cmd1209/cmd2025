@@ -1,5 +1,8 @@
 @import "parts/reset.css";
+
+@import "parts/alignment.css";
 @import "parts/colors.css";
+@import "parts/typo.css";
 
 .intro {
     background: var(--awesome-gradient);
@@ -12,7 +15,6 @@
     padding-top: 2em;
 }
 .site-logo{
-    opacity: 0.9;
     margin-inline: auto;
     max-width: 200px;
 }

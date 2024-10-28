@@ -1,0 +1,93 @@
+/* Flexbox horizontal alignment */
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Flexbox vertical alignment */
+.align-top {
+  align-items: flex-start;
+}
+
+.align-middle {
+  align-items: center;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+/* Grid horizontal alignment */
+.grid-center {
+    display: grid;
+    justify-content: center;
+  }
+  
+  .grid-left {
+    display: grid;
+    justify-content: flex-start;
+  }
+  
+  .grid-right {
+    display: grid;
+    justify-content: flex-end;
+  }
+  
+  /* Grid vertical alignment */
+  .grid-top {
+    align-items: flex-start;
+  }
+  
+  .grid-middle {
+    align-items: center;
+  }
+  
+  .grid-bottom {
+    align-items: flex-end;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-justify {
+    text-align: justify;
+  }
+  
