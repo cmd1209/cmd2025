@@ -1,0 +1,31 @@
+:root {
+    --primary-color: rgb(61, 101, 140);
+    --dark-primary-color: rgb(36, 68, 98);
+    --close-to-black: rgb(52, 54, 56);
+    --secondary-color: #5A001E;
+    --contrast-color: #c9de72;
+    --cool-grey: rgb(200, 202, 204);
+    --offwhite: rgb(245, 247, 249);
+  
+    --awesome-lines: repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1) 3px,
+      rgba(0, 0, 0, 0.4) 3px,
+      rgba(0, 0, 0, 0.4) 6px
+    );
+  
+    --dark-gradient: linear-gradient(180deg, var(--close-to-black), black 100%);
+    --awesome-gradient: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --dark-awesome-gradient: linear-gradient(180deg, rgba(36, 68, 98, 0.8) 0%, var(--secondary-color) 100%);
+    --transparent-gradient: linear-gradient(180deg, var(--dark-primary-color) 0%, rgba(90, 0, 30, 0.8) 100%);
+    --light-awesome-gradient: linear-gradient(180deg, var(--offwhite) 0%, var(--cool-grey) 100%);
+    --darker-gradient: linear-gradient(180deg, var(--primary-color) 0%, rgb(46, 76, 106) 66%);
+  
+    --normal-text-color: rgb(52, 86, 119);
+    --contrast-text-color: rgb(218, 220, 224);
+  }
+
+.home {
+    background: var(--awesome-gradient);
+}  
