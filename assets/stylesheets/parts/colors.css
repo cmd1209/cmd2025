@@ -25,7 +25,3 @@
     --normal-text-color: rgb(52, 86, 119);
     --contrast-text-color: rgb(218, 220, 224);
   }
-
-.home {
-    background: var(--awesome-gradient);
-}  
