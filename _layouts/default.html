@@ -4,7 +4,8 @@
   <body>
     <section class="intro">
       <div class="container">
-        <img src="/assets/images/CMd-logo.svg" class="site-logo" alt="">
+        {%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
+        <img src="{{- postLogo | relative_url -}}" class="site-logo" alt="">
       </div>
       <!-- <div class="date"><p>copyright: {{ site.time | date: '%Y' }} cmdesign</p></div> -->
     </section>
