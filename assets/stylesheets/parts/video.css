@@ -1,0 +1,49 @@
+:root {
+  --video-overlay-color: rgba(0, 0, 0, 0.5);  /* Overlay color with transparency */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;  /* Full viewport height */
+  overflow: hidden;
+  background: var(--awesome-gradient);
+}
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the video covers the container while maintaining aspect ratio */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* Optional: Reduce opacity to darken or blend the video */
+  opacity: 0.25;
+}
+
+.video-content {
+  max-width: var(--container-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  color: white;  /* Color to contrast with the video */
+  text-align: center;
+  padding: 1rem;
+}
+
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--awesome-lines);
+  z-index: 1;
+  /* Optional: Additional blending or overlay effect */
+}

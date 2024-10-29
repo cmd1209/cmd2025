@@ -1,0 +1,40 @@
+:root {
+  /* Breakpoint tokens */
+  --breakpoint-xs: 480px;   /* Extra small screens */
+  --breakpoint-sm: 768px;   /* Small screens, tablets */
+  --breakpoint-md: 992px;   /* Medium screens, desktops */
+  --breakpoint-lg: 1200px;  /* Large screens, large desktops */
+  --breakpoint-xl: 1400px;  /* Extra large screens */
+
+  /* Container width tokens */
+  --container-xs: 100%;         /* Full width for extra-small screens */
+  --container-sm: 540px;        /* Small screens, tablets */
+  --container-md: 720px;        /* Medium screens, desktops */
+  --container-lg: 960px;        /* Large screens, larger desktops */
+  --container-xl: 1140px;       /* Extra-large screens */
+  --container-xxl: 1320px;      /* Extra-extra-large screens */
+
+  /* Spacing tokens for padding */
+  --container-padding-xs: 0.5rem;
+  --container-padding-sm: 1rem;
+  --container-padding-md: 1.5rem;
+  --container-padding-lg: 2rem;
+
+  /* Alignment token */
+  --container-center: 0 auto;
+}
+
+/* Base container class */
+.container {
+  max-width: var(--container-lg);
+  padding: var(--container-padding-xs);
+  margin: var(--container-center);
+  box-sizing: border-box;
+}
+
+
+/* Centering utility classes */
+.container-center {
+  margin-left: auto;
+  margin-right: auto;
+}

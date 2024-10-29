@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i');
 
 :root {
-    --scale-factor: 1.33;           /* Scaling factor for perfect fourth */
-    --font-size-xs: calc(1rem / var(--scale-factor));        /* 1rem / 1.33 */
-    --font-size-sm: 1rem;                                   /* Base size */
-    --font-size-md: calc(1rem * var(--scale-factor));       /* 1rem * 1.33 */
-    --font-size-lg: calc(var(--font-size-md) * var(--scale-factor)); /* 1.33rem * 1.33 */
-    --font-size-xl: calc(var(--font-size-lg) * var(--scale-factor)); /* 1.77rem * 1.33 */
-    --font-size-2xl: calc(var(--font-size-xl) * var(--scale-factor)); /* 2.36rem * 1.33 */
-    --font-size-3xl: calc(var(--font-size-2xl) * var(--scale-factor)); /* 3.14rem * 1.33 */
-    --font-size-4xl: calc(var(--font-size-3xl) * var(--scale-factor)); /* 4.19rem * 1.33 */
-    --font-size-5xl: calc(var(--font-size-4xl) * var(--scale-factor)); /* 5.58rem * 1.33 */
+    --scale-factor: 1.25;           
+    --font-size-xs: calc(1rem / var(--scale-factor));       
+    --font-size-sm: 1rem;                                 
+    --font-size-md: calc(1rem * var(--scale-factor));     
+    --font-size-lg: calc(var(--font-size-md) * var(--scale-factor)); 
+    --font-size-xl: calc(var(--font-size-lg) * var(--scale-factor));
+    --font-size-2xl: calc(var(--font-size-xl) * var(--scale-factor)); 
+    --font-size-3xl: calc(var(--font-size-2xl) * var(--scale-factor)); 
+    --font-size-4xl: calc(var(--font-size-3xl) * var(--scale-factor)); 
+    --font-size-5xl: calc(var(--font-size-4xl) * var(--scale-factor)); 
   }
   
   body {

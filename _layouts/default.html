@@ -2,13 +2,25 @@
 <html>
   {% include head.html %}
   <body>
-    <section class="intro">
-      <div class="container">
+    <div class="video-container">
+      {%- assign backgroundF ="/assets/images/Backgrounfilms5s.mp4" -%}
+      <video class="background-video" autoplay muted loop playsinline>
+        <source src="{{- backgroundF | relative_url -}}" type="video/mp4">
+        <!-- Add additional sources for different formats if needed -->
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-content container-center">
+        <!-- Any content you want to overlay on the video -->
         {%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
-        <img src="{{- postLogo | relative_url -}}" class="site-logo" alt="">
+        <img src="{{- postLogo | relative_url -}}" class="site-logo mb-xxl" alt="">
+        <h1 class="typewrite" data-period="10" data-type='[ "creating making coding shooting framing editing developing brainstorming since 1999" ]'><span class="wrap"></span></h1>
       </div>
-      <h1 class="text-center">hey how are you doing?</h1>
-      <!-- <div class="date"><p>copyright: {{ site.time | date: '%Y' }} cmdesign</p></div> -->
+    </div>
+    <section>
+      <div class="container-center">
+        <h2>what is up</h2>
+        <p>Some overlay text on top of the video</p>
+      </div>
     </section>
   </body>
 </html>

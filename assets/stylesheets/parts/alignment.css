@@ -1,33 +1,143 @@
-/* Flexbox horizontal alignment */
-.flex-left {
-  display: flex;
-  justify-content: flex-start;
-}
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-right {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.flex-space-between {
-  display: flex;
-  justify-content: space-between;
-}
-
-.flex-space-around {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-space-evenly {
-  display: flex;
-  justify-content: space-evenly;
-}
+.flex {
+    display: flex;
+  }
+  
+  /* Flex Direction */
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-column-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  /* Flex Wrap */
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  
+  .flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  
+  /* Justify Content (Horizontal Alignment) */
+  .justify-start {
+    justify-content: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  
+  /* Align Items (Vertical Alignment) */
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-baseline {
+    align-items: baseline;
+  }
+  
+  .align-stretch {
+    align-items: stretch;
+  }
+  
+  /* Align Content (for multi-line flex containers) */
+  .align-content-start {
+    align-content: flex-start;
+  }
+  
+  .align-content-end {
+    align-content: flex-end;
+  }
+  
+  .align-content-center {
+    align-content: center;
+  }
+  
+  .align-content-between {
+    align-content: space-between;
+  }
+  
+  .align-content-around {
+    align-content: space-around;
+  }
+  
+  .align-content-stretch {
+    align-content: stretch;
+  }
+  
+  /* Flex Grow, Shrink, and Basis */
+  .flex-grow {
+    flex-grow: 1;
+  }
+  
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  
+  .flex-basis-auto {
+    flex-basis: auto;
+  }
+  
+  /* Self Alignment (for individual flex items) */
+  .self-start {
+    align-self: flex-start;
+  }
+  
+  .self-end {
+    align-self: flex-end;
+  }
+  
+  .self-center {
+    align-self: center;
+  }
+  
+  .self-baseline {
+    align-self: baseline;
+  }
+  
+  .self-stretch {
+    align-self: stretch;
+  }
+  
 
 /* Flexbox vertical alignment */
 .align-top {

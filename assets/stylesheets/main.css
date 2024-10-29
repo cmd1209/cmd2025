@@ -1,20 +1,19 @@
 @import "parts/reset.css";
 
 @import "parts/alignment.css";
+@import "parts/breakpoints.css";
 @import "parts/colors.css";
+@import "parts/sizing.css";
 @import "parts/typo.css";
+@import "parts/video.css";
 
 .intro {
     background: var(--awesome-gradient);
     min-height: 100vh;
 }
 
-.container {
-    max-width: 940px;
-    margin-inline: auto;
-    padding-top: 2em;
-}
 .site-logo{
     margin-inline: auto;
-    max-width: 200px;
+    max-width: 175px;
+    height: auto;
 }
