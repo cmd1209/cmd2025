@@ -5,47 +5,45 @@ var TxtType = function(el, toRotate, period) {
     this.period = parseInt(period, 10) || 2000;
     this.txt = '';
     this.tick();
-    this.isDeleting = false;
 };
 
 TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
+    var i = this.loopNum;
     var fullTxt = this.toRotate[i];
 
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
+    // Only typing, no deleting
     this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 100 - Math.random() * 50; // Speed up typing
 
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+    // If full text is reached, move to the next one after a pause
+    if (this.txt === fullTxt) {
+        delta = this.period;
+        this.loopNum++;
+        
+        // Stop if we’ve reached the end of all texts
+        if (this.loopNum >= this.toRotate.length) {
+            return;
+        }
+        
+        // Reset txt for the next text in array
+        this.txt = '';
     }
 
     setTimeout(function() {
-    that.tick();
+        that.tick();
     }, delta);
 };
 
 window.onload = function() {
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-type');
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+            new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
     // INJECT CSS

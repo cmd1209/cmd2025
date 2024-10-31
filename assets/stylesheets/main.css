@@ -8,7 +8,7 @@
 @import "parts/video.css";
 
 .intro {
-    background: var(--awesome-gradient);
+    background: var(--gradient-primary);
     min-height: 100vh;
 }
 
@@ -16,4 +16,10 @@
     margin-inline: auto;
     max-width: 175px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .site-logo{
+        max-width: 110px;
+    }
 }

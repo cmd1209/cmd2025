@@ -11,9 +11,15 @@
       </video>
       <div class="video-content container-center">
         <!-- Any content you want to overlay on the video -->
-        {%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
-        <img src="{{- postLogo | relative_url -}}" class="site-logo mb-xxl" alt="">
-        <h1 class="typewrite" data-period="10" data-type='[ "creating making coding shooting framing editing developing brainstorming since 1999" ]'><span class="wrap"></span></h1>
+        <div class="content--header">
+          {%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
+            <img src="{{- postLogo | relative_url -}}" class="site-logo mb-xxl" alt="">
+        </div>
+        <div class="content--body">
+          <div class="typetext">
+            <h1 class="typewrite" data-period="10" data-type='[ "creating making coding shooting framing editing developing brainstorming since 1999!" ]'><span class="wrap"></span></h1>
+          </div>
+        </div>
       </div>
     </div>
     <section>

@@ -7,7 +7,7 @@
   width: 100%;
   height: 100vh;  /* Full viewport height */
   overflow: hidden;
-  background: var(--awesome-gradient);
+  background: var(--gradient-primary);
 }
 
 .background-video {
@@ -25,15 +25,10 @@
 
 .video-content {
   max-width: var(--container-lg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
   position: relative;
   z-index: 2;
   color: white;  /* Color to contrast with the video */
   text-align: center;
-  padding: 1rem;
 }
 
 .video-container::before {
@@ -43,7 +38,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--awesome-lines);
+  background: var(--gradient-texture);
   z-index: 1;
   /* Optional: Additional blending or overlay effect */
+}
+
+.content--header{
+  height: 20vh;
+  padding: var(--size-sm);
+}
+.content--body{
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: var(--size-sm);
 }

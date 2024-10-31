@@ -1,27 +1,31 @@
 :root {
-    --primary-color: rgb(61, 101, 140);
-    --dark-primary-color: rgb(36, 68, 98);
-    --close-to-black: rgb(52, 54, 56);
-    --secondary-color: #5A001E;
-    --contrast-color: #c9de72;
-    --cool-grey: rgb(200, 202, 204);
-    --offwhite: rgb(245, 247, 249);
+    /* Primary Palette */
+    --color-primary: rgb(39, 69, 140);
+    --color-primary-dark: rgb(36, 68, 98);
+    --color-secondary: #5A001E;
+    --color-accent: #c9de72;
   
-    --awesome-lines: repeating-linear-gradient(
+    /* Neutral Palette */
+    --color-neutral-dark: rgb(52, 54, 56);
+    --color-neutral-light: rgb(245, 247, 249);
+    --color-neutral-muted: rgb(200, 202, 204);
+  
+    /* Gradients */
+    --gradient-texture: repeating-linear-gradient(
       45deg,
       rgba(0, 0, 0, 0.1),
       rgba(0, 0, 0, 0.1) 3px,
       rgba(0, 0, 0, 0.4) 3px,
       rgba(0, 0, 0, 0.4) 6px
     );
+    --gradient-primary: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    --gradient-primary-dark: linear-gradient(180deg, rgba(36, 68, 98, 0.8) 0%, var(--color-secondary) 100%);
+    --gradient-transparent: linear-gradient(180deg, var(--color-primary-dark) 0%, rgba(90, 0, 30, 0.8) 100%);
+    --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-light) 0%, var(--color-neutral-muted) 100%);
+    --gradient-muted: linear-gradient(180deg, var(--color-primary) 0%, rgb(46, 76, 106) 66%);
   
-    --dark-gradient: linear-gradient(180deg, var(--close-to-black), black 100%);
-    --awesome-gradient: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-    --dark-awesome-gradient: linear-gradient(180deg, rgba(36, 68, 98, 0.8) 0%, var(--secondary-color) 100%);
-    --transparent-gradient: linear-gradient(180deg, var(--dark-primary-color) 0%, rgba(90, 0, 30, 0.8) 100%);
-    --light-awesome-gradient: linear-gradient(180deg, var(--offwhite) 0%, var(--cool-grey) 100%);
-    --darker-gradient: linear-gradient(180deg, var(--primary-color) 0%, rgb(46, 76, 106) 66%);
-  
-    --normal-text-color: rgb(52, 86, 119);
-    --contrast-text-color: rgb(218, 220, 224);
+    /* Text Colors */
+    --text-color-default: rgb(52, 86, 119);
+    --text-color-inverse: rgb(218, 220, 224);
   }
+  

@@ -12,63 +12,116 @@
     --font-size-3xl: calc(var(--font-size-2xl) * var(--scale-factor)); 
     --font-size-4xl: calc(var(--font-size-3xl) * var(--scale-factor)); 
     --font-size-5xl: calc(var(--font-size-4xl) * var(--scale-factor)); 
-  }
-  
-  body {
+}
+
+body {
     font-size: var(--font-size-sm);   /* Base font size */
     line-height: 1.6;
     font-family: 'Exo 2', sans-serif;
-  }
-  
-  h1 {
+}
+
+/* Headline Sizes */
+h1 {
     font-size: var(--font-size-4xl);
     line-height: 1.2;
     color: var(--cool-grey);
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: var(--font-size-3xl);
     line-height: 1.25;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: var(--font-size-2xl);
     line-height: 1.3;
-  }
-  
-  h4 {
+}
+
+h4 {
     font-size: var(--font-size-xl);
     line-height: 1.35;
-  }
-  
-  h5 {
+}
+
+h5 {
     font-size: var(--font-size-lg);
     line-height: 1.4;
-  }
-  
-  h6 {
+}
+
+h6 {
     font-size: var(--font-size-md);
     line-height: 1.45;
-  }
-  
-  p, li, blockquote {
+}
+
+p, li, blockquote {
     font-size: var(--font-size-sm);  /* Matches the body text */
     margin-bottom: 1em;
-  }
-  
-  small {
+}
+
+small {
     font-size: var(--font-size-xs);
-  }
-  
-  .button {
+}
+
+.button {
     font-size: var(--font-size-md);  /* Slightly larger for emphasis */
     padding: 0.5em 1em;
     border-radius: 4px;
-  }
-  
-  .caption {
+}
+
+.caption {
     font-size: var(--font-size-xs);
     line-height: 1.2;
     color: #666;  /* Lighter color for captions */
-  }
-  
+}
+
+/* Responsive Headline Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-xl);
+    }
+
+    h4 {
+        font-size: var(--font-size-lg);
+    }
+
+    h5 {
+        font-size: var(--font-size-md);
+    }
+
+    h6 {
+        font-size: var(--font-size-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    h4 {
+        font-size: var(--font-size-md);
+    }
+
+    h5 {
+        font-size: var(--font-size-sm);
+    }
+
+    h6 {
+        font-size: var(--font-size-xs);
+    }
+}
