@@ -29,14 +29,14 @@
 }
 
 
-.dash-ps, .dash-il, .dash-id, .dash-xd, .dash-ae, .dash-html, .dash-css, .dash-js {
+.dash-il, .dash-id, .dash-xd, .dash-ae, .dash-html, .dash-css, .dash-js {
     stroke-dasharray: 0 408.2;
 }
-
-.dash-ps.in-view{
-    stroke: #ff6600; /* Replace $secondary-color with its corresponding hex or RGB value */
-    animation: ps 5s ease-in-out forwards;
+.dash-ps {
+    stroke: #ff6600; /* Replace $secondary-color */
+    stroke-dasharray: 406 408.2;
 }
+
 
 .dash-il.in-view {
     stroke: #ff6600; /* Replace $secondary-color */
