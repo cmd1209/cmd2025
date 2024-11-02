@@ -42,6 +42,7 @@
 .dash-stroke{
     stroke: #ff6600; /* Replace $secondary-color */
     animation: ps 5s ease-in-out forwards;
+    -webkit-animation: ps 5s ease-in-out forwards;
 }
 
 .dash-ps.in-view {
@@ -86,6 +87,15 @@
 }
 
 @keyframes ps {
+    0% {
+        stroke-dasharray: 0 408.2;
+    }
+    100% {
+        stroke-dasharray: 406 408.2;
+    }
+}
+
+@-webkit-keyframes ps {
     0% {
         stroke-dasharray: 0 408.2;
     }
