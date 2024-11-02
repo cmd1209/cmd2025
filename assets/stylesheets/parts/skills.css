@@ -34,7 +34,15 @@
     stroke-dasharray: 0 408.2;
 }
 
+.dash-null{
+    stroke: #ff6600; /* Replace $secondary-color */
+    stroke-dasharray: 0 408.2;
+}
 
+.dash-stroke{
+    stroke: #ff6600; /* Replace $secondary-color */
+    animation: ps 5s ease-in-out forwards;
+}
 
 .dash-ps.in-view {
     stroke: #ff6600; /* Replace $secondary-color */

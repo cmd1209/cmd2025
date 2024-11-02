@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(entries => {
 	  entries.forEach(entry => {
 		if (entry.isIntersecting) {
-		  entry.target.classList.add('in-view');
+		  entry.target.classList.add('dash-stroke');
 		  return;
 		}
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 
 	// Get all the elements with the .animate class applied
-	const allAnimatedElements = document.querySelectorAll('.animateview');
+	const allAnimatedElements = document.querySelectorAll('.dash-null');
 
 	// Add the observer to each of those elements
 	allAnimatedElements.forEach((element) => observer.observe(element));
