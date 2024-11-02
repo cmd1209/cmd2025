@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		  entry.target.classList.add('dash-stroke');
 		  return;
 		}
+		entry.target.classList.remove('dash-stroke');
 
 	  });
 	});
