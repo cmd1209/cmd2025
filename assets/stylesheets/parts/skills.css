@@ -39,18 +39,24 @@
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
 
-.animate{
-    transition: all 1s ease-in-out;
-    transform: translateZ(-90deg); /* Force GPU repaint */
-}
 
 .ps.animate{
     stroke: var(--color-primary-light);
-    stroke-dasharray: 402 408.2;
-    stroke-dashoffset: 402 408.2;
-    transition: all 1s ease-in-out;
+    animation: dash 2s forwards ease-in-out;
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
+
+@keyframes dash {
+    from {
+        stroke-dasharray: 0 408.2;
+        stroke-dashoffset: 0 408.2;
+    }
+    to {
+        stroke-dasharray: 408.2 408.2;
+        stroke-dashoffset: 408.2 408.2;
+    }
+}
+
 .fg.animate{
     stroke: var(--color-primary-dark);
     stroke-dasharray: 390 408.2;
