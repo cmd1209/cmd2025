@@ -24,13 +24,14 @@
   --container-center: 0 auto;
 }
 
+/* html {max-width:100%; overflow:hidden; } */
+
 /* Base container class */
 .container {
   max-width: var(--container-lg);
   /* padding: var(--container-padding-xs);
   margin: var(--container-center); */
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 

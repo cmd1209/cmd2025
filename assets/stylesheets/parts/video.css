@@ -31,6 +31,10 @@
   color: white;  /* Color to contrast with the video */
 }
 
+.video-content .container{
+ height: 100%;
+}
+
 .video-container::before {
   content: "";
   position: absolute;
@@ -41,5 +45,47 @@
   background: var(--gradient-texture);
   z-index: 1;
   /* Optional: Additional blending or overlay effect */
+}
+
+
+.downarrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  margin-inline: auto;
+}
+
+.downarrow:hover > span {
+  animation-play-state: paused;
+}
+
+.downarrow span {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: white;
+  border-radius: 3px;
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  display: block;
+  transform: rotate(-45deg) translateX(-80%);
+  animation: down 1.35s infinite alternate ease-in-out;
+}
+
+@keyframes down {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.5;
+  }
 }
 
