@@ -35,12 +35,11 @@
 .static{
     stroke-dasharray: 0 408.2;
     stroke-dashoffset: 0 408.2;
-    transition: none 1s ease-in-out;
+    transition: all 1s ease-in-out;
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
 
 .animate{
-
     transition: all 1s ease-in-out;
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
