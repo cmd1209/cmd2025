@@ -7,8 +7,15 @@
     --size-lg: 2rem;       /* 32px */
     --size-xl: 3rem;       /* 48px */
     --size-xxl: 4rem;      /* 64px */
+    --size-3xl: 12rem;      /* 128px */
     --size-max: 100%;      /* Full width or height */
     --size-auto: auto;     /* For automatic sizing */
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --size-3xl: 1rem;      /* goes back to normal spac */
+    }
   }
   
   /* Padding utility classes */
@@ -70,6 +77,7 @@
   .mt-lg { margin-top: var(--size-lg); }
   .mt-xl { margin-top: var(--size-xl); }
   .mt-xxl { margin-top: var(--size-xxl); }
+  .mt-3xl { margin-top: var(--size-3xl); }
   
   .mr-xxs { margin-right: var(--size-xxs); }
   .mr-xs { margin-right: var(--size-xs); }

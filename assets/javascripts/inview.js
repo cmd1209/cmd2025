@@ -16,16 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
 	const observer = new IntersectionObserver(entries => {
 	  entries.forEach(entry => {
 		if (entry.isIntersecting) {
-		  entry.target.classList.add('dash-stroke');
+		  entry.target.classList.add('animate');
 		  return;
 		}
-		entry.target.classList.remove('dash-stroke');
+		entry.target.classList.remove('animate');
 
 	  });
 	});
 
 	// Get all the elements with the .animate class applied
-	const allAnimatedElements = document.querySelectorAll('.dash-null');
+	const allAnimatedElements = document.querySelectorAll('.static');
 
 	// Add the observer to each of those elements
 	allAnimatedElements.forEach((element) => observer.observe(element));

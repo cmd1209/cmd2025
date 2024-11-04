@@ -11,7 +11,7 @@
 }
 
 .background-video {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
@@ -43,7 +43,3 @@
   /* Optional: Additional blending or overlay effect */
 }
 
-.content--header{
-  height: 20vh;
-  padding: var(--size-sm);
-}
