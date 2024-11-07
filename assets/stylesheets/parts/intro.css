@@ -1,0 +1,39 @@
+div{
+    position: relative;
+}
+.site-portrait{
+    border-radius: 100%;
+    height: 200px;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 200px;
+}
+#intro{
+    position: relative;
+} 
+#intro  h4 {
+    z-index: 1;
+}
+
+.hexagon {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.25;
+    
+
+  }
+
+  .hex1{
+    top: 0;
+    left: 50%;
+    width: 980px;
+    height: auto;
+    transform: translateX(-100%);
+  }
+  .hex2{
+    top: 50%;
+    right: 0;
+    width: 780px;
+    height: auto
+    fill: var(--color-secondary);
+  }

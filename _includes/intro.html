@@ -1,16 +1,27 @@
-<section  class="bg-gradient-darkest color-text-inverse">
+<section  class="bg-gradient-darkest color-text-inverse" id="intro">
+  {%- assign blueHexagon ="/assets/images/hexagon-blue.svg" -%}
+  {%- assign redHexagon ="/assets/images/hexagon-red.svg" -%}
+  <img src="{{- blueHexagon | relative_url -}}" class="hexagon hex1" alt="">
+  <img src="{{- redHexagon | relative_url -}}" class="hexagon hex2" alt=""> 
   <div class="container container-center pt-xl pl-md pr-md pb-xxl pt-xxl overflowhidden">
-    <h5 class="color-headline-inverse text-center mb-xxl">{{ site.title }}</h5>
+    <div class="row">
+      {%- assign sitePortrait ="/assets/images/self-portrait.jpg" -%}
+      <img src="{{- sitePortrait | relative_url -}}" class="site-portrait mb-lg" alt="">
+    </div>
+    <div class="">
+      <h4 class="color-headline-inverse text-center mb-sm">{{ site.title }}</h4>
+      <h6 class="color-headline-inverse text-center mb-md">Creative Director / Front-End Designer & Developer</h6>
+    </div>
     <div class="row">
       <div class="col col-6">
         <div class="drop static">
-          <h4 class="color-headline-inverse mb-sm">what is up</h4>
+          <h6 class="color-headline-inverse mb-xs">what is up</h6>
           <p>I'm baby mukbang thundercats knausgaard venmo fashion axe pabst whatever activated charcoal dreamcatcher ethical, disrupt asymmetrical. DIY cold-pressed blog, pug shoreditch chicharrones kombucha la croix tbh sustainable bruh adaptogen celiac. Truffaut messenger bag tbh bodega boys, PBR&B gluten-free mixtape umami thundercats swag venmo. 8-bit freegan ascot, microdosing everyday carry organic same kombucha heirloom pop-up messenger bag mustache yr.</p>
         </div>
       </div>
       <div class="col col-6 mt-3xl">
         <div class="drop static">
-          <h4 class="color-headline-inverse mb-sm">yo yo what is up for column 2</h4>
+          <h6 class="color-headline-inverse mb-xs">yo yo what is up for column 2</h6>
           <p>Adaptogen tbh man braid, roof party echo park chartreuse squid. Before they sold out letterpress church-key, paleo roof party gastropub synth health goth kickstarter polaroid iceland truffaut kinfolk. Heirloom subway tile craft beer, beard knausgaard vibecession occupy pour-over ennui slow-carb. Semiotics etsy gentrify drinking vinegar.</p>
         </div>
       </div>

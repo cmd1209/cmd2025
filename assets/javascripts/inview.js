@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		  entry.target.classList.add('animate');
 		  return;
 		}
-		entry.target.classList.remove('animate');
 
 	  });
 	});

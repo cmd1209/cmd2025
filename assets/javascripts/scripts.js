@@ -52,3 +52,24 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+document.addEventListener('click', function(event) {
+    if (event.target.closest('.burger') || event.target.closest('.menu-item')) {
+        document.querySelector('.burger').classList.toggle('open');
+        
+        const overlay = document.querySelector('.overlay');
+        if (overlay.style.display === 'block') {
+            overlay.style.display = 'none';
+        } else {
+            overlay.style.display = 'block';
+        }
+
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('navactive');
+        nav.classList.toggle('navhidden');
+    }
+
+    if (event.target.closest('.back')) {
+        window.location.href = 'https://www.chadmdanford.com';
+    }
+});
