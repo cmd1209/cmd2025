@@ -8,14 +8,6 @@
     height: auto;
 }
 
-.skill--wrapper {
-    margin: 0 1em 1em 1em;
-}
-
-.bg-skills {
- background: var(--gradient-primary-dark);
-}
-
 .skill--bg {
     fill: none;
     stroke: rgba(255, 255, 255, 0);

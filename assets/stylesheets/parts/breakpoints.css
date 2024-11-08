@@ -44,13 +44,20 @@
 /* Row */
 .row {
   display: flex;
-  flex-wrap: wrap;
+  column-gap: var(--size-lg);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .row {
+    column-gap: 0;
+    flex-direction: column;
+  }
 }
 
 /* Columns (default is flex-basis 100% for responsive stacking) */
 .col {
   flex: 1;
-  padding: 0.5rem;
 }
 
 /* Column sizes (responsive) */
@@ -70,6 +77,8 @@
 /* Responsive behavior */
 @media (max-width: 768px) {
   .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    flex: 1;
     flex-basis: 100%;
   }
 }
+

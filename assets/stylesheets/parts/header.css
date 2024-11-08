@@ -119,7 +119,6 @@ nav.nav a:hover {
 #nav-icon {
   width: 54px;
   height: 54px;
-  border-radius: 9px;
   z-index: 999;
   position: fixed;
   top: 6px;

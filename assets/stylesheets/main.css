@@ -3,6 +3,7 @@
 @import "parts/alignment.css";
 @import "parts/breakpoints.css";
 @import "parts/colors.css";
+@import "parts/footer.css";
 @import "parts/header.css";
 @import "parts/intro.css";
 @import "parts/native.css";
@@ -12,6 +13,15 @@
 @import "parts/typo.css";
 @import "parts/utilities.css";
 @import "parts/video.css";
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--gradient-brand);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .intro {
     background: var(--gradient-primary);
