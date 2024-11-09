@@ -28,6 +28,10 @@ body {
     min-height: 100vh;
 }
 
+hr{
+    border: 1px solid var(--color-neutral-dark);
+}
+
 .site-logo{
     margin-inline: auto;
     max-width: 175px;

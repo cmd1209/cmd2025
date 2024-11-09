@@ -201,3 +201,13 @@
     text-align: justify;
   }
   
+
+  /* Responsive behavior */
+@media (max-width: 768px) {
+  .justify-md-left {
+    justify-content: left;
+  }
+  .justify-md-center {
+    justify-content: center;
+  }
+}

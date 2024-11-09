@@ -1,4 +1,19 @@
 .logo-footer {
-    max-width: 125px;
+    max-width: 105px;
     height: auto;
+}
+
+.footer-links {
+    display: inline-block;
+}
+
+.footer-links:hover{
+    background-color: var(--color-neutral-darkest);
+}
+
+.icon-footer{
+    width: 42px;
+}
+.icon-footer:hover{
+   opacity: 0.5;
 }

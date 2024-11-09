@@ -48,9 +48,11 @@ a {
 }
 
 ul[role='list'],
+ul,
 ol[role='list'] {
   list-style: none;
 }
+
 
 table {
   border-collapse: collapse;

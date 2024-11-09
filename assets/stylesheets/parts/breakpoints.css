@@ -47,6 +47,19 @@
   column-gap: var(--size-lg);
 }
 
+.gap-xs{
+  column-gap: var(--size-xs);
+}
+.gap-sm{
+  column-gap: var(--size-sm);
+}
+.gap-md{
+  column-gap: var(--size-md);
+}
+.gap-lg{
+  column-gap: var(--size-lg);
+}
+
 /* Responsive behavior */
 @media (max-width: 768px) {
   .row {
@@ -76,7 +89,7 @@
 
 /* Responsive behavior */
 @media (max-width: 768px) {
-  .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     flex: 1;
     flex-basis: 100%;
   }
