@@ -4,7 +4,6 @@ header.startheader {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: rgba(39, 69, 140, 0.95); /* Assuming $primary-color is rgb(39, 69, 140) */
   padding: 0.5em;
   transition: all 0.3s ease-in-out;
 }
@@ -60,14 +59,16 @@ nav.nav li {
 
 nav.nav a {
   display: block;
-  color: #8e9aa5; /* Assuming $cool-grey is #8e9aa5 */
+  color: var(--color-neutral-muted);
   font-size: 185%;
   line-height: 150%;
   font-weight: 400;
 }
 
-nav.nav a:hover {
-  color: #add8e6; /* Assuming $lightblue is #add8e6 */
+nav.nav a:hover,
+nav.nav a.active {
+  text-decoration: underline;
+  text-underline-offset: var(--size-xs);
 }
 
 .navhidden {
@@ -112,7 +113,7 @@ nav.nav a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: #001933; /* Assuming $darkblue is #001933 */
+  background-color: var(--color-primary-darkest);
   z-index: 998;
 }
 
@@ -123,22 +124,18 @@ nav.nav a:hover {
   position: fixed;
   top: 6px;
   left: 6px;
-  background-color: rgba(39, 69, 140, 0.75);
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
 
-#nav-icon:hover {
-  background-color: rgba(39, 69, 140, 0.5);
-}
 
 #nav-icon span {
   display: block;
   position: absolute;
   height: 2px;
   width: 38px;
-  background: #8e9aa5; /* Assuming $cool-grey is #8e9aa5 */
+  background: var(--color-neutral-muted);
   border-radius: 8px;
   opacity: 1;
   left: 8px;
@@ -152,7 +149,7 @@ nav.nav a:hover {
 #nav-icon span:nth-child(4) { top: 38px; }
 
 #nav-icon.open span {
-  background: #8e9aa5; /* Assuming $cool-grey is #8e9aa5 */
+  background: var(--color-neutral-muted);
 }
 
 #nav-icon.open span:nth-child(1) {
@@ -183,4 +180,26 @@ nav.nav a:hover {
 #nav-icon.back span:nth-child(4) {
   width: 20px;
   transform: translate(-2px, -4px) rotate(45deg);
+}
+
+
+header.header-desktop{
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+}
+
+.logo-header {
+  max-width: 105px;
+  height: auto;
+}
+
+.header-links {
+  display: inline-block;
+}
+
+.header-links:hover,
+.header-links.active {
+  text-decoration: underline;
+  text-underline-offset: var(--size-xs);
 }

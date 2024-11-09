@@ -7,8 +7,10 @@
     display: inline-block;
 }
 
-.footer-links:hover{
-    background-color: var(--color-neutral-darkest);
+.footer-links:hover,
+.footer-links.active {
+    text-decoration: underline;
+    text-underline-offset: var(--size-xs);
 }
 
 .icon-footer{

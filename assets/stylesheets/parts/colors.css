@@ -44,6 +44,7 @@
     --gradient-primary-dark: linear-gradient(180deg, var(--color-primary-darker) 0%, var(--color-secondary) 100%);
     --gradient-pri-neu-dark: linear-gradient(180deg, var(--color-primary-darkest) 0%, var(--color-primary-darker) 100%);
     --gradient-transparent: linear-gradient(180deg, var(--color-primary-dark) 0%, rgba(90, 0, 30, 0.8) 100%);
+    --gradient-header: linear-gradient(180deg, var(--color-primary-darkest) 33%, rgba(90, 0, 30, 0) 100%);
     --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-light) 0%, var(--color-neutral-muted) 100%);
     --gradient-muted: linear-gradient(180deg, var(--color-primary) 0%, rgb(46, 76, 106) 66%);
   

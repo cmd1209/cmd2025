@@ -52,7 +52,7 @@ h6 {
     line-height: 1.45;
 }
 
-p, li, blockquote {
+p, blockquote {
     font-size: var(--font-size-sm);  /* Matches the body text */
     margin-bottom: 1em;
 }

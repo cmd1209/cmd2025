@@ -1,3 +1,23 @@
 .overflowhidden{
     overflow: hidden;
 }
+
+.hide-mobile {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+  }
+
+.hide-desktop {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hide-desktop {
+        display: block;
+    }
+  }

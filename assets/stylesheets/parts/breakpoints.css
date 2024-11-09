@@ -28,7 +28,7 @@
 
 /* Base container class */
 .container {
-  max-width: var(--container-lg);
+  max-width: var(--container-xl);
   /* padding: var(--container-padding-xs);
   margin: var(--container-center); */
   box-sizing: border-box;
