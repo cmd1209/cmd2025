@@ -128,6 +128,9 @@ nav.nav a.active {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
+#nav-icon.hidden {
+  transform: translateY(-100%); /* Hidden above the viewport */
+}
 
 
 #nav-icon span {
@@ -202,4 +205,8 @@ header.header-desktop{
 .header-links.active {
   text-decoration: underline;
   text-underline-offset: var(--size-xs);
+}
+
+.header-links:last-child{
+  padding-right: 0;
 }

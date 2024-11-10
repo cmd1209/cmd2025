@@ -1,15 +1,10 @@
- <section class="video-container">
+ <section class="video-container break-out">
       {%- assign backgroundF ="/assets/images/Backgrounfilms5s.mp4" -%}
       <video class="background-video" autoplay muted loop playsinline>
         <source src="{{- backgroundF | relative_url -}}" type="video/mp4">
-        <!-- Add additional sources for different formats if needed -->
-        Your browser does not support the video tag.
       </video>
-      <div class="video-content">
-        <!-- Any content you want to overlay on the video -->
-        <div class="container container-center flex flex-column justify-center pr-md pl-md pt-xxl pb-xxl">
-          <h1 class="mission text-center color-headline-inverse mb-xxl"><span>creating</span> <span>making</span> <span>coding</span> <span>shooting</span> <span>framing</span> <span>editing</span> <span>developing</span> <span>brainstorming</span> <span>since 1999!</span> </h1>
-          <a href="#aboutme" class="downarrow"><span></span></a>
-        </div>
+      <div class="video-content inner-wrapper flex flex-column justify-center">
+        <h1 class="mission text-center color-headline-inverse mb-xxl"><span>creating</span> <span>making</span> <span>coding</span> <span>shooting</span> <span>framing</span> <span>editing</span> <span>developing</span> <span>brainstorming</span> <span>since 1999!</span> </h1>
+        <a href="#aboutme" class="downarrow"><span></span></a>
       </div>
     </section>

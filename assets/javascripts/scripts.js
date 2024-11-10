@@ -73,3 +73,24 @@ document.addEventListener('click', function(event) {
         window.location.href = 'https://www.chadmdanford.com';
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let lastScrollTop = 0;
+    const burgerNav = document.getElementById("nav-icon");
+  
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.screenY || document.documentElement.scrollTop;
+  
+      if (scrollTop > lastScrollTop) {
+        // User scrolled down - hide navigation
+        burgerNav.classList.add("hidden");
+      } else {
+        // User scrolled up - show navigation
+        burgerNav.classList.remove("hidden");
+      }
+  
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scroll values
+    });
+  });
+  
