@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 @import url('https://fonts.googleapis.com/css?family=Exo+2:100,400,400i,600,600i');
 
+
 :root {
     --scale-factor: 1.25;           
     --font-size-xs: calc(1rem / var(--scale-factor));       
@@ -20,6 +21,10 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+}
 /* Headline Sizes */
 h1 {
     font-size: var(--font-size-4xl);
