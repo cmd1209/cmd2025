@@ -1,18 +1,7 @@
 ---
-layout: default
+layout: blog
 title: Blog
 permalink: /blog/
 ---
 
-
-Fuck You Asshole
-
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+This is the Content for the amazing Blog Posts that are coming in a bit - seems to be coming along really well so we will have to see if it pans out the way I think it will. 
