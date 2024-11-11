@@ -4,7 +4,7 @@
     --color-primary: rgb(39, 69, 140);
     --color-primary-dark: rgb(36, 68, 98);
     --color-primary-darker: #183054; 
-    --color-primary-darkest: #0a172a; 
+    --color-primary-darkest: rgb(10, 23, 42); 
     
     /* Secondary Palette */
     --color-secondary-light: #8b3a4e;
@@ -38,13 +38,14 @@
       rgba(0, 0, 0, 0.4) 6px
     );
     --gradient-primary: linear-gradient(180deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-
+    
+    
     --gradient-brand: linear-gradient(180deg, var(--color-primary-darkest) 0%, var(--color-secondary-darkest) 100%);
 
     --gradient-primary-dark: linear-gradient(180deg, var(--color-primary-darker) 0%, var(--color-secondary) 100%);
     --gradient-pri-neu-dark: linear-gradient(180deg, var(--color-primary-darkest) 0%, var(--color-primary-darker) 100%);
     --gradient-transparent: linear-gradient(180deg, var(--color-primary-dark) 0%, rgba(90, 0, 30, 0.8) 100%);
-    --gradient-header: linear-gradient(180deg, var(--color-primary-darkest) 33%, rgba(90, 0, 30, 0) 100%);
+    --gradient-header: linear-gradient(180deg, rgba(10, 23, 42, .7) 33%, rgba(10, 23, 42, 0) 100%);
     --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-light) 0%, var(--color-neutral-muted) 100%);
     --gradient-muted: linear-gradient(180deg, var(--color-primary) 0%, rgb(46, 76, 106) 66%);
   
@@ -52,6 +53,11 @@
     --text-color: rgb(52, 86, 119);
     --text-color-inverse: var(--color-neutral-light);
   }
+
+.bg-gradient-header{
+  background: var(--gradient-header);
+}
+
 .bg-gradient-brand{
   background: var(--gradient-brand);
 }

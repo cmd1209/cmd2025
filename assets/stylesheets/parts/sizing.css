@@ -35,6 +35,7 @@
   .pt-lg { padding-top: var(--size-lg); }
   .pt-xl { padding-top: var(--size-xl); }
   .pt-xxl { padding-top: var(--size-xxl); }
+  .pt-mega { padding-top: 6em; }
   
   .pr-xxs { padding-right: var(--size-xxs); }
   .pr-xs { padding-right: var(--size-xs); }
