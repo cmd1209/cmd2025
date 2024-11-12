@@ -4,6 +4,9 @@ title:  "first post"
 date:   2024-10-24 17:00:06 +0200
 permalink: /blog/:title
 tags: [ "css", "html" ]
+image:
+  thumbnail: /assets/images/placeholder01.webp
+  feature: /assets/images/placeholder01.webp
 ---
 
 Raclette tumblr flexitarian sustainable. Chicharrones thundercats unicorn chartreuse pork belly tumeric ascot small batch prism try-hard YOLO fam heirloom.

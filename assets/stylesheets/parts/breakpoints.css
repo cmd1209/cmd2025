@@ -28,8 +28,9 @@
   display: grid;
 }
 .grid-3col{
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: var(--size-sm);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  column-gap: var(--size-md);
+  row-gap: var(--size-xl);
 }
 
 
@@ -39,12 +40,12 @@
 /* Base container class */
 .wrapper {
   box-sizing: border-box;
-  width: min(var(--wrapper-lg), 100% - (var(--wrapper-padding-lg)*2));
+  width: min(var(--wrapper-xl), 100% - (var(--wrapper-padding-lg)*2));
   margin-inline: auto;
 }
 
 .inner-wrapper{
-  max-width: var(--wrapper-lg);
+  max-width: var(--wrapper-xl);
   margin-inline: auto;
 }
 

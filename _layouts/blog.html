@@ -13,11 +13,18 @@
                 <div class="grid grid-3col">
 
                           {% for post in site.posts %}
-                          <div class="article mb-xl p-md bg-gradient-primary">
-                              <h5>{{ post.title }}</h5>
-                              <p>{{ post.date }}</p>
-                              <p>{{ post.content | markdownify | strip_html | truncatewords: 15 }}</p>
+                          <div class="article">
+                            {% if post.image.feature %}
+                            <img src="{{post.image.feature}}" class="img-responsive" alt="">
+                            {% endif %}
+                            <h5 class="mt-xs mb-md">{{ post.title }}</h5>
+                              <p>{{ post.date | date_to_long_string}}</p>
                               <a class="btn-primary btn-md br-xs" href="{{ post.url }}">Read More</a>
+                              <div class="tags flex gap-xs wrap mt-md">
+                                {% for tag in post.tags %}
+                                  <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="pill-primary">{{ tag }}</a>
+                                {% endfor %}
+                              </div>
                           </div>
                           {% endfor %}
 

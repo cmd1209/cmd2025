@@ -4,6 +4,9 @@ title:  "second post"
 date:   2024-11-11 17:00:06 +0200
 permalink: /blog/:title
 tags: [ "html" ]
+image:
+  thumbnail: /assets/images/placeholder01.webp
+  feature: /assets/images/placeholder01.webp
 ---
 
 Iceland tonx echo park viral letterpress biodiesel YOLO celiac keytar banh mi shoreditch vibecession raw denim ethical jawn. Williamsburg letterpress yr affogato, hexagon cloud bread knausgaard chambray taxidermy. Raw denim pickled knausgaard vice, sartorial gastropub affogato vegan succulents wayfarers unicorn leggings neutra waistcoat fit. Distillery VHS tofu flannel keytar pop-up stumptown tattooed echo park offal art party mukbang tumblr plaid. Fanny pack portland readymade organic quinoa raw denim bespoke health goth s

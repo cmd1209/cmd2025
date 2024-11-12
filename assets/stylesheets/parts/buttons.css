@@ -20,3 +20,13 @@
 .br-xs{
     border-radius: var(--size-xxs);
 }
+
+.pill-primary{
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    color: var(--color-neutral-muted);
+    background-color: var(--color-primary);
+    border-radius: var(--size-xs);
+    padding-inline: var(--size-sm);
+    padding-block: var(--size-xxs);
+}

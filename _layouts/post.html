@@ -7,14 +7,19 @@
       <main class="content pt-mega">
         <section  class="color-text-inverse">
             <div class="inner-wrapper">
-              {% include breadcrumbs.html %}
-                <h2>{{ page.title }}</h2>
+              <div class="post-meta mb-md">
+                {% include breadcrumbs.html %}
+                <div class="tags flex gap-xs wrap mt-md">
+                  {% for tag in page.tags %}
+                    <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="pill-primary">{{ tag }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+                <h2 class="mb-lg">{{ page.title }}</h2>
+                {% if page.image.feature %}
+                  <img src="{{page.image.feature}}" class="img-responsive" alt="">
+                  {% endif %}
                 {{ content }}
-                <h5>here are the tags</h5>
-                Tags:
-      {% for tag in page.tags %}
-        <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="post">#{{ tag }}</a>
-      {% endfor %}
             </div>
           </section>
       </main>

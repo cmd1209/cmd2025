@@ -65,6 +65,9 @@ p, blockquote {
 small {
     font-size: var(--font-size-xs);
 }
+p.small {
+    font-size: var(--font-size-xs);
+}
 
 .button {
     font-size: var(--font-size-md);  /* Slightly larger for emphasis */
