@@ -10,14 +10,14 @@
               {% include breadcrumbs.html %}
                 <h2>{{ page.title }}</h2>
                 {{ content }}
-                <div class="row">
+                <div class="grid grid-3col">
 
                           {% for post in site.posts %}
-                          <div class="col col-4">
+                          <div class="article mb-xl p-md bg-gradient-primary">
                               <h5>{{ post.title }}</h5>
                               <p>{{ post.date }}</p>
-                              <p>{{ post.content | markdownify | strip_html | truncatewords: 25 }}</p>
-                              <a href="{{ post.url }}">Read More</a>
+                              <p>{{ post.content | markdownify | strip_html | truncatewords: 15 }}</p>
+                              <a class="btn-primary btn-md br-xs" href="{{ post.url }}">Read More</a>
                           </div>
                           {% endfor %}
 

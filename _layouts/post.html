@@ -9,14 +9,16 @@
             <div class="inner-wrapper">
               {% include breadcrumbs.html %}
                 <h2>{{ page.title }}</h2>
-
-
-
                 {{ content }}
+                <h5>here are the tags</h5>
+                Tags:
+      {% for tag in page.tags %}
+        <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="post">#{{ tag }}</a>
+      {% endfor %}
             </div>
           </section>
       </main>
-        {% include header.html %}
+        {% include footer.html %}
     </div>
   </body>
 </html>

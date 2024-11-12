@@ -24,6 +24,16 @@
   --wrapper-center: 0 auto;
 }
 
+.grid{
+  display: grid;
+}
+.grid-3col{
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--size-sm);
+}
+
+
+
 /* html {max-width:100%; overflow:hidden; } */
 
 /* Base container class */
@@ -48,6 +58,10 @@
 /* Row */
 .row {
   display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
 }
 
 .gap-xs{

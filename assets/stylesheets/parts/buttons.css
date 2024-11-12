@@ -1,0 +1,22 @@
+.btn-primary{
+    color: var(--color-neutral-muted);
+    background-color: var(--color-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--color-primary-darker);
+}
+.btn-lg{
+    padding-inline: var(--size-lg);
+    padding-block: var(--size-sm);
+}
+
+.btn-md{
+    padding-inline: var(--size-md);
+    padding-block: var(--size-xs);
+}
+
+.br-xs{
+    border-radius: var(--size-xxs);
+}
