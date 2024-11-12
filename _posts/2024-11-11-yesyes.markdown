@@ -2,7 +2,7 @@
 layout: post
 title:  "yes yes yes yeah"
 date:   2024-11-11 17:00:06 +0200
-permalink: /blog/:title
+permalink: /posts/:title
 tags: [ "css" ]
 image:
   thumbnail: /assets/images/placeholder01.webp

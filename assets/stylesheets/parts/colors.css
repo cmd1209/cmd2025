@@ -1,10 +1,11 @@
 :root {
     /* Primary Palette */
-    --color-primary-light: rgb(80, 110, 170); 
-    --color-primary: rgb(39, 69, 140);
-    --color-primary-dark: rgb(36, 68, 98);
-    --color-primary-darker: #183054; 
-    --color-primary-darkest: rgb(10, 23, 42); 
+    --color-primary-light: rgb(101, 128, 187);     /* Softer, slightly desaturated for contrast */
+    --color-primary: rgb(39, 69, 140);             /* Main primary color */
+    --color-primary-dark: rgb(31, 55, 111);        /* Darkened, slightly muted for depth */
+    --color-primary-darker: rgb(24, 43, 87);       /* Deeper, for subtle highlights */
+    --color-primary-darkest: rgb(15, 28, 56);      /* Near-black, minimal saturation */
+
     
     /* Secondary Palette */
     --color-secondary-light: #8b3a4e;

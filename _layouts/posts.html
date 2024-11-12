@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      <main class="content  pt-mega">
+        <section  class="color-text-inverse">
+            <div class="inner-wrapper">
+              {% include breadcrumbs.html %}
+                <h2>{{ page.title }}</h2>
+                {{ content }}
+                <div class="grid grid-3col">
+                  {% for post in site.posts %}
+                  {% include article.html %}
+                  {% endfor %}
+                </div>
+            </div>
+        </section>
+      </main>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

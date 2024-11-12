@@ -1,0 +1,15 @@
+<div class="article">
+    {% if post.image.feature %}
+    <img src="{{post.image.feature}}" class="img-responsive" alt="">
+    {% endif %}
+    <div class="flex justify-between align-baseline gap-xs mt-xs">
+        <p class="">{{ post.date | date_to_long_string}}</p>
+        <div class="tags flex gap-xs">
+        {% for tag in post.tags %}
+        <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="btn-secondary btn-xs">{{ tag }}</a>
+        {% endfor %}
+        </div>
+    </div>
+    <h3 class="mt-xs mb-md">{{ post.title }}</h3>
+    <a class="btn-primary btn-md" href="{{ post.url }}">Read More</a>
+</div>

@@ -2,7 +2,7 @@
 layout: post
 title:  "first post"
 date:   2024-10-24 17:00:06 +0200
-permalink: /blog/:title
+permalink: /posts/:title
 tags: [ "css", "html" ]
 image:
   thumbnail: /assets/images/placeholder01.webp

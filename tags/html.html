@@ -5,18 +5,7 @@ permalink: /html
 ---
 
 <div class="grid grid-3col">
-
   {%- for post in site.tags["html"] -%}
-  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-  <div class="article p-md bg-gradient-primary">
-      <h5>{{ post.title }}</h5>
-      <p>{{ post.date | date: date_format }}</p>
-      
-      <p>{{ post.content | markdownify | strip_html | truncatewords: 15 }}</p>
-      <a class="btn-primary btn-md br-xs" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-  </div>
+    {% include article.html %}
   {%- endfor -%}
-
 </div>

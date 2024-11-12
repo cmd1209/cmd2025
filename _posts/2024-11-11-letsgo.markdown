@@ -2,7 +2,7 @@
 layout: post
 title:  "second post"
 date:   2024-11-11 17:00:06 +0200
-permalink: /blog/:title
+permalink: /posts/:title
 tags: [ "html" ]
 image:
   thumbnail: /assets/images/placeholder01.webp

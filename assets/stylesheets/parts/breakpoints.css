@@ -44,6 +44,12 @@
   margin-inline: auto;
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    width: min(var(--wrapper-xl), 100% - (var(--wrapper-padding-md)*2));
+  }
+}
+
 .inner-wrapper{
   max-width: var(--wrapper-xl);
   margin-inline: auto;

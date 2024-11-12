@@ -7,26 +7,37 @@
 .btn-primary:active {
     background-color: var(--color-primary-darker);
 }
+.btn-secondary{
+    color: var(--color-neutral-muted);
+    background-color: var(--color-primary-darker);
+}
+.btn-secondary:hover,
+.btn-secondaary:focus,
+.btn-secondaary:active {
+    background-color: var(--color-primary-darkest);
+}
+
 .btn-lg{
     padding-inline: var(--size-lg);
     padding-block: var(--size-sm);
+    border-radius: var(--size-xxs);
 }
 
 .btn-md{
     padding-inline: var(--size-md);
     padding-block: var(--size-xs);
-}
-
-.br-xs{
     border-radius: var(--size-xxs);
 }
 
-.pill-primary{
-    display: inline-block;
-    font-size: var(--font-size-xs);
-    color: var(--color-neutral-muted);
-    background-color: var(--color-primary);
-    border-radius: var(--size-xs);
+.btn-sm{
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
+    border-radius: var(--size-xxs);
+}
+
+.btn-xs{
+    padding-inline: var(--size-sm);
+    padding-block: var(--size-xxs);
+    border-radius: var(--size-xxs);
+    font-size: var(--font-size-xs);
 }
