@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "second post"
+author: Chad Matthew Danford
 date:   2024-11-11 17:00:06 +0200
 permalink: /posts/:title
 tags: [ "html" ]

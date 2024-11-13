@@ -1,15 +1,32 @@
 <div class="article">
-    {% if post.image.feature %}
-    <img src="{{post.image.feature}}" class="img-responsive" alt="">
-    {% endif %}
-    <div class="flex justify-between align-baseline gap-xs mt-xs">
-        <p class="">{{ post.date | date_to_long_string}}</p>
-        <div class="tags flex gap-xs">
-        {% for tag in post.tags %}
-        <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="btn-secondary btn-xs">{{ tag }}</a>
-        {% endfor %}
+    <div class="article__head">
+        {% if post.image.feature %}
+        <a href="{{post.url}}" class="article__image">
+            <img src="{{post.image.feature}}" class="img-responsive" alt="">
+        </a>
+        {% endif %}
+    </div>
+    <div class="article__content">
+        <div class="article__meta flex gap-xs align-baseline">
+            <div class="article__tags flex gap-xs ">
+                {% for tag in post.tags %}
+                    <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            <p class="article__date">{{ post.date | date_to_long_string}}</p>
+        </div>
+        <div class="article__title mb-xs">
+            <h4>{{ post.title }}</h4>
+        </div>
+        <div class="article__excerpt">
+            <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+        </div>
+        <div class="article__info flex">
+            {%- assign sitePortrait ="/assets/images/self-portrait-2019.jpg" -%}
+            <img class="article__portrait" src="{{- sitePortrait | relative_url -}}" alt="">
+            <div class="article__author">
+                <p><span class="article__by mr-xs">by</span><a href="/about/">{{ post.author }}</a></p>
+            </div>
         </div>
     </div>
-    <h3 class="mt-xs mb-md">{{ post.title }}</h3>
-    <a class="btn-primary btn-md" href="{{ post.url }}">Read More</a>
 </div>

@@ -27,6 +27,8 @@
     --color-neutral-darkest: #0c0c14;
     --color-neutral-darker: rgb(29, 29, 30);
     --color-neutral-dark: rgb(52, 54, 56);
+    --color-neutral-50: #787b7e;
+    --color-neutral-25: #a2a6aa;
     --color-neutral-light: rgb(245, 247, 249);
     --color-neutral-muted: rgb(200, 202, 204);
   
@@ -51,7 +53,7 @@
     --gradient-muted: linear-gradient(180deg, var(--color-primary) 0%, rgb(46, 76, 106) 66%);
   
     /* Text Colors */
-    --text-color: rgb(52, 86, 119);
+    --text-color: var(--color-neutral-darkest);
     --text-color-inverse: var(--color-neutral-light);
   }
 
@@ -65,9 +67,14 @@
 .bg-gradient-primary{
   background: var(--gradient-primary-dark);
 }
-.bg-neutral-darkest{
-  background-color: var(--color-neutral-darkest);
+
+.bg-neutral-50{
+  background-color: var(--color-neutral-50);
 }
+.bg-neutral-dark{
+  background-color: var(--color-neutral-dark);
+}
+
 .bg-neutral-darker{
   background-color: var(--color-neutral-darker);
 }

@@ -1,3 +1,12 @@
+.br-xs{
+    border-radius: var(--size-xxs);
+}
+.br-sm{
+    border-radius: var(--size-xs);
+}
+.br-md{
+    border-radius: var(--size-sm);
+}
 
 
 

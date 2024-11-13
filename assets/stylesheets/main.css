@@ -1,6 +1,7 @@
 @import "parts/reset.css";
 
 @import "parts/alignment.css";
+@import "parts/article.css";
 @import "parts/breakpoints.css";
 @import "parts/buttons.css";
 @import "parts/colors.css";

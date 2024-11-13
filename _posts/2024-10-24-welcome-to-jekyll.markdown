@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "first post"
+author: Chad Matthew Danford
 date:   2024-10-24 17:00:06 +0200
 permalink: /posts/:title
 tags: [ "css", "html" ]
