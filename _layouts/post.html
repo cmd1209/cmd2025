@@ -5,21 +5,12 @@
     <div class="wrapper">
       {% include header.html %}
       <main class="content pt-mega">
-        <section  class="color-text-inverse">
-            <div class="inner-wrapper">
-              <div class="post-meta mb-md">
-                {% include breadcrumbs.html %}
-                <div class="tags flex gap-xs wrap mt-md">
-                  {% for tag in page.tags %}
-                    <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="pill-primary">{{ tag }}</a>
-                  {% endfor %}
-                </div>
-              </div>
-                <h2 class="mb-lg">{{ page.title }}</h2>
-                {% if page.image.feature %}
-                  <img src="{{page.image.feature}}" class="img-responsive" alt="">
-                  {% endif %}
+        <section>
+            <div class="inner-wrapper-md">
+              {% include post-header.html %}
+              <div class="post__content">
                 {{ content }}
+              </div>
             </div>
           </section>
       </main>

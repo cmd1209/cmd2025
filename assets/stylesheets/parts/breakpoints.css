@@ -55,6 +55,16 @@
   margin-inline: auto;
 }
 
+.inner-wrapper-lg{
+  max-width: var(--wrapper-lg);
+  margin-inline: auto;
+}
+
+.inner-wrapper-md{
+  max-width: var(--wrapper-md);
+  margin-inline: auto;
+}
+
 .break-out{
   width: 100vw;
   position: relative;

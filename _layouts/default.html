@@ -5,11 +5,12 @@
     <div class="wrapper">
       {% include header.html %}
       <main class="content  pt-mega">
-        <section  class="color-text-inverse">
+        <section>
             <div class="inner-wrapper">
-              {% include breadcrumbs.html %}
-                <h2>{{ page.title }}</h2>
+              {% include post-header.html %}
+              <div class="post__content">
                 {{ content }}
+              </div>
             </div>
         </section>
       </main>

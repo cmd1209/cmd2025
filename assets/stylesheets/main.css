@@ -24,6 +24,7 @@ body {
     background: var(--gradient-brand);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: var(--color-neutral-light);
 }
 
 .intro {

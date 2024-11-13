@@ -76,3 +76,7 @@
 .article__tag:active {
     background-color: var(--color-primary-darker);
 }
+
+.post__content{
+    margin-top: var(--size-md);
+}
