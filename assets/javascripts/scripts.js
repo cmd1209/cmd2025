@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "https://www.chadmdanford.com";
       }
     });
+
   
     // Scroll function, runs only if overlay is not active
     window.addEventListener("scroll", () => {
