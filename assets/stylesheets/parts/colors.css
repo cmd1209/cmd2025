@@ -29,8 +29,8 @@
     --color-neutral-dark: rgb(52, 54, 56);
     --color-neutral-50: #787b7e;
     --color-neutral-25: #a2a6aa;
-    --color-neutral-light: rgb(245, 247, 249);
     --color-neutral-muted: rgb(200, 202, 204);
+    --color-neutral-light: rgb(245, 247, 249);
   
     /* Gradients */
     --gradient-texture: repeating-linear-gradient(
