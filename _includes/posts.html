@@ -1,17 +1,16 @@
-<section>
-  <div class="">
-    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+<section class="mt-xl mb-xl">
+  <div class="posts__header mb-lg">
+    <h3>Posts</h3>
+  </div>
+  <div class="splide" role="group" aria-label="Splide Basic HTML Example">
       <div class="splide__track">
         <ul class="splide__list">
           {% for post in site.posts %}
-          <li class="splide__slide" style="margin-inline: 1em;">
+          <li class="splide__slide">
             {% include article.html %}
           </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-
-    
-  </div>
 </section>

@@ -12,6 +12,7 @@
 @import "parts/sizing.css";
 @import "parts/shapes.css";
 @import "parts/skills.css";
+@import "parts/splider.css";
 @import "parts/swiper.css";
 @import "parts/typo.css";
 @import "parts/utilities.css";
@@ -27,6 +28,10 @@ body {
     background-attachment: fixed;
     color: var(--color-neutral-light);
 }
+
+/* body *{
+    border: 1px solid rgba(255, 0, 0,0.5);
+} */
 
 .intro {
     background: var(--gradient-primary);
