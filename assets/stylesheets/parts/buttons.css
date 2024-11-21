@@ -1,20 +1,20 @@
 .btn-primary{
-    color: var(--color-neutral-muted);
-    background-color: var(--color-primary);
+    color: var(--color-neutral-20);
+    background-color: var(--color-primary-50);
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: var(--color-primary-darker);
+    background-color: var(--color-primary-70);
 }
 .btn-secondary{
-    color: var(--color-neutral-muted);
-    background-color: var(--color-primary-darker);
+    color: var(--color-neutral-20);
+    background-color: var(--color-primary-70);
 }
 .btn-secondary:hover,
 .btn-secondaary:focus,
 .btn-secondaary:active {
-    background-color: var(--color-primary-darkest);
+    background-color: var(--color-primary-90);
 }
 
 .btn-lg{

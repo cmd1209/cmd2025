@@ -68,13 +68,13 @@
     font-size: var(--font-size-xs);
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary-60);
     border-radius: var(--size-sm);
 }
 .article__tag:hover,
 .article__tag:focus,
 .article__tag:active {
-    background-color: var(--color-primary-darker);
+    background-color: var(--color-primary-70);
 }
 
 .post__content{

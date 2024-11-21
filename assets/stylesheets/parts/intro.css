@@ -35,5 +35,5 @@ div{
     right: 0;
     width: 780px;
     height: auto;
-    fill: var(--color-secondary);
+    fill: var(--color-secondary-50);
   }
