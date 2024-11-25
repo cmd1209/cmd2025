@@ -6,7 +6,7 @@ date:   2024-11-11 17:00:06 +0200
 permalink: /posts/:title
 tags: [ "css" ]
 image:
-  thumbnail: /assets/images/photo02.webp
+  thumbnail: /assets/images/photo02-thumb.webp
   feature: /assets/images/photo02.webp
 ---
 
