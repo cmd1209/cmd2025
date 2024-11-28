@@ -68,15 +68,26 @@
     font-size: var(--font-size-xs);
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
-    background-color: var(--color-primary-60);
     border-radius: var(--size-sm);
 }
 .article__tag:hover,
 .article__tag:focus,
 .article__tag:active {
-    background-color: var(--color-primary-70);
+    background-color: var(--color-neutral-80);
 }
 
+.article-tag__css{
+    background-color: var(--color-primary-70);
+}
+.article-tag__design{
+    background-color: var(--color-primary-20);
+}
+.article-tag__html{
+    background-color: var(--color-primary-50);
+}
+.article-tag__js{
+    background-color: var(--color-primary-30);
+}
 .post__content{
     margin-top: var(--size-md);
 }

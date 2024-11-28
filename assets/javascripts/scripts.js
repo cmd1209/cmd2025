@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const burger = document.querySelector(".burger");
     const overlay = document.querySelector(".overlay");
     const nav = document.querySelector(".nav");
     const burgerNav = document.getElementById("mobile-nav-header");
     let lastScrollTop = 0;
   
-    document.addEventListener("click", function (event) {
+    document.addEventListener("click", (event) => {
       if (event.target.closest(".burger") || event.target.closest(".menu-item")) {
         // Toggle burger open state
         burger.classList.toggle("open");

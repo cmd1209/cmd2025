@@ -2,7 +2,7 @@
                 <div class="article__meta flex gap-xs align-baseline">
                   <div class="article__tags flex gap-xs ">
                       {% for tag in page.tags %}
-                          <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag">{{ tag }}</a>
+                          <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag article-tag__{{tag}}">{{ tag }}</a>
                       {% endfor %}
                   </div>
                   <p class="article__date">{{ page.date | date_to_long_string}}</p>

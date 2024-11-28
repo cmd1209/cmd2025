@@ -9,13 +9,24 @@
             <div class="inner-wrapper">
               {% include post-header.html %}
               <div class="post__content">
-                {{ content }}
-              </div>
-                <div class="grid grid-3col">
-                  {% for post in site.posts %}
-                  {% include article.html %}
-                  {% endfor %}
+                <div class="row">
+                  <div class="col-8">
+                    {{ content }}
+                  </div>
+                  <div class="col-4">
+                    <div class="flex gap-xs justify-end">
+                      {% for tag in site.tags %}
+                        <a href="/{{ tag[0] | slugify }}" class="article__tag article-tag__{{tag[0]}}">{{ tag[0] }} {{ tag[1].size}}</a>
+                      {% endfor %}
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="grid grid-3col">
+                {% for post in site.posts %}
+                {% include article.html %}
+                {% endfor %}
+              </div>
             </div>
         </section>
       </main>
