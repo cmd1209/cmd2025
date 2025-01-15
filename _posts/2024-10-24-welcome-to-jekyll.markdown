@@ -9,7 +9,7 @@ image:
   thumbnail: /assets/images/photo04-thumb.webp
   feature: /assets/images/photo04.webp
 ---
-![yahoo just another image that we want to show]({{ page.image:feature }})
+[![Alt text for broken image link]({{page.image:feature}})]({{page.image:feature}})
 
 Raclette tumblr flexitarian sustainable. Chicharrones thundercats unicorn chartreuse pork belly tumeric ascot small batch prism try-hard YOLO fam heirloom.
 Chicharrones thundercats unicorn chartreuse pork belly tumeric ascot small batch prism try-hard YOLO fam heirloom.

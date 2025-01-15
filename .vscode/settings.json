@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "terminal.integrated.fontSize": 16,
-    "editor.fontFamily": "\"Inconsolata\", Menlo, Monaco, 'Courier New', monospace"
+    "editor.fontFamily": " 'Fira Code', \"Inconsolata\", Menlo, Monaco, 'Courier New', monospace"
 }
