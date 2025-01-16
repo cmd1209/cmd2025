@@ -61,8 +61,8 @@
 #lightbox.gallery #prev, #lightbox.gallery #next {display: block;}
 #lightbox #prev {left: 0;}
 #lightbox #next {right: 0;}
-#lightbox #close {height: 50px; width: 50px; position: fixed; cursor: pointer; text-decoration: none; z-index: 99; right: 0; top: 0;}
-#lightbox #close:after, #lightbox #close:before {position: absolute; margin-top: 22px; margin-left: 14px; content: ""; height: 3px; background: white; width: 23px;
+#lightbox #close {height: 54px; width: 54px; position: fixed; cursor: pointer; text-decoration: none; z-index: 99; left: 1em; top: 1em;}
+#lightbox #close:after, #lightbox #close:before {position: absolute; margin-top: 26px; margin-left: 7px; content: ""; height: 2px; background: white; width: 38px;
 -webkit-transform-origin: 50% 50%;
 -moz-transform-origin: 50% 50%;
 -o-transform-origin: 50% 50%;
