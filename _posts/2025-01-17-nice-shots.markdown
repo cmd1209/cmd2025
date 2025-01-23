@@ -1,23 +1,20 @@
 ---
 layout: post
-title:  "yes yes yes yeah"
+title:  "nice shots"
 author: Chad Matthew Danford
-date:   2024-11-11 17:00:06 +0200
+date:   2025-01-17 17:00:06 +0200
 permalink: /posts/:title
-tags: ["photography"]
+tags: [ "design", "photography" ]
 image:
-  gallery: /assets/images/nyc/
-  feature: nyc-01.webp
-  thumbnail: nyc-thumb.webp
+  thumbnail: /assets/images/photo02-thumb.webp
+  feature: /assets/images/photo02.webp
 ---
 
 Iceland tonx echo park viral letterpress biodiesel YOLO celiac keytar banh mi shoreditch vibecession raw denim ethical jawn. Williamsburg letterpress yr affogato, hexagon cloud bread knausgaard chambray taxidermy. Raw denim pickled knausgaard vice, sartorial gastropub affogato vegan succulents wayfarers unicorn leggings neutra waistcoat fit. Distillery VHS tofu flannel keytar pop-up stumptown tattooed echo park offal art party mukbang tumblr plaid. Fanny pack portland readymade organic quinoa raw denim bespoke health goth s
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-
-[![Alt text for broken image link]({{page.image:gallery}}{{page.image:feature}})]({{page.image:gallery}}{{page.image:feature}})
-*see what this does with an image caption*
+[![Alt text for broken image link]({{page.image:feature}})]({{page.image:feature}})
 
 
 Jekyll requires blog post files to be named according to the following format:

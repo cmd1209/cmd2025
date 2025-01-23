@@ -79,8 +79,14 @@
 .article-tag__css{
     background-color: var(--color-primary-70);
 }
+.article-tag__web-dev{
+    background-color: var(--color-primary-70);
+}
 .article-tag__design{
     background-color: var(--color-primary-20);
+}
+.article-tag__photography{
+    background-color: var(--color-primary-30);
 }
 .article-tag__html{
     background-color: var(--color-primary-50);
