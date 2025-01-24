@@ -65,8 +65,8 @@
   left: 50%;
   color: white;
   border-radius: 3px;
-  border-left: 3px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  border-left: 3px solid rgba(255, 255, 255);
+  border-bottom: 3px solid rgba(255, 255, 255);
   display: block;
   transform: rotate(-45deg) translateX(-80%);
   animation: down 1.35s infinite alternate ease-in-out;
@@ -76,12 +76,12 @@
   0% {
     width: 30px;
     height: 30px;
-    opacity: 0.2;
+    opacity: 0.45;
   }
   100% {
     width: 40px;
     height: 40px;
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
 

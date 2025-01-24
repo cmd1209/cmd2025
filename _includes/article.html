@@ -7,6 +7,9 @@
         {% endif %}
     </div>
     <div class="article__content">
+        <div class="article__title mb-xs">
+            <h4>{{ post.title }}</h4>
+        </div>
         <div class="article__meta flex gap-xs align-baseline">
             <div class="article__tags flex gap-xs ">
                 {% for tag in post.tags %}
@@ -14,9 +17,6 @@
                 {% endfor %}
             </div>
             <p class="article__date">{{ post.date | date_to_long_string}}</p>
-        </div>
-        <div class="article__title mb-xs">
-            <h4>{{ post.title }}</h4>
         </div>
         <div class="article__excerpt">
             <p>{{ post.content | strip_html | truncatewords: 15 }}</p>

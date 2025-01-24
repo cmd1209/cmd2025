@@ -4,7 +4,10 @@
   perPage: 3,
   gap: '1rem',
   breakpoints: {
-		640: {
+		992: {
+			perPage: 2,
+		},
+    768: {
 			perPage: 1,
 		},
   }
