@@ -69,6 +69,7 @@
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
     border-radius: var(--size-sm);
+    white-space: nowrap;
 }
 .article__tag:hover,
 .article__tag:focus,
@@ -77,23 +78,24 @@
 }
 
 .article-tag__css{
-    background-color: var(--color-primary-70);
+    background-color: var(--color-primary-60);
 }
 .article-tag__web-dev{
-    background-color: var(--color-primary-70);
+    background-color: var(--color-primary-60);
 }
 .article-tag__design{
     background-color: var(--color-primary-20);
 }
 .article-tag__photography{
-    background-color: var(--color-primary-30);
+    background-color: var(--color-primary-40);
 }
 .article-tag__html{
-    background-color: var(--color-primary-50);
+    background-color: var(--color-primary-60);
 }
 .article-tag__js{
-    background-color: var(--color-primary-30);
+    background-color: var(--color-primary-60);
 }
 .post__content{
-    margin-top: var(--size-md);
+    margin-block: var(--size-md);
+
 }

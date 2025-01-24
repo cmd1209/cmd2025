@@ -1,6 +1,6 @@
 <div class="post__header">
                 <div class="article__meta flex gap-xs align-baseline">
-                  <div class="article__tags flex gap-xs ">
+                  <div class="article__tags flex gap-xs">
                       {% for tag in page.tags %}
                           <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag article-tag__{{tag}}">{{ tag }}</a>
                       {% endfor %}

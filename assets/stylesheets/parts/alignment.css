@@ -210,4 +210,7 @@
   .justify-md-center {
     justify-content: center;
   }
+  .justify-md-start {
+    justify-content: start;
+  }
 }
