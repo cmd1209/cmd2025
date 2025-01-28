@@ -1,7 +1,6 @@
 .btn-primary{
     color: var(--color-neutral-20);
     background-color: var(--color-primary-50);
-    font-size: var(--font-size-xs);
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -21,24 +20,27 @@
 .btn-lg{
     padding-inline: var(--size-lg);
     padding-block: var(--size-sm);
-    border-radius: var(--size-xxs);
+    border-radius: var(--size-sm);
+    font-size: var(--font-size-md);
 }
 
 .btn-md{
     padding-inline: var(--size-md);
     padding-block: var(--size-xs);
-    border-radius: var(--size-xxs);
+    border-radius: var(--size-sm);
+    font-size: var(--font-size-sm);
 }
 
 .btn-sm{
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
-    border-radius: var(--size-xxs);
+    border-radius: var(--size-xs);
+    font-size: var(--font-size-sm);
 }
 
 .btn-xs{
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
-    border-radius: var(--size-xxs);
+    border-radius: var(--size-xs);
     font-size: var(--font-size-xs);
 }
