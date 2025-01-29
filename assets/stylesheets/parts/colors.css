@@ -1,34 +1,35 @@
 :root {
 
-  --primary-color: hsl(222, 56%, 35%);
-  --secondary-color: hsl(340, 100%, 17%);
+  --primary-color: oklch(40% 0.15 272);
+  --secondary-color: oklch(30% 0.13 10.92);
+  --teal-color: oklch(65% 0.1099 198);
 
     /* Primary Palette */
-    --color-primary-0: #7391D8;     
-    --color-primary-10: #5B7FD1;     
-    --color-primary-20: #446CCB;   
-    --color-primary-30: #3258B3;   
-    --color-primary-40: #2C4FA0;   
-    --color-primary-50: var(--primary-color);           
-    --color-primary-60: #213B78;           
-    --color-primary-70: #1A3066;     
-    --color-primary-80: #10224C;     
-    --color-primary-90: #0C1A3B;   
-    --color-primary-100: #091020;   
+    --color-primary-0: oklch(from var(--primary-color) 90% c h);
+    --color-primary-10: oklch(from var(--primary-color) 80% c h);
+    --color-primary-20: oklch(from var(--primary-color) 70% c h);
+    --color-primary-30: oklch(from var(--primary-color) 60% c h);
+    --color-primary-40: oklch(from var(--primary-color) 50% c h);
+    --color-primary-50: var(--primary-color);
+    --color-primary-60: oklch(from var(--primary-color) 30% c h);
+    --color-primary-70: oklch(from var(--primary-color) 20% c h);
+    --color-primary-80: oklch(from var(--primary-color) 10% c h);
+    --color-primary-90: oklch(from var(--primary-color) 5% c h);
+    --color-primary-100: oklch(from var(--primary-color) 0% c h);
 
     
     /* Secondary Palette */
-    --color-secondary-0: #C70042;
-    --color-secondary-10: #A80038;
-    --color-secondary-20: #8A002E;
-    --color-secondary-30: #7A0029;
-    --color-secondary-40: #700025;
+    --color-secondary-0: oklch(from var(--secondary-color) 95% c h);
+    --color-secondary-10: oklch(from var(--secondary-color) 85% c h);
+    --color-secondary-20: oklch(from var(--secondary-color) 73% c h);
+    --color-secondary-30: oklch(from var(--secondary-color) 55% c h);
+    --color-secondary-40: oklch(from var(--secondary-color) 40% c h);
     --color-secondary-50: var(--secondary-color);
-    --color-secondary-60: #52001B;
-    --color-secondary-70: #470018;
-    --color-secondary-80: #3D0014;
-    --color-secondary-90: #330011;
-    --color-secondary-100: #29000E;
+    --color-secondary-60: oklch(from var(--secondary-color) 25% c h);
+    --color-secondary-70: oklch(from var(--secondary-color) 20% c h);
+    --color-secondary-80: oklch(from var(--secondary-color) 17% c h);
+    --color-secondary-90: oklch(from var(--secondary-color) 12% c h);
+    --color-secondary-100: oklch(from var(--secondary-color) 8% c h);
     
     /* Accent Palette */
     --color-accent-light: #e0ef9e;
@@ -36,9 +37,17 @@
     --color-accent-dark: #a1b356;
     
     /* Teal Palette */
-    --color-teal-light: #6bc1bf;
-    --color-teal: rgb(58, 154, 152);
-    --color-teal-dark: #286f6e;
+    --color-teal-0: oklch(from var(--teal-color) 99% c h);
+    --color-teal-10: oklch(from var(--teal-color) 90% c h);
+    --color-teal-20: oklch(from var(--teal-color) 85% c h);
+    --color-teal-30: oklch(from var(--teal-color) 75% c h);
+    --color-teal-40: oklch(from var(--teal-color) 70% c h);
+    --color-teal-50: var(--teal-color);
+    --color-teal-60: oklch(from var(--teal-color) 58% c h);
+    --color-teal-70: oklch(from var(--teal-color) 45% c h);
+    --color-teal-80: oklch(from var(--teal-color) 32% c h);
+    --color-teal-90: oklch(from var(--teal-color) 24% c h);
+    --color-teal-100: oklch(from var(--teal-color) 18% c h);
 
     /* Neutral Palette */
     --color-white: rgb(255, 255, 255);

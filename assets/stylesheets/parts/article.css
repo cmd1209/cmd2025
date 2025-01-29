@@ -71,30 +71,51 @@
     border-radius: var(--size-sm);
     white-space: nowrap;
 }
-.article__tag:hover,
-.article__tag:focus,
-.article__tag:active {
-    background-color: var(--color-neutral-80);
+
+.tag__css{
+    background-color: var(--color-teal-60);
+}
+.tag__css:hover,
+.tag__css:focus,
+.tag__css:active {
+    background-color: var(--color-teal-40);
 }
 
-.article-tag__css{
-    background-color: var(--color-primary-60);
+.tag__web{
+    background-color: var(--color-teal-80);
 }
-.article-tag__web-dev{
-    background-color: var(--color-primary-60);
+.tag__web:hover,
+.tag__web:focus,
+.tag__web:active {
+    background-color: var(--color-teal-70);
 }
-.article-tag__design{
-    background-color: var(--color-primary-20);
+
+.tag__design{
+    background-color: var(--color-teal-60);
 }
-.article-tag__photography{
-    background-color: var(--color-primary-40);
+.tag__design:hover,
+.tag__design:focus,
+.tag__design:active {
+    background-color: var(--color-teal-70);
 }
-.article-tag__html{
-    background-color: var(--color-primary-60);
+
+.tag__photography {
+    background-color: var(--color-teal-70);
 }
-.article-tag__js{
-    background-color: var(--color-primary-60);
+.tag__photography:hover,
+.tag__photography:focus,
+.tag__photography:active {
+    background-color: var(--color-teal-60);
 }
+
+.tag__html{
+    background-color: var(--color-teal-60);
+}
+
+.tag__js{
+    background-color: var(--color-teal-60);
+}
+
 .post__content{
     margin-block: var(--size-md);
 

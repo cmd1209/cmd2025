@@ -4,7 +4,7 @@ title:  "first post"
 author: Chad Matthew Danford
 date:   2024-10-24 17:00:06 +0200
 permalink: /posts/:title
-tags: [ "web-dev" ]
+tags: [ "web" ]
 image:
   thumbnail: /assets/images/photo04-thumb.webp
   feature: /assets/images/photo04.webp

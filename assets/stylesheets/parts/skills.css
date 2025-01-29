@@ -66,21 +66,21 @@
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
 .html.animate{
-    stroke: var(--color-teal);
+    stroke: var(--color-teal-50);
     stroke-dasharray: 390 408.2;
     stroke-dashoffset: 390 408.2;
     transition: all 1s ease-in-out;
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
 .css.animate{
-    stroke: var(--color-teal-light);
+    stroke: var(--color-teal-30);
     stroke-dasharray: 390 408.2;
     stroke-dashoffset: 390 408.2;
     transition: all 1s ease-in-out;
     transform: translateZ(-90deg); /* Force GPU repaint */
 }
 .js.animate{
-    stroke: var(--color-teal-dark);
+    stroke: var(--color-teal-70);
     stroke-dasharray: 390 408.2;
     stroke-dashoffset: 390 408.2;
     transition: all 1s ease-in-out;
