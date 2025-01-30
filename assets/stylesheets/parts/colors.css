@@ -18,6 +18,9 @@
     --color-primary-90: oklch(from var(--primary-color) 5% c h);
     --color-primary-100: oklch(from var(--primary-color) 0% c h);
 
+    --color-primary-a4: oklch(from var(--primary-color) l c h / .4);
+    --color-primary-a6: oklch(from var(--primary-color) l c h / .6);
+
     
     /* Secondary Palette */
     --color-secondary-0: oklch(from var(--secondary-color) 95% c h);

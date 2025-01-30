@@ -68,53 +68,60 @@
     font-size: var(--font-size-xs);
     padding-inline: var(--size-sm);
     padding-block: var(--size-xxs);
-    border-radius: var(--size-sm);
+    border-radius: var(--size-xs);
     white-space: nowrap;
+    background-color: var(--color-primary-a4);
 }
 
-.tag__css{
-    background-color: var(--color-teal-60);
+.article__tag:hover,
+.article__tag:focus,
+.article__tag:active {
+    background-color: var(--color-primary-a6);
+}
+
+/* .tag__css{
+    background-color: var(--color-primary-60);
 }
 .tag__css:hover,
 .tag__css:focus,
 .tag__css:active {
-    background-color: var(--color-teal-40);
+    background-color: var(--color-primary-70);
 }
 
 .tag__web{
-    background-color: var(--color-teal-80);
+    background-color: var(--color-primary-60);
 }
 .tag__web:hover,
 .tag__web:focus,
 .tag__web:active {
-    background-color: var(--color-teal-70);
+    background-color: var(--color-primary-70);
 }
 
 .tag__design{
-    background-color: var(--color-teal-60);
+    background-color: var(--color-primary-70);
 }
 .tag__design:hover,
 .tag__design:focus,
 .tag__design:active {
-    background-color: var(--color-teal-70);
+    background-color: var(--color-primary-80);
 }
 
 .tag__photography {
-    background-color: var(--color-teal-70);
+    background-color: var(--color-primary-80);
 }
 .tag__photography:hover,
 .tag__photography:focus,
 .tag__photography:active {
-    background-color: var(--color-teal-60);
+    background-color: var(--color-primary-90);
 }
 
 .tag__html{
-    background-color: var(--color-teal-60);
+    background-color: var(--color-primary-60);
 }
 
 .tag__js{
-    background-color: var(--color-teal-60);
-}
+    background-color: var(--color-primary-60);
+} */
 
 .post__content{
     margin-block: var(--size-md);

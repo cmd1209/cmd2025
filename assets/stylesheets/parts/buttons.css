@@ -5,7 +5,7 @@
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: var(--color-primary-70);
+    background-color: var(--color-primary-60);
 }
 .btn-secondary{
     color: var(--color-neutral-20);
