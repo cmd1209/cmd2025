@@ -3,6 +3,7 @@
   --primary-color: oklch(40% 0.15 272);
   --secondary-color: oklch(30% 0.13 10.92);
   --teal-color: oklch(65% 0.1099 198);
+  --alert-color: oklch(80% 0.1659 119.42);
 
     /* Primary Palette */
     --color-primary-0: oklch(from var(--primary-color) 90% c h);
@@ -31,10 +32,18 @@
     --color-secondary-90: oklch(from var(--secondary-color) 12% c h);
     --color-secondary-100: oklch(from var(--secondary-color) 8% c h);
     
-    /* Accent Palette */
-    --color-accent-light: #e0ef9e;
-    --color-accent: rgb(201, 222, 114);
-    --color-accent-dark: #a1b356;
+    /* alert Palette */
+    --color-alert-0: oklch(from var(--alert-color) 99% c h);
+    --color-alert-10: oklch(from var(--alert-color) 93% c h);
+    --color-alert-20: oklch(from var(--alert-color) 91% c h);
+    --color-alert-30: oklch(from var(--alert-color) 87% c h);
+    --color-alert-40: oklch(from var(--alert-color) 83% c h);
+    --color-alert-50: var(--alert-color);
+    --color-alert-60: oklch(from var(--alert-color) 76% c h);
+    --color-alert-70: oklch(from var(--alert-color) 60% c h);
+    --color-alert-80: oklch(from var(--alert-color) 50% c h);
+    --color-alert-90: oklch(from var(--alert-color) 40% c h);
+    --color-alert-100: oklch(from var(--alert-color) 20% c h);
     
     /* Teal Palette */
     --color-teal-0: oklch(from var(--teal-color) 99% c h);

@@ -1,0 +1,16 @@
+---
+layout: default
+title: "web"
+permalink: /web
+---
+<div class="flex gap-xs justify-end justify-md-start">
+  {% for tag in site.tags %}
+    <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }} {{ tag[1].size}}</a>
+  {% endfor %}
+</div>
+
+<div class="grid grid-3col">
+  {%- for post in site.tags["web"] -%}
+    {% include article.html %}
+  {%- endfor -%}
+</div>
