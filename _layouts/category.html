@@ -7,7 +7,11 @@
       <main class="content  pt-mega">
         <section>
             <div class="inner-wrapper">
-              {% include post-header.html %}
+              <div class="post__header">
+                <div class="article__title mb-xs">
+                  <h2>{{ page.title }}</h2>
+                </div>
+              </div>
               <div class="post__categories">
                 <div class="row ">
                   <div class="col-8 col-md-6">
@@ -15,10 +19,10 @@
                   </div>
                   <div class="col-4 col-md-6">
                     <div class="flex gap-xs justify-end justify-md-start">
+                      {% for tag in site.tags %}
+                        <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
+                      {% endfor %}
                       <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag article__all">all</a>
-                        {% for tag in site.tags %}
-                          <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
-                        {% endfor %}
                     </div>
                   </div>
                 </div>
