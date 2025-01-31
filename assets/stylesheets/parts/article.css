@@ -133,7 +133,8 @@
     background-color: var(--color-primary-60);
 } */
 
-.post__content{
-    margin-block: var(--size-md);
+.post__content,
+.post__categories{
+    margin-bottom: var(--size-md);
 
 }
