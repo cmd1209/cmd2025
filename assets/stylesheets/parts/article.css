@@ -74,19 +74,22 @@
 }
 
 .article__tag:hover,
-.article__tag:focus,
-.article__tag:active {
+.article__tag:focus {
     background-color: var(--color-secondary-70);
 }
 
-.article__all{
+.article__tag-active {
     background-color: var(--color-secondary-40);
+}
+
+.article__all{
+    background-color: var(--color-secondary-60);
 }
 
 .article__all:hover,
 .article__all:focus,
 .article__all:active {
-    background-color: var(--color-secondary-50);
+    background-color: var(--color-secondary-70);
 }
 
 /* .tag__css{

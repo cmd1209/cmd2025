@@ -11,7 +11,6 @@
                 <div class="article__title mb-xs">
                   <h2>{{ page.title }}</h2>
                 </div>
-
               </div>
               <div class="post__categories">
                 <div class="row ">
@@ -23,7 +22,7 @@
                       {% for tag in site.tags %}
                         <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
                       {% endfor %}
-                      <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag article__all">all</a>
+
                       </div>
                   </div>
                 </div>
