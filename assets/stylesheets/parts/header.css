@@ -208,6 +208,7 @@ header.header-desktop{
 }
 
 .header-links:hover,
+.header-links:focus,
 .header-links.active {
   text-decoration: underline;
   text-underline-offset: var(--size-xs);

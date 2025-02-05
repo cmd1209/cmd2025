@@ -5,7 +5,7 @@
   <div class="article__meta flex gap-xs align-baseline">
     <div class="article__tags flex gap-xs ">
       {% for tag in page.tags %}
-        <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag tag__{{tag}}">{{ tag }}</a>
+      <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag tag__{{tag}}">{{ tag }}</a>
       {% endfor %}
       <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag article__all">all</a>
     </div>

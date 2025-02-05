@@ -83,13 +83,13 @@
 }
 
 .article__all{
-    background-color: var(--color-secondary-60);
+    background-color: var(--color-secondary-40);
 }
 
 .article__all:hover,
 .article__all:focus,
 .article__all:active {
-    background-color: var(--color-secondary-70);
+    background-color: var(--color-secondary-50);
 }
 
 /* .tag__css{
