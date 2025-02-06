@@ -74,67 +74,15 @@
 }
 
 .article__tag:hover,
-.article__tag:focus {
+.article__tag:focus,
+.article__tag:active {
     background-color: var(--color-secondary-70);
 }
 
-.article__tag-active {
+.tag__active {
     background-color: var(--color-secondary-40);
 }
 
-.article__all{
-    background-color: var(--color-secondary-40);
-}
-
-.article__all:hover,
-.article__all:focus,
-.article__all:active {
-    background-color: var(--color-secondary-50);
-}
-
-/* .tag__css{
-    background-color: var(--color-primary-60);
-}
-.tag__css:hover,
-.tag__css:focus,
-.tag__css:active {
-    background-color: var(--color-primary-70);
-}
-
-.tag__web{
-    background-color: var(--color-primary-60);
-}
-.tag__web:hover,
-.tag__web:focus,
-.tag__web:active {
-    background-color: var(--color-primary-70);
-}
-
-.tag__design{
-    background-color: var(--color-primary-70);
-}
-.tag__design:hover,
-.tag__design:focus,
-.tag__design:active {
-    background-color: var(--color-primary-80);
-}
-
-.tag__photography {
-    background-color: var(--color-primary-80);
-}
-.tag__photography:hover,
-.tag__photography:focus,
-.tag__photography:active {
-    background-color: var(--color-primary-90);
-}
-
-.tag__html{
-    background-color: var(--color-primary-60);
-}
-
-.tag__js{
-    background-color: var(--color-primary-60);
-} */
 
 .post__content,
 .post__categories{
