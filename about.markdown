@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: contact
 title: About
 permalink: /about/
 ---
@@ -10,18 +10,4 @@ I'm baby fam post-ironic man braid intelligentsia snackwave, gorpcore Brooklyn f
 
 Schlitz brunch big mood offal typewriter. Bicycle rights shabby chic edison bulb succulents godard, typewriter vinyl art party. Cold-pressed air plant la croix semiotics tbh. Butcher mixtape activated charcoal chia post-ironic put a bird on it hashtag migas whatever thundercats.
 
-Raclette tumblr flexitarian sustainable. Chicharrones thundercats unicorn chartreuse pork belly tumeric ascot small batch prism try-hard YOLO fam heirloom. Iceland tonx echo park viral letterpress biodiesel YOLO celiac keytar banh mi shoreditch vibecession raw denim ethical jawn. Williamsburg letterpress yr affogato, hexagon cloud bread knausgaard chambray taxidermy. Raw denim pickled knausgaard vice, sartorial gastropub affogato vegan succulents wayfarers unicorn leggings neutra waistcoat fit. Distillery VHS tofu flannel keytar pop-up stumptown tattooed echo park offal art party mukbang tumblr plaid. Fanny pack portland readymade organic quinoa raw denim bespoke health goth s
-
-
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Raclette tumblr flexitarian sustainable. Chicharrones thundercats unicorn chartreuse pork belly tumeric ascot small batch prism try-hard YOLO fam heirloom. Iceland tonx echo park viral letterpress biodiesel YOLO celiac keytar banh mi shoreditch vibecession raw denim ethical jawn. Williamsburg letterpress yr affogato, hexagon cloud bread knausgaard chambray taxidermy. Raw denim pickled knausgaard vice, sartorial gastropub affogato vegan succulents wayfarers unicorn leggings neutra waistcoat fit. Distillery VHS tofu flannel keytar pop-up stumptown tattooed echo park offal art party mukbang tumblr plaid. Fanny pack portland readymade organic quinoa raw denim bespoke health goth
