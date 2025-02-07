@@ -44,3 +44,6 @@
     border-radius: var(--size-xs);
     font-size: var(--font-size-xs);
 }
+.btn-maxw{
+    width: 100%;
+}

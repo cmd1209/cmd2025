@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      {% include header.html %}
+      <main class="content pt-mega">
+        <section>
+            <div class="inner-wrapper-md">
+
+              <div class="post__header">
+                <div class="article__title mb-xs">
+                  <h2>{{ page.title }}</h2>
+                </div>
+              </div>
+              
+              <div class="post__content">
+                {{ content }}
+              </div>
+            </div>
+          </section>
+      </main>
+        {% include footer.html %}
+    </div>
+  </body>
+</html>

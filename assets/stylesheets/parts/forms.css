@@ -1,0 +1,35 @@
+.form{
+  max-width: var(--breakpoint-sm);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-sm);
+}
+.form__top{
+  display: flex;
+  gap: var(--size-sm);
+}
+.form__group {
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 20px 24px;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: var(--size-sm);
+  outline: 0;
+  transition: all .2s;
+  resize: vertical;
+  color: var(--color-neutral-10);
+  background: var(--color-neutral-90);
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
