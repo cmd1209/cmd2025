@@ -94,6 +94,8 @@
     --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-10) 0%, var(--color-neutral-20) 100%);
     --gradient-muted: linear-gradient(180deg, var(--color-primary-50) 0%, rgb(46, 76, 106) 66%);
   
+    --gradient-teal: linear-gradient(0deg, var(--color-teal-90) 0%, var(--color-primary-100) 100%);
+
     /* Text Colors */
     --text-color: var(--color-neutral-90);
     --text-color-inverse: var(--color-neutral-10);
@@ -101,6 +103,10 @@
 
 .bg-gradient-header{
   background: var(--gradient-header);
+}
+
+.bg-gradient-teal{
+  background: var(--gradient-teal);
 }
 
 .bg-gradient-brand{

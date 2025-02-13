@@ -68,7 +68,6 @@
 .break-out{
   width: 100vw;
   position: relative;
-  background-color: lightgreen;
   left: calc(-1 * (100vw - 100%) / 2);
 }
 
