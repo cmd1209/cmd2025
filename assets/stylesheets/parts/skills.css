@@ -21,7 +21,7 @@
 .skill--bg {
     fill: none;
     stroke: rgba(255, 255, 255, 0);
-    stroke-width: 40;
+    stroke-width: 50;
     transform: rotate(-90deg);
     transform-origin: 50%;
     stroke-dasharray: var(--circ) var(--circ);
@@ -50,10 +50,11 @@
 
 
 .skill1{
+    stroke-dasharray: 0 408.4;
+    stroke-dashoffset: 0 408.4;
     transform: rotate(-90deg);
-    stroke-dasharray: var(--30per) var(--circ);
-    stroke-dashoffset: var(--30per) var(--circ);
     stroke: var(--color-primary-60);
+    animation: skillone 2s linear both;
 }
 .skill1.animate{
     transform: rotate(-90deg);
@@ -98,14 +99,10 @@
 }
 
 
-@keyframes skill1 {
-    from {
-        stroke-dasharray: 0 var(--circ);
-        stroke-dashoffset: 0 var(--circ);
-    }
+@keyframes skillone {
     to {
-        stroke-dasharray: var(--30per) var(--circ);
-        stroke-dashoffset: var(--30per) var(--circ);
+        stroke-dasharray: 121.5 408.4;
+        stroke-dashoffset: 121.5 408.4;
         
     }
 }
