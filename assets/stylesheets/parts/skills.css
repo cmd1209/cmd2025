@@ -63,8 +63,6 @@
     stroke-dashoffset: var(--30per) var(--circ);
     transition: all 3s var(--spring-easing);
     transform: translateZ(-90deg); /* Force GPU repaint */
-    transition-delay: 1s;
-    animation: skill1 2s var(--spring-easing) forwards 1s;
 }
 
 .skill2{
@@ -80,7 +78,6 @@
     stroke-dasharray: var(--50per) var(--circ);
     transition: all 3s var(--spring-easing);
     transform: translateZ(18deg); /* Force GPU repaint */
-    transition-delay: 1.5s;
 }
 
 .skill3{
@@ -96,8 +93,6 @@
     stroke-dasharray: var(--20per) var(--circ);
     transition: all 3s var(--spring-easing);
     transform: translateZ(198deg); /* Force GPU repaint */
-    transition-delay: 2s;
-
 }
 
 
