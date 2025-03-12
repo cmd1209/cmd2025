@@ -64,6 +64,7 @@
     transition: all 3s var(--spring-easing);
     transform: translateZ(-90deg); /* Force GPU repaint */
     transition-delay: 1s;
+    animation: skill1 2s var(--spring-easing) forwards 1s;
 }
 
 .skill2{
