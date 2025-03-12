@@ -22,7 +22,7 @@
   transition: all .2s;
   resize: vertical;
   color: var(--color-neutral-10);
-  background: var(--color-neutral-90);
+  background: var(--neutral-trans-30);
 }
 
 .screen-reader-text {

@@ -73,6 +73,14 @@
     --color-neutral-80: rgb(48, 49, 50);
     --color-neutral-90: rgb(24, 24, 25);
     --color-black: rgb(0, 0, 0);
+
+    --neutral-trans-20: rgba(96,98,100, 0.2);
+    --neutral-trans-30: rgba(96,98,100, 0.3);
+    --neutral-trans-40: rgba(96,98,100, 0.4);
+    --neutral-trans-50: rgba(96,98,100, 0.5);
+    --neutral-trans-60: rgba(96,98,100, 0.6);
+    --neutral-trans-70: rgba(96,98,100, 0.7);
+
   
     /* Gradients */
     --gradient-texture: repeating-linear-gradient(
