@@ -67,8 +67,8 @@
 .skill2{
     transform: rotate(18deg);
     transform: translateZ(18deg); /* Force GPU repaint */
-    stroke-dasharray: 0 var(--circ);
-    stroke-dasharray: 0 var(--circ);
+    stroke-dasharray: var(--50per) var(--circ);
+    stroke-dasharray: var(--50per) var(--circ);
     stroke: var(--color-primary-50);
 }
 .skill2.animate{
@@ -83,8 +83,8 @@
 .skill3{
     transform: rotate(198deg);
     transform: translateZ(198deg); /* Force GPU repaint */
-    stroke-dasharray: 0 var(--circ);
-    stroke-dasharray: 0 var(--circ);
+    stroke-dasharray: var(--20per) var(--circ);
+    stroke-dasharray: var(--20per) var(--circ);
     stroke: var(--color-primary-40);
 }
 .skill3.animate{
