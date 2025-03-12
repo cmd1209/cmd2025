@@ -45,7 +45,7 @@
 .static{
     stroke-dasharray: 0 var(--circ);
     stroke-dashoffset: 0 var(--circ);
-    transition: all 1s ease-in-out;
+    transition: all 2s var(--spring-easing);
     transform: translateZ(0); /* Force GPU repaint */
 }
 
@@ -55,13 +55,15 @@
     stroke-dasharray: 0 var(--circ);
     stroke-dasharray: 0 var(--circ);
     stroke: var(--color-primary-60);
+    transform: translateZ(-90deg); /* Force GPU repaint */
 }
 .skill1.animate{
     transform: rotate(-90deg);
     stroke-dasharray: var(--30per) var(--circ);
     stroke-dashoffset: var(--30per) var(--circ);
-    transition: all 2s ease-in-out;
+    transition: all 3s var(--spring-easing);
     transform: translateZ(-90deg); /* Force GPU repaint */
+    transition-delay: 1s;
 }
 
 .skill2{
@@ -69,15 +71,15 @@
     stroke-dasharray: 0 var(--circ);
     stroke-dasharray: 0 var(--circ);
     stroke: var(--color-primary-50);
+    transform: translateZ(18deg); /* Force GPU repaint */
 }
 .skill2.animate{
     transform: rotate(18deg);
     stroke-dasharray: var(--50per) var(--circ);
     stroke-dasharray: var(--50per) var(--circ);
-    transition: all 2s ease-in-out;
-    transition-delay: 2s;
+    transition: all 3s var(--spring-easing);
     transform: translateZ(18deg); /* Force GPU repaint */
-
+    transition-delay: 1.5s;
 }
 
 .skill3{
@@ -85,17 +87,30 @@
     stroke-dasharray: 0 var(--circ);
     stroke-dasharray: 0 var(--circ);
     stroke: var(--color-primary-40);
+    transform: translateZ(198deg); /* Force GPU repaint */
 }
 .skill3.animate{
     transform: rotate(198deg);
     stroke-dasharray: var(--20per) var(--circ);
     stroke-dasharray: var(--20per) var(--circ);
-    transition: all 2s ease-in-out;
-    transition-delay: 4s;
+    transition: all 3s var(--spring-easing);
     transform: translateZ(198deg); /* Force GPU repaint */
+    transition-delay: 2s;
 
 }
 
+
+@keyframes skill1 {
+    from {
+        stroke-dasharray: 0 var(--circ);
+        stroke-dashoffset: 0 var(--circ);
+    }
+    to {
+        stroke-dasharray: var(--30per) var(--circ);
+        stroke-dashoffset: var(--30per) var(--circ);
+        
+    }
+}
 
 
 @keyframes dash {
