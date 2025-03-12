@@ -51,10 +51,9 @@
 
 .skill1{
     transform: rotate(-90deg);
-    stroke-dasharray: 0 var(--circ);
-    stroke-dasharray: 0 var(--circ);
+    stroke-dasharray: var(--30per) var(--circ);
+    stroke-dashoffset: var(--30per) var(--circ);
     stroke: var(--color-primary-60);
-    transform: translateZ(-90deg); /* Force GPU repaint */
 }
 .skill1.animate{
     transform: rotate(-90deg);
