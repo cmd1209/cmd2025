@@ -45,14 +45,19 @@
 .static{
     stroke-dasharray: 0 408.4;
     stroke-dashoffset: 0 408.4;
+    transition: all 1s ease-in-out;
 }
 
 
 .skillone{
     stroke: var(--color-primary-60);
+    transition: all 1s ease-in-out;
 }
 .skillone.animate{
-    animation: skilloneanimation 3s ease-out forwards;
+    stroke-dasharray: 122.52 408.4;
+    stroke-dashoffset: 122.52 408.4;
+    transition: all 1s ease-in-out;
+    /* animation: skilloneanimation 3s ease-out forwards; */
 }
 
 @keyframes skilloneanimation {
@@ -67,7 +72,10 @@
     stroke: var(--color-primary-50);
 }
 .skilltwo.animate{
-    animation: skilltwoanimation 3s ease-out forwards;
+    stroke-dasharray:204.2 408.4;
+    stroke-dashoffset:204.2 408.4;
+    transition: all 1s ease-in-out;
+    /* animation: skilltwoanimation 3s ease-out forwards; */
 }
 
 @keyframes skilltwoanimation {
@@ -81,9 +89,13 @@
 
 .skillthree{
     stroke: var(--color-primary-40);
+    transition: all 1s ease-in-out;
 }
 .skillthree.animate{
-    animation: skillthreeanimation 3s ease-out forwards;
+    stroke-dasharray: 81.68 408.4;
+    stroke-dashoffset: 81.68 408.4;
+    transition: all 1s ease-in-out;
+    /* animation: skillthreeanimation 3s ease-out forwards; */
 
 }
 
