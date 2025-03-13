@@ -50,8 +50,7 @@
 
 
 .skillone{
-    stroke-dasharray: 0 408.4;
-    stroke-dashoffset: 0 408.4;
+    transform: translateZ(-90deg); /* Force GPU repaint */
     transform: rotate(-90deg);
     stroke: var(--color-primary-60);
 }
@@ -59,40 +58,30 @@
     transform: rotate(-90deg);
     transform: translateZ(-90deg); /* Force GPU repaint */
     stroke: var(--color-primary-60);
-    stroke-dasharray: 0 408.4;
-    stroke-dashoffset: 0 408.4;
     animation: skilloneanimation 3s ease-out forwards;
 }
 
 .skilltwo{
     transform: rotate(18deg);
     transform: translateZ(18deg); /* Force GPU repaint */
-    stroke-dasharray: var(--50per) var(--circ);
-    stroke-dasharray: var(--50per) var(--circ);
     stroke: var(--color-primary-50);
 }
 .skilltwo.animate{
     stroke: var(--color-primary-50);
     transform: rotate(18deg);
     transform: translateZ(-18deg); /* Force GPU repaint */
-    stroke-dasharray: var(--50per) var(--circ);
-    stroke-dasharray: var(--50per) var(--circ);
     transition: all 3s var(--spring-easing);
 }
 
 .skillthree{
     transform: rotate(198deg);
     transform: translateZ(198deg); /* Force GPU repaint */
-    stroke-dasharray: var(--20per) var(--circ);
-    stroke-dasharray: var(--20per) var(--circ);
     stroke: var(--color-primary-40);
 }
 .skillthree.animate{
     stroke: var(--color-primary-40);
     transform: rotate(198deg);
     transform: translateZ(198deg); /* Force GPU repaint */
-    stroke-dasharray: var(--20per) var(--circ);
-    stroke-dasharray: var(--20per) var(--circ);
     transition: all 3s var(--spring-easing);
 
 }
