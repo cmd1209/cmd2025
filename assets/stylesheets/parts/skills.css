@@ -50,8 +50,8 @@
 
 .skillone{
     stroke: var(--color-primary-60);
-    stroke-dasharray: 0 408.4;
-    stroke-dashoffset: 0 408.4;
+    stroke-dasharray: 122.52 408.4;
+    stroke-dashoffset: 122.52 408.4;
     transform: rotate(-90deg);
     transform: translateZ(-90deg); /* Force GPU repaint */
     transition: all 1s ease-in-out;
