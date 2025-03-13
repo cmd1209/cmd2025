@@ -61,11 +61,11 @@
 }
 
 @keyframes skilloneanimation {
-    from {
+    0% {
         stroke-dasharray: 0 408.4;
         stroke-dashoffset: 0 408.4;
     }
-    to {
+    100% {
         stroke-dasharray: 122.52 408.4;
         stroke-dashoffset: 122.52 408.4;
         
