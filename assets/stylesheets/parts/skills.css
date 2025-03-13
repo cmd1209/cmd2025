@@ -57,10 +57,14 @@
     stroke-dasharray: 122.52 408.4;
     stroke-dashoffset: 122.52 408.4;
     transition: all 1s ease-in-out;
-    /* animation: skilloneanimation 3s ease-out forwards; */
+    animation: skilloneanimation 3s ease-out forwards;
 }
 
 @keyframes skilloneanimation {
+    from {
+        stroke-dasharray: 0 408.4;
+        stroke-dashoffset: 0 408.4;
+    }
     to {
         stroke-dasharray: 122.52 408.4;
         stroke-dashoffset: 122.52 408.4;
@@ -75,10 +79,14 @@
     stroke-dasharray:204.2 408.4;
     stroke-dashoffset:204.2 408.4;
     transition: all 1s ease-in-out;
-    /* animation: skilltwoanimation 3s ease-out forwards; */
+    animation: skilltwoanimation 3s ease-out forwards;
 }
 
 @keyframes skilltwoanimation {
+    from {
+        stroke-dasharray: 0 408.4;
+        stroke-dashoffset: 0 408.4;
+    }
     to {
         stroke-dasharray:204.2 408.4;
         stroke-dashoffset:204.2 408.4;
@@ -95,11 +103,15 @@
     stroke-dasharray: 81.68 408.4;
     stroke-dashoffset: 81.68 408.4;
     transition: all 1s ease-in-out;
-    /* animation: skillthreeanimation 3s ease-out forwards; */
+    animation: skillthreeanimation 3s ease-out forwards;
 
 }
 
 @keyframes skillthreeanimation {
+    from {
+        stroke-dasharray: 0 408.4;
+        stroke-dashoffset: 0 408.4;
+    }
     to {
         stroke-dasharray: 81.68 408.4;
         stroke-dashoffset: 81.68 408.4;
