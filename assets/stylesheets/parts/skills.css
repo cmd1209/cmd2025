@@ -45,47 +45,15 @@
 .static{
     stroke-dasharray: 0 408.4;
     stroke-dashoffset: 0 408.4;
-    transition: all 2s var(--spring-easing);
 }
 
 
 .skillone{
-    transform: translateZ(-90deg); /* Force GPU repaint */
-    transform: rotate(-90deg);
     stroke: var(--color-primary-60);
 }
 .skillone.animate{
-    transform: rotate(-90deg);
-    transform: translateZ(-90deg); /* Force GPU repaint */
-    stroke: var(--color-primary-60);
     animation: skilloneanimation 3s ease-out forwards;
 }
-
-.skilltwo{
-    transform: rotate(18deg);
-    transform: translateZ(18deg); /* Force GPU repaint */
-    stroke: var(--color-primary-50);
-}
-.skilltwo.animate{
-    stroke: var(--color-primary-50);
-    transform: rotate(18deg);
-    transform: translateZ(-18deg); /* Force GPU repaint */
-    transition: all 3s var(--spring-easing);
-}
-
-.skillthree{
-    transform: rotate(198deg);
-    transform: translateZ(198deg); /* Force GPU repaint */
-    stroke: var(--color-primary-40);
-}
-.skillthree.animate{
-    stroke: var(--color-primary-40);
-    transform: rotate(198deg);
-    transform: translateZ(198deg); /* Force GPU repaint */
-    transition: all 3s var(--spring-easing);
-
-}
-
 
 @keyframes skilloneanimation {
     to {
@@ -94,6 +62,40 @@
         
     }
 }
+
+.skilltwo{
+    stroke: var(--color-primary-50);
+}
+.skilltwo.animate{
+    animation: skilltwoanimation 3s ease-out forwards;
+}
+
+@keyframes skilltwoanimation {
+    to {
+        stroke-dasharray:204.2 408.4;
+        stroke-dashoffset:204.2 408.4;
+        
+    }
+}
+
+
+.skillthree{
+    stroke: var(--color-primary-40);
+}
+.skillthree.animate{
+    animation: skillthreeanimation 3s ease-out forwards;
+
+}
+
+@keyframes skillthreeanimation {
+    to {
+        stroke-dasharray: 81.68 408.4;
+        stroke-dashoffset: 81.68 408.4;
+        
+    }
+}
+
+
 
 
 @keyframes dash {
