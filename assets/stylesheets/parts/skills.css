@@ -33,7 +33,6 @@
 .skill--path {
     fill: none;
     stroke-width: 40;
-    transform: rotate(-90deg);
     transform-origin: 50%;
 }
 
@@ -51,13 +50,18 @@
 
 .skillone{
     stroke: var(--color-primary-60);
+    stroke-dasharray: 0 408.4;
+    stroke-dashoffset: 0 408.4;
+    transform: rotate(-90deg);
+    transform: translateZ(-90deg); /* Force GPU repaint */
     transition: all 1s ease-in-out;
 }
 .skillone.animate{
     stroke-dasharray: 122.52 408.4;
     stroke-dashoffset: 122.52 408.4;
     transition: all 1s ease-in-out;
-    animation: skilloneanimation 3s ease-out forwards;
+    transform: translateZ(-90deg); /* Force GPU repaint */
+    /* animation: skilloneanimation 3s ease-out forwards; */
 }
 
 @keyframes skilloneanimation {
