@@ -59,6 +59,8 @@
     transform: rotate(-90deg);
     transform: translateZ(-90deg); /* Force GPU repaint */
     stroke: var(--color-primary-60);
+    stroke-dasharray: 0 408.4;
+    stroke-dashoffset: 0 408.4;
     animation: skillone 3s ease-out forwards;
 }
 
@@ -97,10 +99,6 @@
 
 
 @keyframes skillone {
-    from {
-        stroke-dasharray: 0 408.4;
-        stroke-dashoffset: 0 408.4;
-    }
     to {
         stroke-dasharray: 122.52 408.4;
         stroke-dashoffset: 122.52 408.4;
