@@ -48,13 +48,12 @@
 .skillone{
     stroke: var(--color-primary-60);
     transform: rotate(270deg);
-    stroke-dasharray: 0 408.4;
-    stroke-dashoffset: 0 408.4;
-}
-.skillone.animate{
-    transform: translateZ(-90deg); /* Force GPU repaint */
+    transform: translateZ(270deg); /* Force GPU repaint */
     animation: skilloneanimation 3s ease-in-out infinite alternate;
     -webkit-animation: skilloneanimation 3s ease-in-out infinite alternate;
+}
+.skillone.animate{
+
 }
 
 @keyframes skilloneanimation {
