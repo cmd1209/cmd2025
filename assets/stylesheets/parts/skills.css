@@ -40,9 +40,8 @@
     font-size: 2rem;
 }
 
-.static{
 
-}
+
 
 
 .skillone{
@@ -51,12 +50,13 @@
     transform: translateZ(270deg); /* Force GPU repaint */
     animation: skilloneanimation 3s ease-in-out forwards;
     -webkit-animation: skilloneanimation 3s ease-in-out forwards;
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
+
 }
+
+
+
 .skillone.animate{
-    animation-play-state: running;
-    -webkit-animation-play-state: running;
+    
 }
 
 @keyframes skilloneanimation {
@@ -76,8 +76,6 @@
     transform: translateZ(18deg); /* Force GPU repaint */
     animation: skilltwoanimation 3s ease-in-out forwards;
     -webkit-animation: skilltwoanimation 3s ease-in-out forwards;
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
 }
 .skilltwo.animate{
     animation-play-state: running;
@@ -103,8 +101,6 @@
     transform: translateZ(198deg); /* Force GPU repaint */
     animation: skillthreeanimation 3s ease-in-out forwards;
     -webkit-animation: skillthreeanimation 3s ease-in-out forwards;
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
 }
 .skillthree.animate{
     animation-play-state: running;
@@ -244,4 +240,15 @@ animation-delay: 2.00s;
     transform: translateY(200px);
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.playing{
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+
+.stopped{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }

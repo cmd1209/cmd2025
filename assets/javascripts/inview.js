@@ -30,3 +30,28 @@ document.addEventListener("DOMContentLoaded", () => {
 	allAnimatedElements.forEach((element) => observer.observe(element));
 
 }); 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Use Intersection Observer to determine if objects are within the viewport
+  const stoppedElements = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Toggle between 'stopped' and 'playing' classes
+        if (entry.target.classList.contains('stopped')) {
+          entry.target.classList.remove('stopped');
+          entry.target.classList.add('playing');
+        } else {
+          entry.target.classList.remove('playing');
+          entry.target.classList.add('stopped');
+        }
+      }
+    });
+  });
+
+  // Get all the elements with the .animate class initially
+  const allAnimatedElements = document.querySelectorAll('.stopped');
+
+  // Add the observer to each of those elements
+  allAnimatedElements.forEach((element) => stoppedElements.observe(element));
+});
