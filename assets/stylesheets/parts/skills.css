@@ -41,6 +41,7 @@
 }
 
 .static{
+
 }
 
 
@@ -50,9 +51,10 @@
     transform: translateZ(270deg); /* Force GPU repaint */
     animation: skilloneanimation 3s ease-in-out forwards;
     -webkit-animation: skilloneanimation 3s ease-in-out forwards;
+    animation-play-state: paused;
 }
 .skillone.animate{
-
+    animation-play-state: running;
 }
 
 @keyframes skilloneanimation {
@@ -72,9 +74,10 @@
     transform: translateZ(18deg); /* Force GPU repaint */
     animation: skilltwoanimation 3s ease-in-out forwards;
     -webkit-animation: skilltwoanimation 3s ease-in-out forwards;
+    animation-play-state: paused;
 }
 .skilltwo.animate{
-
+    animation-play-state: running;
 }
 
 @keyframes skilltwoanimation {
@@ -96,9 +99,10 @@
     transform: translateZ(198deg); /* Force GPU repaint */
     animation: skillthreeanimation 3s ease-in-out forwards;
     -webkit-animation: skillthreeanimation 3s ease-in-out forwards;
+    animation-play-state: paused;
 }
 .skillthree.animate{
-
+    animation-play-state: running;
 }
 
 @keyframes skillthreeanimation {
