@@ -234,6 +234,7 @@ animation-delay: 2.00s;
 }
 
 .playing{
+    transform: translate3d(0, 0, 0);
     -webkit-animation-play-state: running;
     animation-play-state: running;
 }
