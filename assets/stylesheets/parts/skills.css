@@ -52,9 +52,11 @@
     animation: skilloneanimation 3s ease-in-out forwards;
     -webkit-animation: skilloneanimation 3s ease-in-out forwards;
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 .skillone.animate{
     animation-play-state: running;
+    -webkit-animation-play-state: running;
 }
 
 @keyframes skilloneanimation {
@@ -75,9 +77,11 @@
     animation: skilltwoanimation 3s ease-in-out forwards;
     -webkit-animation: skilltwoanimation 3s ease-in-out forwards;
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 .skilltwo.animate{
     animation-play-state: running;
+    -webkit-animation-play-state: running;
 }
 
 @keyframes skilltwoanimation {
@@ -100,9 +104,11 @@
     animation: skillthreeanimation 3s ease-in-out forwards;
     -webkit-animation: skillthreeanimation 3s ease-in-out forwards;
     animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 .skillthree.animate{
     animation-play-state: running;
+    -webkit-animation-play-state: running;
 }
 
 @keyframes skillthreeanimation {
