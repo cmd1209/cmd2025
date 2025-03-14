@@ -54,11 +54,6 @@
 }
 
 
-
-.skillone.animate{
-    
-}
-
 @keyframes skilloneanimation {
     from {
         stroke-dasharray: 0 408.4;
@@ -77,10 +72,7 @@
     animation: skilltwoanimation 3s ease-in-out forwards;
     -webkit-animation: skilltwoanimation 3s ease-in-out forwards;
 }
-.skilltwo.animate{
-    animation-play-state: running;
-    -webkit-animation-play-state: running;
-}
+
 
 @keyframes skilltwoanimation {
     from {
@@ -101,10 +93,6 @@
     transform: translateZ(198deg); /* Force GPU repaint */
     animation: skillthreeanimation 3s ease-in-out forwards;
     -webkit-animation: skillthreeanimation 3s ease-in-out forwards;
-}
-.skillthree.animate{
-    animation-play-state: running;
-    -webkit-animation-play-state: running;
 }
 
 @keyframes skillthreeanimation {
@@ -243,12 +231,12 @@ animation-delay: 2.00s;
 }
 
 .playing{
-    animation-play-state: running;
     -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
 
 .stopped{
-    animation-play-state: paused;
     -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
