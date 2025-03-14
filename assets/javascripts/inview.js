@@ -32,17 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
 }); 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const stoppedElement = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.toggle('stopped');
         entry.target.classList.toggle('playing');
       }
     });
-  });
+  }, { threshold: 0.3 }); // Adjust threshold to control when animation starts
 
-  // Select elements with class 'stopped' or any default class you want
-  const elements = document.querySelectorAll('.stopped');
+  // Select the SVG container instead of individual circles
+  const elements = document.querySelectorAll('.skill'); 
 
-  elements.forEach(element => stoppedElement.observe(element));
+  elements.forEach(element => observer.observe(element));
 });
