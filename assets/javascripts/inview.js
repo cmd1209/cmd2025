@@ -32,22 +32,23 @@ document.addEventListener("DOMContentLoaded", () => {
 }); 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const circleObserver = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.remove('stopped');
-        entry.target.classList.add('playing');
+        // Find all `.skill` elements inside the triggered container
+        entry.target.querySelectorAll('.skill').forEach(skill => {
+          skill.classList.remove('stopped');
+          skill.classList.add('playing');
+        });
 
-        // Stop observing once it has played
-        circleObserver.unobserve(entry.target);
+        // Stop observing after triggering once
+        observer.unobserve(entry.target);
       }
     });
-  }, { 
-		rootMargin: "0px 0px -10% 0px", // Expands viewport detection
-    threshold: 0.1 // Triggers when at least 10% of the element is in view
-	 });
+  }, { threshold: 0.3 });
 
-  const elements = document.querySelectorAll('.skill');
+  // Select the container that triggers the animation
+  const containers = document.querySelectorAll('.skill--container'); 
 
-  elements.forEach(element => circleObserver.observe(element));
+  containers.forEach(container => observer.observe(container));
 });

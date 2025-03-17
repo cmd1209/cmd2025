@@ -232,10 +232,12 @@ animation-delay: 2.00s;
 }
 
 .playing{
-    stroke: green;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
 }
 
 
 .stopped{
-    stroke: red;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
