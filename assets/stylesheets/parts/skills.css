@@ -17,9 +17,7 @@
     height: 390px;
 }
 
-.skill{
-    transform: translate3d(0, 0, 0);
-}
+
 
 .skill--bg {
     fill: none;
@@ -234,13 +232,10 @@ animation-delay: 2.00s;
 }
 
 .playing{
-    transform: translate3d(0, 0, 0);
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
+    stroke: green;
 }
 
 
 .stopped{
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+    stroke: red;
 }

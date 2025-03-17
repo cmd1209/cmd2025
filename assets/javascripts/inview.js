@@ -32,17 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
 }); 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver(entries => {
+  const circleObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.toggle('stopped');
-        entry.target.classList.toggle('playing');
+        entry.target.classList.remove('stopped');
+        entry.target.classList.add('playing');
+
+        // Stop observing once it has played
+        circleObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.3 }); // Adjust threshold to control when animation starts
+  }, { 
+		rootMargin: "0px 0px -10% 0px", // Expands viewport detection
+    threshold: 0.1 // Triggers when at least 10% of the element is in view
+	 });
 
-  // Select the SVG container instead of individual circles
-  const elements = document.querySelectorAll('.skill'); 
+  const elements = document.querySelectorAll('.skill');
 
-  elements.forEach(element => observer.observe(element));
+  elements.forEach(element => circleObserver.observe(element));
 });
