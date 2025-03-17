@@ -2,7 +2,10 @@
     --spring-easing: linear(0, 0.0023, 0.0089, 0.0195 1.36%, 0.0366 1.88%, 0.0803 2.86%, 0.1467 4%, 0.2902 5.96%, 0.7476 11.53%, 0.8701 13.27%, 0.9696 14.93%, 1.0468 16.51%, 1.1085 18.17%, 1.1321, 1.1513, 1.1661 20.66%, 1.1775 21.56%, 1.1853 22.62%, 1.1877 23.75%, 1.1843 24.95%, 1.1752 26.23%, 1.1626 27.44%, 1.146 28.72%, 1.0535 34.75%, 1.0317 36.34%, 1.0135 37.84%, 0.9961, 0.9828, 0.9734 43.05%, 0.9674 44.86%, 0.9648 47.19%, 0.967 49.83%, 0.9726 52.39%, 0.9969 61.21%, 1.0026 64.46%, 1.0057 67.77%, 1.0062 73.43%, 0.9993 89.11%, 0.9991 99.96%);
     --spring-duration: 1.629s;
 
-    --radius: 300px;
+    --spring2-easing: linear(0, 0.0027, 0.0113, 0.0253, 0.0454, 0.0717, 0.1032 2.23%, 0.1847 3.06%, 0.2674 3.77%, 0.3714 4.57%, 0.7663 7.35%, 0.917, 1.0519 9.59%, 1.1603 10.64%, 1.2054, 1.2451, 1.2794, 1.3074, 1.3309, 1.3489, 1.3617, 1.3696 14.75%, 1.3719, 1.3722 15.43%, 1.3666 16.14%, 1.3526 16.88%, 1.3304 17.65%, 1.3004 18.45%, 1.2607 19.34%, 1.2123 20.31%, 1.047 23.45%, 0.9975 24.5%, 0.9578 25.47%, 0.9194, 0.891 27.72%, 0.8804, 0.8722, 0.8664, 0.8628 29.97%, 0.8614 30.66%, 0.8632 31.39%, 0.8683 32.14%, 0.8768, 0.8882 33.76%, 0.903 34.65%, 0.982 38.73%, 1.0149 40.72%, 1.0292, 1.0399, 1.047 44.03%, 1.0509 45.14%, 1.051 46.64%, 1.0459 48.25%, 1.036 49.98%, 1.0069 54.01%, 0.9949 55.95%, 0.9856, 0.9812 60.24%, 0.9809 61.83%, 0.9829 63.55%, 1.0016 71.13%, 1.0069 75.23%, 1.0064 78.86%, 0.9976 89.73%, 0.9997 100%);
+    --spring2-duration: 5s;
+
+    --radius: 250px;
     --strokebgWidth: 80px;
     --strokeWidth: 150px;
     --circ: calc(var(--radius) * 2 * 3.14159265359);
@@ -47,8 +50,8 @@
     stroke: var(--color-primary-60);
     transform: rotate(270deg);
     transform: translateZ(270deg); /* Force GPU repaint */
-    animation: skilloneanimation 3s ease-in-out forwards;
-    -webkit-animation: skilloneanimation 3s ease-in-out forwards;
+    animation: skilloneanimation var(--spring2-duration) var(--spring2-easing) forwards;
+    -webkit-animation: skilloneanimation var(--spring2-duration) var(--spring2-easing) forwards;
 
 }
 
@@ -68,8 +71,8 @@
     stroke: var(--color-primary-50);
     transform: rotate(18deg);
     transform: translateZ(18deg); /* Force GPU repaint */
-    animation: skilltwoanimation 3s ease-in-out forwards;
-    -webkit-animation: skilltwoanimation 3s ease-in-out forwards;
+    animation: skilltwoanimation var(--spring2-duration) var(--spring2-easing) forwards;
+    -webkit-animation: skilltwoanimation var(--spring2-duration) var(--spring2-easing) forwards;
 }
 
 
@@ -89,8 +92,8 @@
     stroke: var(--color-primary-40);
     transform: rotate(198deg);
     transform: translateZ(198deg); /* Force GPU repaint */
-    animation: skillthreeanimation 3s ease-in-out forwards;
-    -webkit-animation: skillthreeanimation 3s ease-in-out forwards;
+    animation: skillthreeanimation var(--spring2-duration) var(--spring2-easing) forwards;
+    -webkit-animation: skillthreeanimation var(--spring2-duration) var(--spring2-easing) forwards;
 }
 
 @keyframes skillthreeanimation {
