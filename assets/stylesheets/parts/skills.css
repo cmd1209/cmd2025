@@ -2,7 +2,9 @@
     --spring-easing: linear(0, 0.0023, 0.0089, 0.0195 1.36%, 0.0366 1.88%, 0.0803 2.86%, 0.1467 4%, 0.2902 5.96%, 0.7476 11.53%, 0.8701 13.27%, 0.9696 14.93%, 1.0468 16.51%, 1.1085 18.17%, 1.1321, 1.1513, 1.1661 20.66%, 1.1775 21.56%, 1.1853 22.62%, 1.1877 23.75%, 1.1843 24.95%, 1.1752 26.23%, 1.1626 27.44%, 1.146 28.72%, 1.0535 34.75%, 1.0317 36.34%, 1.0135 37.84%, 0.9961, 0.9828, 0.9734 43.05%, 0.9674 44.86%, 0.9648 47.19%, 0.967 49.83%, 0.9726 52.39%, 0.9969 61.21%, 1.0026 64.46%, 1.0057 67.77%, 1.0062 73.43%, 0.9993 89.11%, 0.9991 99.96%);
     --spring-duration: 1.629s;
 
-    --radius: 65;
+    --radius: 300px;
+    --strokebgWidth: 80px;
+    --strokeWidth: 150px;
     --circ: calc(var(--radius) * 2 * 3.14159265359);
     --20per: calc(var(--circ) * 0.2);
     --30per: calc(var(--circ) * 0.3);
@@ -12,17 +14,11 @@
 }
 
 
-.skill--circle {
-    width: 390px;   
-    height: 390px;
-}
-
-
 
 .skill--bg {
     fill: none;
     stroke: rgba(255, 255, 255, 0);
-    stroke-width: 50;
+    stroke-width: var(--strokebgWidth);
     transform-origin: 50%;
     stroke-dasharray: var(--circ) var(--circ);
     stroke-dasharray: var(--circ) var(--circ);
@@ -32,8 +28,9 @@
 
 .skill--path {
     fill: none;
-    stroke-width: 40;
+    stroke-width: var(--radius);
     transform-origin: 50% 50%;
+    
 }
 
 .skill--text {
@@ -41,8 +38,9 @@
     font-size: 2rem;
 }
 
-
-
+.skill{
+    stroke-width: var(--strokeWidth);
+}
 
 
 .skillone{
@@ -56,13 +54,13 @@
 
 
 @keyframes skilloneanimation {
-    from {
-        stroke-dasharray: 0 408.4;
-        stroke-dashoffset: 0 408.4;
+    from{
+        stroke-dasharray: 0 var(--circ);
+        stroke-dashoffset: 0 var(--circ);
     }
     to {
-        stroke-dasharray: 122.52 408.4;
-        stroke-dashoffset: 122.52 408.4;
+        stroke-dasharray: var(--30per) var(--circ);
+        stroke-dashoffset: var(--30per) var(--circ);
     }
 }
 
@@ -76,14 +74,13 @@
 
 
 @keyframes skilltwoanimation {
-    from {
-        stroke-dasharray: 0 408.4;
-        stroke-dashoffset: 0 408.4;
+    from{
+        stroke-dasharray: 0 var(--circ);
+        stroke-dashoffset: 0 var(--circ);
     }
     to {
-        stroke-dasharray:204.2 408.4;
-        stroke-dashoffset:204.2 408.4;
-        
+        stroke-dasharray: var(--50per) var(--circ);
+        stroke-dashoffset: var(--50per) var(--circ);
     }
 }
 
@@ -97,14 +94,13 @@
 }
 
 @keyframes skillthreeanimation {
-    from {
-        stroke-dasharray: 0 408.4;
-        stroke-dashoffset: 0 408.4;
+    from{
+        stroke-dasharray: 0 var(--circ);
+        stroke-dashoffset: 0 var(--circ);
     }
     to {
-        stroke-dasharray: 81.68 408.4;
-        stroke-dashoffset: 81.68 408.4;
-        
+        stroke-dasharray: var(--20per) var(--circ);
+        stroke-dashoffset: var(--20per) var(--circ);
     }
 }
 
