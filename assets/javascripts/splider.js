@@ -1,5 +1,5 @@
   document.addEventListener( 'DOMContentLoaded', function() {
-    var splide = new Splide( '.splide' , {
+    var splide = new Splide( '#postslisting' , {
   type: 'slide',
   perPage: 3,
   gap: '1rem',
@@ -14,3 +14,11 @@
 } );
     splide.mount();
   } );
+
+
+  document.addEventListener( 'DOMContentLoaded', function() {
+  var gallerySplider = new Splide( '#gallerysplider' , {
+} );
+    gallerySplider.mount();
+  } );
+

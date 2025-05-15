@@ -1,0 +1,19 @@
+<div id="gallerysplider" class="splide mt-xxl" aria-labelledby="gallery-splider">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {% for file in site.static_files %}
+        {% if file.path contains page.image.gallery %}
+          {% if file.extname == '.webp' %}
+            {% unless file.name contains 'thumb' %}
+              <li class="splide__slide">
+                <div class="splide__slide__container" >
+                  <img src="{{ file.path }}" alt="Gallery Image">
+                </div>
+              </li>
+            {% endunless %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
