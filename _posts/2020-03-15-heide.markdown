@@ -1,0 +1,16 @@
+---
+layout: gallery-post
+title:  "Heide in the Corona Time"
+author: Chad Matthew Danford
+date:   2020-04-15 17:00:06 +0200
+permalink: /posts/:title
+tags: ["photography"]
+image:
+  gallery: /assets/images/heide-corona/
+  feature: heide-01.webp
+  thumbnail: heide-01.webp
+  image02: heide-01.webp
+---
+
+Iceland tonx echo park viral letterpress biodiesel YOLO celiac keytar banh mi shoreditch vibecession raw denim ethical jawn. 
+

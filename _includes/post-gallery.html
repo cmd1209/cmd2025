@@ -7,7 +7,7 @@
             {% unless file.name contains 'thumb' %}
               <li class="splide__slide">
                 <div class="splide__slide__container" >
-                  <img src="{{ file.path }}" alt="Gallery Image">
+                  <a href="{{ file.path }}"><img src="{{ file.path }}" alt="Gallery Image"></a>
                 </div>
               </li>
             {% endunless %}
