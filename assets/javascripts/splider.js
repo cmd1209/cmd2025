@@ -19,6 +19,7 @@
   document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '#worksplider' , {
   type: 'slide',
+  start  : 5,
   perPage: 3,
   gap: '1rem',
   breakpoints: {
