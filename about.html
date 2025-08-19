@@ -3,40 +3,6 @@ layout: default
 title: About Me
 permalink: /about/
 ---
-<section  class="pt-xl pb-xl" id="aboutme">
-  {%- assign sitePortrait ="/assets/images/self-portrait-2019.jpg" -%}
-  <div class="inner-wrapper z2">
-    <img src="{{- sitePortrait | relative_url -}}" class="site-portrait mb-lg z2 drop static" alt="">
-    <h3 class="text-center mb-sm z-02 drop static">{{ site.title }}</h3>
-    <h5 class="fw-light text-center mb-xxl z-02 drop static">Creative Director / Front-End Designer & Developer / Photographer</h5>
-    <div class="row gap-md">
-      <div class="col-8 col-center drop static">
-        <p>In February 1999, I landed my first professional job at an advertising agency in Essen, Germany. I crafted my first Bewerbung using Microsoft Word and convinced my parents to invest $100 to send my B.F.A. portfolio—packed in my now-infamous silver case. I was hired on the spot and asked if I could start the following Monday.</p>
-        <p>That Monday in early February 1999 set into motion one of the most amazing, terrifying, complicated, and eye-opening work experiences I could have imagined. Over the years, my journey has evolved beyond traditional design, embracing front-end development and the endless possibilities of digital interaction. Alongside my passion for crafting thoughtful user experiences, photography has remained a constant in my creative life—another way to capture, frame, and tell stories.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section  class="pt-xl pb-xl" id="skills">
-  <h3 class=" text-center mb-sm drop static">The skills to pay the bills</h3>
-  <h5 class=" fw-light text-center mb-md drop static">Blending design, code, and creativity to build impactful experiences.</h5>
-  <div class="row">
-    <div class="col col-6">
-      {% include skills/skill-all.html %}
-    </div>
-    <div class="col col-6">
-      <div class="drop static">
-        <h5 class=" mb-xs">Art Direction</h5>
-        <p>Great design tells a story. As an art director, I shape visual narratives that connect, inspire, and leave a lasting impression. Whether crafting brand identities, designing campaigns, or refining aesthetics, I thrive on bringing creative visions to life with clarity and purpose.</p>
-      </div>
-      <div class="drop static">
-        <h5 class=" mb-xs">Frontend Design & Development</h5>
-        <p>Bridging the gap between design and technology, I create intuitive, engaging digital experiences. From pixel-perfect UI design to seamless front-end interactions, I bring ideas to life with clean, efficient code—always keeping usability and aesthetics in perfect balance.</p>
-      </div>
-      <div class="drop static">
-        <h5 class=" mb-xs">Photography</h5>
-        <p>Photography is my way of capturing moments that words can’t express. From conceptual shoots to documentary-style storytelling, I focus on composition, light, and emotion to create images that resonate. Every frame is an opportunity to distill an experience into something timeless.</p>
-      </div>
-    </div>
-  </div>
-</section>
+{% include about/history.html %}
+{% include about/experience.html %}
+{% include about/skills.html %}

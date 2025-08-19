@@ -1,0 +1,31 @@
+.card{
+  border-radius: var(--size-xs);
+  padding: var(--size-sm);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+
+.card-01{
+    background: var(--color-secondary-40);
+}
+.card-02{
+    background: var(--color-secondary-50);
+}
+.card-03{
+    background: var(--color-secondary-60);
+}
+.card-04{
+    background: var(--color-secondary-70);
+}
+.card-05{
+    background: var(--color-secondary-80);
+}
+.card-06{
+    background: var(--color-secondary-90);
+}
+
+
+
