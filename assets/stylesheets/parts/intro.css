@@ -1,13 +1,6 @@
 div{
     position: relative;
 }
-.site-portrait{
-    border-radius: 100%;
-    height: 200px;
-    margin: 0 auto;
-    object-fit: cover;
-    width: 200px;
-}
 #aboutme{
     position: relative;
 } 
@@ -35,3 +28,17 @@ div{
     height: auto;
     fill: var(--color-secondary-50);
   }
+
+
+.site-portrait {
+  height: 200px;
+  margin: 0 auto;
+  aspect-ratio: cos(30deg);
+  /* notice how I simply switched the x/y from the previous polygon, easy! */
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  background: linear-gradient(45deg,#A7DBD8,#C7F464);
+}
+
+img.site-portrait {
+  object-fit:cover;
+}
