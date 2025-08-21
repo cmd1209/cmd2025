@@ -27,7 +27,7 @@
 			perPage: 2,
 		},
     768: {
-			perPage: 2,
+			perPage: 1,
 		},
   }
 } );
