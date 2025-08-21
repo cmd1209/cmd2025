@@ -1,31 +1,26 @@
 .card{
-  border-radius: var(--size-xs);
   padding: var(--size-sm);
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
 } 
 
 
 .card-01{
-    background: var(--color-secondary-40);
+    background: var(--color-teal-40);
 }
 .card-02{
-    background: var(--color-secondary-50);
+    background: var(--color-teal-50);
 }
 .card-03{
-    background: var(--color-secondary-60);
+    background: var(--color-teal-60);
 }
 .card-04{
-    background: var(--color-secondary-70);
+    background: var(--color-teal-70);
 }
 .card-05{
-    background: var(--color-secondary-80);
+    background: var(--color-alert-70);
 }
-.card-06{
-    background: var(--color-secondary-90);
-}
-
-
 

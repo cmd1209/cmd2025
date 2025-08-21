@@ -31,7 +31,7 @@ div{
 
 
 .site-portrait {
-  height: 200px;
+  height: 300px;
   margin: 0 auto;
   aspect-ratio: cos(30deg);
   /* notice how I simply switched the x/y from the previous polygon, easy! */
