@@ -20,14 +20,14 @@
 .btn-lg{
     padding-inline: var(--size-lg);
     padding-block: var(--size-sm);
-    border-radius: var(--size-sm);
+    border-radius: var(--size-xs);
     font-size: var(--font-size-md);
 }
 
 .btn-md{
     padding-inline: var(--size-md);
     padding-block: var(--size-xs);
-    border-radius: var(--size-sm);
+    border-radius: var(--size-xs);
     font-size: var(--font-size-sm);
 }
 

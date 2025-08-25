@@ -9,6 +9,13 @@
     color: var(--color-neutral-25); 
 }
 
+.article__content{
+    padding: var(--size-sm);
+    background: var(--neutral-trans-30);
+    border-radius: 0  0 var(--size-xs) var(--size-xs);
+    min-height: 302px;
+} 
+
 .article__date{
     font-size: var(--font-size-xs);
     color: var(--color-neutral-25);
@@ -30,9 +37,8 @@
     position: relative;
     transform: translate(0);
     display: block;
-    margin-bottom: 20px;
     aspect-ratio: 4 / 4;
-    border-radius: var(--size-xs);
+    border-radius: var(--size-xs) var(--size-xs) 0 0;
     outline: none;
     overflow: hidden;
     transition: transform .3s ease-in-out;
@@ -56,10 +62,11 @@
 }
 
 .article__info{
+    margin-top: auto;
 
 }
 
-.article_title{
+.article__title{
 
 }
 

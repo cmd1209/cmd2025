@@ -6,10 +6,8 @@
         </a>
         {% endif %}
     </div>
-    <div class="article__content">
-        <div class="article__title mb-xs">
-            <h4>{{ post.title }}</h4>
-        </div>
+    <div class="article__content flex flex-column">
+        <h4 class="article__title mb-sm">{{ post.title | strip_html | truncatewords: 25 }}</h4>
         <div class="article__meta flex gap-xs align-baseline">
             <div class="article__tags flex gap-xs ">
                 {% for tag in post.tags %}
