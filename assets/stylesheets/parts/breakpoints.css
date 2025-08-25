@@ -30,7 +30,7 @@
 .grid-3col{
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   column-gap: var(--size-md);
-  row-gap: var(--size-xl);
+  row-gap: var(--size-md);
 }
 
 
