@@ -10,10 +10,7 @@
 }
 
 .article__content{
-    padding: var(--size-sm);
-    background: var(--neutral-trans-30);
-    border-radius: 0  0 var(--size-xs) var(--size-xs);
-    min-height: 302px;
+    padding-block: var(--size-sm);
 } 
 
 .article__date{
@@ -37,8 +34,8 @@
     position: relative;
     transform: translate(0);
     display: block;
-    aspect-ratio: 4 / 4;
-    border-radius: var(--size-xs) var(--size-xs) 0 0;
+    aspect-ratio: 4 / 3.5;
+    border-radius: var(--size-xs);
     outline: none;
     overflow: hidden;
     transition: transform .3s ease-in-out;

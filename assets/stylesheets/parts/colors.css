@@ -153,3 +153,6 @@
 .color-headline-inverse{
   color: var(--text-color-inverse);
 }
+.color-headline-teal{
+  color: var(--color-teal-30);
+}
