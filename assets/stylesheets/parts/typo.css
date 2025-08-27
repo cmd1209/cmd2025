@@ -79,6 +79,10 @@ p.small {
     font-size: var(--font-size-xs);
 }
 
+pre, code {
+    font-size: var(--font-size-xs);  /* Slightly larger for emphasis */
+}
+
 .button {
     font-size: var(--font-size-md);  /* Slightly larger for emphasis */
     padding: 0.5em 1em;

@@ -1,0 +1,206 @@
+---
+layout: gallery-post
+title:  "OKLCH Color Scheme"
+author: Chad Matthew Danford
+date:   2019-11-20 17:00:06 +0200
+permalink: /posts/:title
+tags: ["web"]
+image:
+  gallery: /assets/images/oklch/
+  thumbnail: oklch_colors_thumbnail.png
+  feature: oklch_colors_thumbnail.png
+---
+<div class="row">
+      <p>When I set out to define the color system for this project, I wanted something that would be both flexible and future-proof. Traditional hex or RGB values work fine for static palettes, but they become limiting when you need to adjust lightness, contrast, or accessibility on the fly. That’s why I chose to build the palette using the OKLCH color model. Unlike HSL or HEX, OKLCH is perceptually uniform — meaning that changes in lightness or chroma behave more consistently with how our eyes actually see color. This makes it much easier to fine-tune shades, generate accessible contrasts, and maintain harmony across the palette.</p>
+</div>
+<div class="row mb-md">
+    {% highlight css %}
+    /* Primary Palette */
+    --primary-color: oklch(40% 0.15 272);
+    --color-primary-0: oklch(from var(--primary-color) 90% c h);
+    --color-primary-10: oklch(from var(--primary-color) 80% c h);
+    --color-primary-20: oklch(from var(--primary-color) 70% c h);
+    --color-primary-30: oklch(from var(--primary-color) 60% c h);
+    --color-primary-40: oklch(from var(--primary-color) 50% c h);
+    --color-primary-50: var(--primary-color);
+    --color-primary-60: oklch(from var(--primary-color) 30% c h);
+    --color-primary-70: oklch(from var(--primary-color) 20% c h);
+    --color-primary-80: oklch(from var(--primary-color) 10% c h);
+    --color-primary-90: oklch(from var(--primary-color) 5% c h);
+    --color-primary-100: oklch(from var(--primary-color) 0% c h);
+    {% endhighlight %}
+</div>
+
+<div class="row bm-md">
+  <p>The foundation of the palette is the primary color range, which I created by varying the lightness value from 0 to 100 while keeping chroma and hue constant. This gave me a smooth spectrum of tints and shades derived from one anchor hue. From there, I added a secondary color, an alert color for states and notifications, and a more playful accent color (teal). Each range follows the same principle — start with a base and build out a scale by adjusting lightness in OKLCH.</p>
+</div>
+
+
+<div class="grid grid-6col gap-xs mb-md">
+  <div class="box color-white">
+  </div>
+  <div class="box color-primary-0">
+  </div>
+  <div class="box color-primary-10">
+  </div>
+  <div class="box color-primary-20">
+  </div>
+  <div class="box color-primary-30">
+  </div>
+  <div class="box color-primary-40">
+  </div>
+  <div class="box color-primary-50">
+  </div>
+  <div class="box color-primary-60">
+  </div>
+  <div class="box color-primary-70">
+  </div>
+  <div class="box color-primary-80">
+  </div>
+  <div class="box color-primary-90">
+  </div>
+  <div class="box color-primary-100">
+  </div>
+</div>
+
+<div class="row mb-md">
+  <p>To make the palette practical for development, I translated every step into CSS custom properties. Each color in the scale gets a variable name (e.g. --color-primary-30, --color-accent-70) that corresponds to its lightness step. On top of that, I created utility classes (e.g. .bg-primary-30, .text-accent-70) to apply the colors directly in markup. This approach keeps design tokens consistent, makes it easy to swap or extend colors later, and reduces guesswork when working with the palette in real-world layouts.</p>
+</div>
+
+<div class="row mb-md">
+    {% highlight css %}
+    /* Secondary Palette */
+    --secondary-color: oklch(30% 0.13 10.92);
+    --color-secondary-0: oklch(from var(--secondary-color) 95% c h);
+    --color-secondary-10: oklch(from var(--secondary-color) 85% c h);
+    --color-secondary-20: oklch(from var(--secondary-color) 73% c h);
+    --color-secondary-30: oklch(from var(--secondary-color) 55% c h);
+    --color-secondary-40: oklch(from var(--secondary-color) 40% c h);
+    --color-secondary-50: var(--secondary-color);
+    --color-secondary-60: oklch(from var(--secondary-color) 25% c h);
+    --color-secondary-70: oklch(from var(--secondary-color) 20% c h);
+    --color-secondary-80: oklch(from var(--secondary-color) 17% c h);
+    --color-secondary-90: oklch(from var(--secondary-color) 12% c h);
+    --color-secondary-100: oklch(from var(--secondary-color) 8% c h);
+    {% endhighlight %}
+</div>
+
+<div class="grid grid-6col gap-xs mb-md">
+  <div class="box color-white">
+  </div>
+  <div class="box color-secondary-0">
+  </div>
+  <div class="box color-secondary-10">
+  </div>
+  <div class="box color-secondary-20">
+  </div>
+  <div class="box color-secondary-30">
+  </div>
+  <div class="box color-secondary-40">
+  </div>
+  <div class="box color-secondary-50">
+  </div>
+  <div class="box color-secondary-60">
+  </div>
+  <div class="box color-secondary-70">
+  </div>
+  <div class="box color-secondary-80">
+  </div>
+  <div class="box color-secondary-90">
+  </div>
+  <div class="box color-secondary-100">
+  </div>
+</div>
+
+<div class="row mb-md">
+    {% highlight css %}
+    /* Teal Palette */
+    --teal-color: oklch(65% 0.1099 198);
+    --color-teal-0: oklch(from var(--teal-color) 99% c h);
+    --color-teal-10: oklch(from var(--teal-color) 90% c h);
+    --color-teal-20: oklch(from var(--teal-color) 85% c h);
+    --color-teal-30: oklch(from var(--teal-color) 75% c h);
+    --color-teal-40: oklch(from var(--teal-color) 70% c h);
+    --color-teal-50: var(--teal-color);
+    --color-teal-60: oklch(from var(--teal-color) 58% c h);
+    --color-teal-70: oklch(from var(--teal-color) 45% c h);
+    --color-teal-80: oklch(from var(--teal-color) 32% c h);
+    --color-teal-90: oklch(from var(--teal-color) 24% c h);
+    --color-teal-100: oklch(from var(--teal-color) 18% c h);
+    {% endhighlight %}
+</div>
+
+
+<div class="grid grid-6col gap-xs mb-md">
+  <div class="box color-white">
+  </div>
+  <div class="box color-teal-0">
+  </div>
+  <div class="box color-teal-10">
+  </div>
+  <div class="box color-teal-20">
+  </div>
+  <div class="box color-teal-30">
+  </div>
+  <div class="box color-teal-40">
+  </div>
+  <div class="box color-teal-50">
+  </div>
+  <div class="box color-teal-60">
+  </div>
+  <div class="box color-teal-70">
+  </div>
+  <div class="box color-teal-80">
+  </div>
+  <div class="box color-teal-90">
+  </div>
+  <div class="box color-teal-100">
+  </div>
+</div>
+
+<div class="row mb-md">
+    {% highlight css %}
+  /* alert Palette */
+   --alert-color: oklch(80% 0.1659 119.42);
+    --color-alert-0: oklch(from var(--alert-color) 99% c h);
+    --color-alert-10: oklch(from var(--alert-color) 93% c h);
+    --color-alert-20: oklch(from var(--alert-color) 91% c h);
+    --color-alert-30: oklch(from var(--alert-color) 87% c h);
+    --color-alert-40: oklch(from var(--alert-color) 83% c h);
+    --color-alert-50: var(--alert-color);
+    --color-alert-60: oklch(from var(--alert-color) 76% c h);
+    --color-alert-70: oklch(from var(--alert-color) 60% c h);
+    --color-alert-80: oklch(from var(--alert-color) 50% c h);
+    --color-alert-90: oklch(from var(--alert-color) 40% c h);
+    --color-alert-100: oklch(from var(--alert-color) 20% c h);
+    {% endhighlight %}
+</div>
+
+<div class="grid grid-6col gap-xs mb-md">
+  <div class="box color-white">
+  </div>
+  <div class="box color-alert-0">
+  </div>
+  <div class="box color-alert-10">
+  </div>
+  <div class="box color-alert-20">
+  </div>
+  <div class="box color-alert-30">
+  </div>
+  <div class="box color-alert-40">
+  </div>
+  <div class="box color-alert-50">
+  </div>
+  <div class="box color-alert-60">
+  </div>
+  <div class="box color-alert-70">
+  </div>
+  <div class="box color-alert-80">
+  </div>
+  <div class="box color-alert-90">
+  </div>
+  <div class="box color-alert-100">
+  </div>
+</div>
+
+

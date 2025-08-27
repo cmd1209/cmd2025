@@ -24,13 +24,31 @@
   --wrapper-center: 0 auto;
 }
 
+.box{
+  width: 100%;
+  height: 90px;
+}
+
 .grid{
   display: grid;
 }
+
 .grid-3col{
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   column-gap: var(--size-md);
   row-gap: var(--size-md);
+}
+
+.grid-6col{
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: var(--size-xs);
+  row-gap: var(--size-xs);
+}
+
+@media (max-width: 768px) {
+  .grid-6col {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 
