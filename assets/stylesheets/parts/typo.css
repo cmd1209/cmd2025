@@ -79,7 +79,13 @@ p.small {
     font-size: var(--font-size-xs);
 }
 
-pre, code {
+pre{
+    padding: var(--size-md);
+    border-radius: var(--size-sm);
+    overflow: hidden;
+}
+
+pre code {
     font-size: var(--font-size-xs);  /* Slightly larger for emphasis */
 }
 
