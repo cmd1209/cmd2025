@@ -9,24 +9,44 @@ div{
 }
 
 .hexagon {
-    position: absolute;
-    z-index: 0;
-    opacity: 0.25;
+  aspect-ratio: cos(30deg);
+  clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
+  position: absolute;
+  z-index: 0;
+  opacity: 0.25;
+}
+
+
+.hex1{
+  top: -25%;
+  left: 50%;
+  width: 980px;
+  height: auto;
+  transform: translateX(-100%);
+  background: var(--color-primary-50);
+}
+.hex2{
+  top: 50%;
+  right: 0;
+  width: 780px;
+  height: auto;
+  background: var(--color-secondary-50);
   }
 
-  .hex1{
-    top: -25%;
-    left: 50%;
-    width: 980px;
-    height: auto;
-    transform: translateX(-100%);
-  }
-  .hex2{
-    top: 50%;
-    right: 0;
-    width: 780px;
-    height: auto;
-    fill: var(--color-secondary-50);
+.hex3{
+  bottom: 25%;
+  right: 50%;
+  width: 980px;
+  height: auto;
+  transform: translateX(-100%);
+  background: var(--color-primary-50);
+}
+.hex4{
+  top: 50%;
+  left: 50%;
+  width: 780px;
+  height: auto;
+  background: var(--color-secondary-50);
   }
 
 
@@ -34,9 +54,7 @@ div{
   height: 300px;
   margin: 0 auto;
   aspect-ratio: cos(30deg);
-  /* notice how I simply switched the x/y from the previous polygon, easy! */
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
-  background: linear-gradient(45deg,#A7DBD8,#C7F464);
 }
 
 img.site-portrait {
