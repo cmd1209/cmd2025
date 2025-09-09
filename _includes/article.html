@@ -9,9 +9,9 @@
     <div class="article__content flex flex-column">
         <h4 class="article__title mb-sm">{{ post.title | strip_html | truncatewords: 25 }}</h4>
         <div class="article__meta flex gap-xs align-baseline">
-            <div class="article__tags flex gap-xs ">
+            <div class="article__tags flex gap-xs wrap">
                 {% for tag in post.tags %}
-                    <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag tag__{{tag}}">{{ tag }}</a>
+                    <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag mb-sm tag__{{tag}}">{{ tag }}</a>
                 {% endfor %}
             </div>
             <p class="article__date">{{ post.date | date_to_long_string}}</p>

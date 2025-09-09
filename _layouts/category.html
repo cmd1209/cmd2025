@@ -18,10 +18,10 @@
                     <p>{{ page.description }}</p>
                   </div>
                   <div class="col-4 col-md-6">
-                    <div class="flex gap-xs justify-end justify-md-start">
-                      <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag">{{site.snippets.all-tags}}</a>
+                    <div class="flex gap-xs justify-end justify-md-start wrap">
+                      <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag mb-xs">{{site.snippets.all-tags}}</a>
                       {% for tag in site.tags %}
-                        <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}} {% if tag[0] == page.title %} tag__active {% endif %} ">{{ tag[0] }}</a>
+                        <a href="/{{ tag[0] | slugify }}" class="article__tag mb-xs tag__{{tag[0]}} {% if tag[0] == page.title %} tag__active {% endif %} ">{{ tag[0] }}</a>
                       {% endfor %}
                     </div>
                   </div>
