@@ -4,6 +4,7 @@
   --secondary-color: oklch(30% 0.13 10.92);
   --teal-color: oklch(65% 0.1099 198);
   --alert-color: oklch(80% 0.1659 119.42);
+  --color-calumet: #eb1d43;
 
     /* Primary Palette */
     --color-primary-0: oklch(from var(--primary-color) 90% c h);

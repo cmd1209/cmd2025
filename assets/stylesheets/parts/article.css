@@ -90,6 +90,17 @@
     background-color: var(--color-secondary-40);
 }
 
+.tag__calumet {
+    background-color: var(--color-calumet);
+}
+.tag__calumet:hover,
+.tag__calumet:focus,
+.tag__calumet:active {
+    background-color: #9c0e28;
+}
+
+
+
 
 .post__content,
 .post__categories{

@@ -12,8 +12,8 @@
     background-color: var(--color-primary-70);
 }
 .btn-secondary:hover,
-.btn-secondaary:focus,
-.btn-secondaary:active {
+.btn-secondary:focus,
+.btn-secondary:active {
     background-color: var(--color-primary-90);
 }
 
@@ -47,3 +47,13 @@
 .btn-maxw{
     width: 100%;
 }
+
+.btn-calumet{
+    background-color: var(--color-calumet);
+}
+.btn-calumet:hover,
+.btn-calumet:focus,
+.btn-calumet:active {
+    background-color: #9c0e28;
+}
+
