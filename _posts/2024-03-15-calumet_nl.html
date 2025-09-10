@@ -7,14 +7,16 @@ permalink: /posts/:title
 tags: ["design", "calumet"]
 image:
   gallery: /assets/images/calumet_nl/
-  thumbnail: calumet_nl_thumbnail.jpg
-  feature: calumet_nl_thumbnail.jpg
-  cutoutold: calumet_nl_old.png
+  thumbnail: calumet_nl_thumbnail.webp
+  feature: calumet_nl_thumbnail.webp
+  cutoutold: calumet_nl_old_thumb.webp
   cutout01: calumet_nl01.webp
   cutout02: calumet_nl02.webp
+  cutout03: calumet_nl03.webp
+  cutout04: calumet_nl04.webp
 ---
 
-<div class="row gap-md mb-xl">
+<div class="row gap-md">
   <div class="col-6">
     <img src="{{page.image.gallery}}{{page.image.cutoutold}}" alt="">
   </div>
@@ -25,11 +27,11 @@ image:
 </div>
 <div class="row gap-md mb-xl">
   <div class="col-6">
-<p>That persistence paid off. Soon, I was sitting in on direct talks with the content lead and the developers at Emarsys, who were building the newsletter modules. With design, content, and development working in sync, we moved from ad hoc tweaks to building reusable modules that looked good, worked reliably, and represented the brand consistently.</p>
-<p>The result was a newsletter system that felt cohesive and professional — less like a series of one-off sends, more like a branded experience. Production became smoother for the content team, developers had clearer design direction, and stakeholders saw a tangible step forward in how design could add value.</p>
+    {% include post-gallery.html %}
   </div>
   <div class="col-6">
-    {% include post-gallery.html %}
+    <p>That persistence paid off. Soon, I was sitting in on direct talks with the content lead and the developers at Emarsys, who were building the newsletter modules. With design, content, and development working in sync, we moved from ad hoc tweaks to building reusable modules that looked good, worked reliably, and represented the brand consistently.</p>
+    <p>The result was a newsletter system that felt cohesive and professional — less like a series of one-off sends, more like a branded experience. Production became smoother for the content team, developers had clearer design direction, and stakeholders saw a tangible step forward in how design could add value.</p>
   </div>
 </div>
 
