@@ -132,4 +132,10 @@ pre code {
     }
 }
 
-
+ul.list_standard{
+    padding-left: var(--size-lg);
+}
+ul.list_standard  li {
+    list-style: disc;
+    margin-bottom: var(--size-xs);
+}
