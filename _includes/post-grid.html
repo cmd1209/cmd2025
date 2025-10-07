@@ -2,13 +2,11 @@
   <div class="grid post__grid gap-sm ">
       {% for file in site.static_files %}
         {% if file.path contains page.image.gallery %}
-          {% if file.extname == '.webp' %}
             {% unless file.name contains 'thumb' %}
-                  <a href="{{ file.path }}" class="post__image">
-                    <img src="{{ file.path }}" class="img-responsive" alt="Grid Image">
-                  </a>
+                <a href="{{ file.path }}" class="post__image">
+                  <img src="{{ file.path }}" class="img-responsive" alt="Grid Image">
+                </a>
             {% endunless %}
-          {% endif %}
         {% endif %}
       {% endfor %}
   </div>
