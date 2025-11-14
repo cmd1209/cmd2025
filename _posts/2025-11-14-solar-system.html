@@ -1,0 +1,90 @@
+---
+layout: gallery-post
+title:  "CSS-Driven Solar System"
+author: Chad Matthew Danford
+date:   2025-11-12 17:00:06 +0200
+permalink: /posts/:title
+tags: ["web"]
+image:
+  gallery: /assets/images/solarsystem/
+  thumbnail: solarsystem_thumb.jpg
+  feature: solarsystem_thumb.jpg
+---
+<div class="mt-md">
+  <h4>A Little Universe Built with Pure Code</h4>
+
+<p>This project started as “let me animate a planet real quick” and quietly escalated into a full solar system with moons, shadows, and a procedurally generated asteroid belt.
+All of it built with HTML + SCSS, zero JavaScript, and a dangerous amount of enthusiasm.</p>
+
+<p>This is exactly the kind of thing I love doing in my spare time: using code to build tiny worlds, experimenting with motion, and seeing how far you can push CSS before it starts sweating.</p>
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="bNpdGoL" data-pen-title="Solar System - Revised with Moons and Asteroids" data-user="cmd1209" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/cmd1209/pen/bNpdGoL">
+  Solar System - Revised with Moons and Asteroids</a> by Chad Danford (<a href="https://codepen.io/cmd1209">@cmd1209</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://public.codepenassets.com/embed/index.js"></script>
+      <p>Fort the project if you like and send me a link of what you were able to come up with.</p>
+</div>
+
+<div class="mt-md">
+  <h5>The simulation includes:</h5>
+<ul class="list_standard">
+  <li>Planets orbiting in their correct relative positions
+</li>
+<li>Moons (like the Moon and the four Galilean moons) following their planets
+</li>
+<li>Dynamic shadows based on which side faces the sun
+</li>
+<li>A fully generated asteroid belt that looks surprisingly “natural”
+</li>
+<li>All orbits, sizes, and speeds adjustable through variables
+</li>
+</ul>
+<p>Everything is parametric: change one value (like Earth’s orbital duration) and the whole system shifts in harmony. That’s the magic of SCSS loops, math, and a lot of trial and error.</p>
+</div>
+
+<div class="mt-md">
+  <h5>The Hardest / Most Fun Part: The Asteroid Belt</h5>
+<p>CSS doesn’t give you real randomness, so creating 100+ asteroids that feel chaotic — different distances, different speeds, different starting positions — meant getting creative with SCSS’s pseudo-random numbers.</p>
+<p>The “aha!” moment was realizing that you can fake natural distribution by randomizing:</p>
+<ul class="list_standard">
+  <li>orbital radius</li>
+  <li>animation speed</li>
+  <li>starting offset</li>
+</ul>
+<p>The result? A belt that feels alive instead of looking like a dotted line someone forgot to align.</p>
+</div>
+
+<div class="mt-md">
+  {% highlight css %}
+  /* Primary Palette */
+//asteroids variables
+$asteroid-number: 100
+$asteroid-start: $au * 1.8
+$asteroid-end: $au * 2.9
+
+  @for $i from 1 through $asteroid-number 
+  $randN: (random(10000) - 1) / 1000
+  $asteroid-spread: random($asteroid-end - $asteroid-start) + $asteroid-start
+  .orbit--asteroids:nth-of-type(#{$i})
+    position: absolute
+    top: 50%
+    left: 50%
+    border-radius: 50%
+    transform-origin: center center
+    width: #{$asteroid-spread * 2}
+    height: #{$asteroid-spread * 2}
+    margin-left: -#{$asteroid-spread}
+    margin-top: -#{$asteroid-spread}
+    animation: orbit (#{$ceres-year * (0.9 + random(20)/100)}) linear infinite
+    animation-delay: -#{$randN * $earth-year}
+
+.asteroid
+  width: 2px
+  height: 2px
+  background-color: grey
+  {% endhighlight %}
+</div>
+
+
