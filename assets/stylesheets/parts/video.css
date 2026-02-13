@@ -6,7 +6,7 @@
   position: relative;
   height: 100vh;  /* Full viewport height */
   overflow: hidden;
-  background: var(--gradient-neutral-light);
+  background: var(--gradient-video);
 }
 
 .background-video {
@@ -19,7 +19,7 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   /* Optional: Reduce opacity to darken or blend the video */
-  opacity: 0.25;
+  opacity: 0.15;
 }
 
 .video-content {
