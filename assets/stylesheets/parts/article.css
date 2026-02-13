@@ -97,7 +97,7 @@
 .tag__calumet:hover,
 .tag__calumet:focus,
 .tag__calumet:active {
-    background-color: #9c0e28;
+    background-color: var(--button-hover-color);
 }
 
 

@@ -107,9 +107,34 @@
     --gradient-alert: linear-gradient(0deg, var(--color-alert-90) 0%, var(--color-secondary-100) 100%);
 
     /* Text Colors */
-    --text-color: var(--color-neutral-90);
-    --text-color-inverse: var(--color-neutral-10);
+    /* --text-color: var(--color-neutral-90);
+    --text-color-inverse: var(--color-neutral-10); */
+
+    /* Dark mode defaults */
+    --text-color: var(--color-neutral-10);
+    --text-color-inverse: var(--color-neutral-90);
+  
+    /* Component Colors - Dark Mode */
+    --button-hover-color: #eb1d43;
+    --caption-color: var(--color-neutral-20);
+    --form-border-color: var(--color-neutral-60);
+    --lightbox-overlay: rgba(0, 0, 0, 0.95);
   }
+
+
+
+:root[data-theme="light"] {
+  /* Light mode overrides */
+  --text-color: var(--color-neutral-90);
+  --text-color-inverse: var(--color-neutral-10);
+  --gradient-brand: linear-gradient(180deg, var(--color-neutral-10) 0%, var(--color-neutral-20) 100%);
+  
+  /* Component Colors - Light Mode */
+  --button-hover-color: #9c0e28;
+  --caption-color: var(--color-neutral-60);
+  --form-border-color: var(--color-neutral-30);
+  --lightbox-overlay: rgba(0, 0, 0, 0.9);
+}
 
 .bg-gradient-header{
   background: var(--gradient-header);

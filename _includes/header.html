@@ -29,6 +29,9 @@
                     {% for item in site.data.menu %}
                         <li><a href="{{item.link}}" class="{% if page.url == item.link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item.title}}</a></li>                         
                     {% endfor %}
+                    <li class="pl-md pr-md">
+                        {% include theme-toggle.html %}
+                    </li>
                 </ul>
         </div>
     </div>

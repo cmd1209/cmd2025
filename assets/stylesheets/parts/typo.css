@@ -29,7 +29,6 @@ h1,h2,blockquote,.audiowide{
 h1 {
     font-size: var(--font-size-4xl);
     line-height: 1.2;
-    color: var(--cool-grey);
 }
 
 h2 {
@@ -102,7 +101,7 @@ pre code {
 .caption {
     font-size: var(--font-size-xs);
     line-height: 1.2;
-    color: #666;  /* Lighter color for captions */
+    color: var(--caption-color);
 }
 
 /* Responsive Headline Adjustments */
