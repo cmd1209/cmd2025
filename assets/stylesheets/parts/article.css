@@ -79,16 +79,19 @@
     border-radius: var(--size-xs);
     white-space: nowrap;
     background-color: var(--color-secondary-60);
+    color: var(--color-neutral-10);
 }
 
 .article__tag:hover,
 .article__tag:focus,
 .article__tag:active {
     background-color: var(--color-secondary-70);
+    color: var(--color-neutral-10);
 }
 
 .tag__active {
     background-color: var(--color-secondary-40);
+    color: var(--color-neutral-10);
 }
 
 .tag__calumet {

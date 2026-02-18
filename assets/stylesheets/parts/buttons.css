@@ -1,18 +1,22 @@
 .btn-primary{
     background-color: var(--color-primary-50);
+    color: var(--color-neutral-10);
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
     background-color: var(--color-primary-60);
+    color: var(--color-neutral-10);
 }
 .btn-secondary{
     background-color: var(--color-primary-70);
+    color: var(--color-neutral-10);
 }
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
     background-color: var(--color-primary-90);
+    color: var(--color-neutral-10);
 }
 
 .btn-lg{
@@ -48,10 +52,11 @@
 
 .btn-calumet{
     background-color: var(--color-calumet);
+    color: var(--color-neutral-10);
 }
 .btn-calumet:hover,
 .btn-calumet:focus,
 .btn-calumet:active {
     background-color: var(--button-hover-color);
+    color: var(--color-neutral-10);
 }
-

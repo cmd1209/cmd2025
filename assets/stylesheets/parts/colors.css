@@ -137,6 +137,17 @@
   );
 }
 
+.logo-svg,
+.icon-svg {
+  display: block;
+  color: var(--color-white);
+}
+
+:root[data-theme="light"] .logo-svg,
+:root[data-theme="light"] .icon-svg {
+  color: var(--color-black);
+}
+
 .bg-gradient-header{
   background: var(--gradient-header);
 }

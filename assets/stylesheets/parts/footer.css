@@ -1,4 +1,5 @@
-.logo-footer {
+.logo-footer,
+.logo-svg {
     max-width: 105px;
     height: auto;
 }
@@ -15,6 +16,11 @@
 
 .icon-footer{
     width: 42px;
+}
+.icon-footer svg{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .icon-footer:hover{
    opacity: 0.5;

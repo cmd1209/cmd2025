@@ -25,12 +25,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--color-neutral-10);
     transition: color 0.3s ease;
   }
 
   .theme-toggle:hover {
-    opacity: 0.7;
+    opacity: 1;
+  }
+
+  :root[data-theme="light"] .theme-toggle {
+    color: var(--color-neutral-90);
   }
 
   .theme-icon {

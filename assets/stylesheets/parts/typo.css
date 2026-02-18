@@ -92,10 +92,15 @@ pre code {
     font-size: var(--font-size-md);  /* Slightly larger for emphasis */
     padding: 0.5em 1em;
     border-radius: 4px;
+    color: var(--color-neutral-10);
 }
 
 .fw-light{
     font-weight: 100;
+}
+
+:root[data-theme="light"] .fw-light{
+    font-weight: 400;
 }
 
 .caption {

@@ -1,4 +1,3 @@
-{%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
 <header  class="header-mobile hide-desktop" id="header-mobile">
     <div class="overlay"></div>
     <div id="mobile-nav-header" class="mobile-nav-header bg-gradient-header">
@@ -22,10 +21,12 @@
 <header class="header-desktop hide-mobile pt-md" id="header-desktop">
     <div class="row justify-between">
         <div class="col col-2 flex">
-            <a href="{{ index.url | prepend: site.baseurl}}/"><img src="{{- postLogo | relative_url -}}" class="logo-footer " alt=""></a>
+            <a href="{{ index.url | prepend: site.baseurl}}/" class="logo-wrap">
+                {% include svg/logo.svg %}
+            </a>
         </div>
         <div class="col col-10">
-                <ul class="flex justify-end">
+                <ul class="flex justify-end align-center">
                     {% for item in site.data.menu %}
                         <li><a href="{{item.link}}" class="{% if page.url == item.link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item.title}}</a></li>                         
                     {% endfor %}
