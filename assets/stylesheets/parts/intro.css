@@ -13,7 +13,6 @@ div{
   clip-path: polygon(-50% 50%,50% 100%,150% 50%,50% 0);
   position: absolute;
   z-index: 0;
-  opacity: 0.25;
 }
 
 
@@ -23,14 +22,14 @@ div{
   width: 980px;
   height: auto;
   transform: translateX(-100%);
-  background: var(--color-primary-50);
+  background: var(--color-blue-hex);
 }
 .hex2{
   top: 50%;
   right: 0;
   width: 780px;
   height: auto;
-  background: var(--color-secondary-50);
+  background: var(--color-red-hex);
   }
 
 .hex3{

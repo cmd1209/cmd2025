@@ -59,7 +59,7 @@ nav.nav li {
 
 nav.nav a {
   display: block;
-  color: var(--color-neutral-20);
+  color: var(--text-color);
   font-size: 185%;
   line-height: 150%;
   font-weight: 400;
@@ -113,7 +113,7 @@ nav.nav a.active {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-primary-90);
+  background-color: var(--color-overlay);
   z-index: 997;
 }
 
@@ -137,6 +137,9 @@ nav.nav a.active {
   padding-inline: 1em;
   padding-block: 1em;
   transition: 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #nav-icon span {
@@ -144,7 +147,7 @@ nav.nav a.active {
   position: absolute;
   height: 2px;
   width: 38px;
-  background: var(--color-neutral-20);
+  background: var(--text-color);
   border-radius: 8px;
   opacity: 1;
   left: 8px;
@@ -158,7 +161,7 @@ nav.nav a.active {
 #nav-icon span:nth-child(4) { top: 38px; }
 
 #nav-icon.open span {
-  background: var(--color-neutral-20);
+  background: var(--text-color);
 }
 
 #nav-icon.open span:nth-child(1) {
