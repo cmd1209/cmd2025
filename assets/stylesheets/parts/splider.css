@@ -16,7 +16,6 @@
     color: var(--color-neutral-10);
 }
 .splide__arrow:disabled {
-    opacity: 1;
     background-color: var(--color-neutral-80);
 }
 .splide__arrow svg {
@@ -26,5 +25,4 @@
 }
 .splide__arrow:disabled svg {
     fill: var(--color-neutral-70);
-    opacity: 1;
 }
