@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (desktopHeader) {
       desktopHeader.classList.add("is-visible");
+      desktopHeader.classList.add("is-at-top");
     }
   
     // Scroll function, runs only if overlay is not active
@@ -54,10 +55,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (desktopHeader && desktopBreakpoint.matches) {
         const isScrollingDown = scrollTop > lastScrollTop;
         const isPastHeader = scrollTop > desktopHeader.offsetHeight;
+        const isAtTop = scrollTop <= 0;
+
+        desktopHeader.classList.toggle("is-at-top", isAtTop);
+        desktopHeader.classList.toggle("is-compact", !isAtTop);
 
         clearTimeout(desktopHeaderTimer);
 
-        if (isScrollingDown && isPastHeader) {
+        if (isAtTop) {
+          desktopHeader.classList.remove("is-hidden");
+          desktopHeader.classList.add("is-visible");
+        } else if (isScrollingDown && isPastHeader) {
           desktopHeader.classList.add("is-hidden");
           desktopHeader.classList.remove("is-visible");
         } else {
@@ -66,6 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         desktopHeaderTimer = window.setTimeout(() => {
+          const hasReturnedToTop = window.scrollY <= 0;
+          desktopHeader.classList.toggle("is-at-top", hasReturnedToTop);
+          desktopHeader.classList.toggle("is-compact", !hasReturnedToTop);
           desktopHeader.classList.remove("is-hidden");
           desktopHeader.classList.add("is-visible");
         }, 180);

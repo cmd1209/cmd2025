@@ -21,7 +21,8 @@
 
     --color-primary-a4: oklch(from var(--primary-color) l c h / .4);
     --color-primary-a6: oklch(from var(--primary-color) l c h / .6);
-
+    --color-primary-a95: oklch(from var(--color-primary-100) l c h / .95);
+    
     
     /* Secondary Palette */
     --color-secondary-0: oklch(from var(--secondary-color) 95% c h);
@@ -61,7 +62,7 @@
     --color-teal-80: oklch(from var(--teal-color) 32% c h);
     --color-teal-90: oklch(from var(--teal-color) 24% c h);
     --color-teal-100: oklch(from var(--teal-color) 18% c h);
-
+    
     /* Neutral Palette */
     --color-white: rgb(255, 255, 255);
     --color-neutral-10: rgb(228, 228, 229);
@@ -74,13 +75,17 @@
     --color-neutral-80: rgb(48, 49, 50);
     --color-neutral-90: rgb(24, 24, 25);
     --color-black: rgb(0, 0, 0);
-
+    
+    --color-neutral-30a95: rgba(174, 175, 177, 0.95);
+    
     --neutral-trans-20: rgba(96,98,100, 0.2);
     --neutral-trans-30: rgba(96,98,100, 0.3);
     --neutral-trans-40: rgba(96,98,100, 0.4);
     --neutral-trans-50: rgba(96,98,100, 0.5);
     --neutral-trans-60: rgba(96,98,100, 0.6);
     --neutral-trans-70: rgba(96,98,100, 0.7);
+    --neutral-trans-80: rgba(96,98,100, 0.8);
+    --neutral-trans-90: rgba(96,98,100, 0.9);
 
   
     /* Gradients */
@@ -96,7 +101,7 @@
     --gradient-pri-neu-dark: linear-gradient(180deg, var(--color-primary-90) 0%, var(--color-primary-70) 100%);
     --gradient-transparent: linear-gradient(180deg, var(--color-primary-60) 0%, rgba(90, 0, 30, 0.8) 100%);
     
-    --gradient-header: linear-gradient(180deg, rgba(0, 0, 0, .66) 33%, rgba(0, 0, 0, 0) 100%);
+    --gradient-header: linear-gradient(180deg, rgba(0, 0, 0, .85) 30%, rgba(0, 0, 0, 0) 100%);
     
     --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-10) 0%, var(--color-neutral-40) 100%);
     --gradient-muted: linear-gradient(180deg, var(--color-primary-50) 0%, rgb(46, 76, 106) 66%);
@@ -114,8 +119,8 @@
     --caption-color: var(--color-neutral-20);
     --form-border-color: var(--color-neutral-60);
    
-    --color-overlay: var(--color-neutral-90);
-    --lightbox-overlay: var(--color-neutral-90);
+    --color-overlay: var(--color-primary-a95);
+    --lightbox-overlay: var(--color-primary-a95);
 
     --color-blue-hex: oklch(from var(--color-primary-50) l c h / 0.25);
     --color-red-hex: oklch(from var(--color-secondary-50) l c h / 0.25);
@@ -133,8 +138,8 @@
   --form-border-color: var(--color-neutral-30);
   --gradient-video: var(--gradient-neutral-light);
   --gradient-brand: var(--gradient-neutral-light);
-  --color-overlay: var(--color-neutral-30);
-  --lightbox-overlay: var(--color-neutral-30);
+  --color-overlay: var(--color-neutral-30a95);
+  --lightbox-overlay: var(--color-neutral-30a95);
   --color-blue-hex: oklch(from var(--color-primary-50) l c h / 0.075);
   --color-red-hex: oklch(from var(--color-secondary-50) l c h / 0.075);
   --gradient-texture: repeating-linear-gradient(
