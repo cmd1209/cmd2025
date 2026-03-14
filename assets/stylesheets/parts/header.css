@@ -196,9 +196,37 @@ nav.nav a.active {
 
 
 header.header-desktop{
-  position: absolute;
-  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
   width: 100%;
+  padding-top: var(--size-md);
+  transition: transform 0.35s ease-in-out, opacity 0.35s ease-in-out, padding-top 0.35s ease-in-out;
+  will-change: transform, opacity, padding-top;
+}
+
+header.header-desktop.is-compact {
+  padding-top: 12px;
+}
+
+header.header-desktop.is-hidden {
+  transform: translateY(calc(-100% - var(--size-sm)));
+  opacity: 0;
+}
+
+header.header-desktop.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header-desktop .logo-svg {
+  max-width: 105px;
+  transition: max-width 0.35s ease-in-out;
+}
+
+header.header-desktop.is-compact .logo-svg {
+  max-width: 80px;
 }
 
 .logo-header {
