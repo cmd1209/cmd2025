@@ -20,22 +20,24 @@
     </nav>
 </header>
 {%- assign postLogo ="/assets/images/CMd-logo.svg" -%}
-<header class="header-desktop hide-mobile pt-md" id="header-desktop">
-    <div class="row justify-between">
-        <div class="col col-2 flex">
-            <a href="{{ index.url | prepend: site.baseurl}}/" class="logo-wrap">
-                {% include svg/logo.svg %}
-            </a>
-        </div>
-        <div class="col col-10">
+<header class="header-desktop hide-mobile pt-md bg-gradient-header" id="header-desktop">
+    <div class="wrapper">
+        <div class="row justify-between">
+            <div class="col col-2 flex">
+                <a href="{{ index.url | prepend: site.baseurl}}/" class="logo-wrap">
+                    {% include svg/logo.svg %}
+                </a>
+            </div>
+            <div class="col col-10">
                 <ul class="flex justify-end align-center">
                     {% for item in site.data.menu %}
-                        <li><a href="{{item.link}}" class="{% if page.url == item.link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item.title}}</a></li>                         
+                    <li><a href="{{item.link}}" class="{% if page.url == item.link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item.title}}</a></li>                         
                     {% endfor %}
                     <li class="pl-md pr-md">
                         {% include theme-toggle.html %}
                     </li>
                 </ul>
+            </div>
         </div>
     </div>
 </header>

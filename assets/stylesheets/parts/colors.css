@@ -96,7 +96,7 @@
     --gradient-pri-neu-dark: linear-gradient(180deg, var(--color-primary-90) 0%, var(--color-primary-70) 100%);
     --gradient-transparent: linear-gradient(180deg, var(--color-primary-60) 0%, rgba(90, 0, 30, 0.8) 100%);
     
-    --gradient-header: linear-gradient(180deg, rgba(10, 23, 42, .7) 33%, rgba(10, 23, 42, 0) 100%);
+    --gradient-header: linear-gradient(180deg, rgba(0, 0, 0, .66) 33%, rgba(0, 0, 0, 0) 100%);
     
     --gradient-neutral-light: linear-gradient(180deg, var(--color-neutral-10) 0%, var(--color-neutral-40) 100%);
     --gradient-muted: linear-gradient(180deg, var(--color-primary-50) 0%, rgb(46, 76, 106) 66%);
@@ -127,7 +127,7 @@
 :root[data-theme="light"] {
   --text-color: var(--color-neutral-90);
   --text-color-inverse: var(--color-neutral-10);
-  --gradient-header: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 33%, rgba(188, 188, 188, 0) 100%);
+  --gradient-header: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 33%, rgba(255, 255, 255, 0) 100%);
   --button-hover-color: #9c0e28;
   --caption-color: var(--color-neutral-60);
   --form-border-color: var(--color-neutral-30);

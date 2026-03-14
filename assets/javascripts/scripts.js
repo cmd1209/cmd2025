@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.querySelector(".overlay");
     const nav = document.querySelector(".nav");
     const burgerNav = document.getElementById("mobile-nav-header");
+    const desktopHeader = document.getElementById("header-desktop");
+    const desktopBreakpoint = window.matchMedia("(min-width: 769px)");
     let lastScrollTop = 0;
+    let desktopHeaderTimer;
   
     document.addEventListener("click", (event) => {
-      if (event.target.closest(".burger") || event.target.closest(".menu-item")) {
+      if ((event.target.closest(".burger") || event.target.closest(".menu-item")) && burger && overlay && nav) {
         // Toggle burger open state
         burger.classList.toggle("open");
   
@@ -30,19 +33,42 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
+    if (desktopHeader) {
+      desktopHeader.classList.add("is-visible");
+    }
   
     // Scroll function, runs only if overlay is not active
     window.addEventListener("scroll", () => {
-      if (overlay.style.display === "block") return; // Skip scroll handling if overlay is active
+      if (overlay && overlay.style.display === "block") return; // Skip scroll handling if overlay is active
   
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
   
-      if (scrollTop > lastScrollTop) {
+      if (burgerNav && scrollTop > lastScrollTop) {
         // User scrolled down - hide navigation
         burgerNav.classList.add("hidden");
-      } else {
+      } else if (burgerNav) {
         // User scrolled up - show navigation
         burgerNav.classList.remove("hidden");
+      }
+
+      if (desktopHeader && desktopBreakpoint.matches) {
+        const isScrollingDown = scrollTop > lastScrollTop;
+        const isPastHeader = scrollTop > desktopHeader.offsetHeight;
+
+        clearTimeout(desktopHeaderTimer);
+
+        if (isScrollingDown && isPastHeader) {
+          desktopHeader.classList.add("is-hidden");
+          desktopHeader.classList.remove("is-visible");
+        } else {
+          desktopHeader.classList.remove("is-hidden");
+          desktopHeader.classList.add("is-visible");
+        }
+
+        desktopHeaderTimer = window.setTimeout(() => {
+          desktopHeader.classList.remove("is-hidden");
+          desktopHeader.classList.add("is-visible");
+        }, 180);
       }
   
       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Prevent negative scroll values
