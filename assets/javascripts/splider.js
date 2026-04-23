@@ -9,6 +9,7 @@
 		},
     768: {
 			perPage: 1,
+      padding: { right: '20%' },
 		},
   }
 } );
@@ -28,6 +29,7 @@
 		},
     768: {
 			perPage: 1,
+      padding: { right: '20%' },
 		},
   }
 } );
@@ -40,4 +42,3 @@
 } );
     gallerySplider.mount();
   } );
-
