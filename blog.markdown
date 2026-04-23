@@ -1,6 +1,8 @@
 ---
 layout: posts
-title: Posts
+title: Work
+lang: en
+translation_key: posts
 permalink: /posts/
 ---
 

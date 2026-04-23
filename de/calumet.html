@@ -1,0 +1,15 @@
+---
+layout: category
+title: "Drei Jahre Calumet visuell auf Kurs"
+description: "Ein kuratierter Blick auf Projekte, Kampagnen und kreative Arbeit, die unser Team seit meiner Übernahme der Art Direction bei Calumet umgesetzt hat. Von internen Präsentationen bis zu Kampagnen, in Zusammenarbeit mit Freelancern und Partnern: alles mit dem Ziel, die Marke klar, konsistent und ein wenig lebendiger zu machen."
+lang: de
+translation_key: category-calumet
+tag_key: calumet
+permalink: /de/calumet
+---
+
+<div class="grid grid-3col">
+  {%- for post in site.tags["calumet"] -%}
+    {% include article.html %}
+  {%- endfor -%}
+</div>

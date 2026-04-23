@@ -1,4 +1,5 @@
 <section id="footer">
+        {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
         <hr class="mt-lg mb-lg">
         <div class="row justify-between justify-md-center">
             <div class="col col-2 flex justify-md-center mb-md">
@@ -7,7 +8,9 @@
             <div class="col col-6 mb-lg">
                     <ul class="flex justify-center">
                         {% for item in site.data.menu %}
-                            <li><a href="{{item.link}}" class="{% if page.url == item.link %} active {% endif %} footer-links pt-xs pb-xs pl-sm pr-sm">{{item.title}}</a></li>                         
+                            {%- assign item_link = item.link[current_lang] | default: item.link.en -%}
+                            {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
+                            <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} footer-links pt-xs pb-xs pl-sm pr-sm">{{item_title}}</a></li>                         
                         {% endfor %}
                     </ul>
             </div>

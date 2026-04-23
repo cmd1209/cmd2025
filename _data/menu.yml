@@ -1,11 +1,27 @@
-- title: Home
-  link: /
+- title:
+    en: Home
+    de: Start
+  link:
+    en: /
+    de: /de/
 
-- title: About Me
-  link: /about/
+- title:
+    en: About Me
+    de: Über mich
+  link:
+    en: /about/
+    de: /de/about/
 
-- title: Work
-  link: /posts/
+- title:
+    en: Work
+    de: Arbeiten
+  link:
+    en: /posts/
+    de: /de/posts/
 
-- title: Contact
-  link: /contact/
+- title:
+    en: Contact
+    de: Kontakt
+  link:
+    en: /contact/
+    de: /de/contact/

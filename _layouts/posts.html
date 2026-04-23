@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
   {% include head.html %}
   <body>
     <div class="wrapper">
@@ -9,7 +9,7 @@
             <div class="inner-wrapper">
               <div class="post__header">
                 <div class="article__title mb-xs">
-                  <h2>Work</h2>
+                  <h2>{{ page.title }}</h2>
                 </div>
               </div>
               <div class="post__categories">

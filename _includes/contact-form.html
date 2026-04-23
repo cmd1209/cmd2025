@@ -1,24 +1,40 @@
-<form class="form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdku6KWJUM9a3bfVtpS7UfQLZuF1k98cTe8hpo2msL7XSb9Qw/formResponse">
+{%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
+{%- if current_lang == "de" -%}
+  {%- assign name_label = "Dein Name" -%}
+  {%- assign email_label = "Deine E-Mail" -%}
+  {%- assign message_label = "Deine Nachricht" -%}
+  {%- assign honeypot_label = "Dieses Feld leer lassen" -%}
+  {%- assign submit_label = "Nachricht senden" -%}
+  {%- assign success_url = "/de/success/" -%}
+{%- else -%}
+  {%- assign name_label = "Your Name" -%}
+  {%- assign email_label = "Your Email" -%}
+  {%- assign message_label = "Your Message" -%}
+  {%- assign honeypot_label = "Leave this field empty" -%}
+  {%- assign submit_label = "send message" -%}
+  {%- assign success_url = "/success/" -%}
+{%- endif -%}
+<form class="form" id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdku6KWJUM9a3bfVtpS7UfQLZuF1k98cTe8hpo2msL7XSb9Qw/formResponse" data-success-url="{{ success_url }}">
     <div class="form__top">
         <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-            <input class="form__input" id="form-name" type="text" name="entry.278300584" placeholder="Your name" required="">
+            <label class="form__label screen-reader-text" for="form-name">{{ name_label }}</label>
+            <input class="form__input" id="form-name" type="text" name="entry.278300584" placeholder="{{ name_label }}" required="">
         </div>
         <div class="form__group">
-            <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-            <input class="form__input" id="form-email" type="email" name="entry.1749120134" placeholder="Your email" required="">
+            <label class="form__label screen-reader-text" for="form-email">{{ email_label }}</label>
+            <input class="form__input" id="form-email" type="email" name="entry.1749120134" placeholder="{{ email_label }}" required="">
         </div>
     </div>
     <div class="form__group">
-        <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-        <textarea class="form__input" id="form-text" name="entry.1858543278" rows="8" placeholder="Your message" required=""></textarea>
+        <label class="form__label screen-reader-text" for="form-text">{{ message_label }}</label>
+        <textarea class="form__input" id="form-text" name="entry.1858543278" rows="8" placeholder="{{ message_label }}" required=""></textarea>
         <div style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
-            <label for="hp-website" class="screen-reader-text">Leave this field empty</label>
+            <label for="hp-website" class="screen-reader-text">{{ honeypot_label }}</label>
             <input id="hp-website" name="website" type="text" tabindex="-1" autocomplete="off" />
         </div>
     </div>
     <div class="form__group">
-        <button class="btn-primary btn-md btn-maxw" type="submit">send message</button>
+        <button class="btn-primary btn-md btn-maxw" type="submit">{{ submit_label }}</button>
     </div>
 </form>
 <script>
@@ -26,6 +42,7 @@
   var form = document.getElementById('contact-form');
   if(!form) return;
   var hp = form.querySelector('input[name="website"]');
+  var successUrl = form.getAttribute('data-success-url') || '/success/';
   
   form.addEventListener('submit', function(e){
     if(hp && hp.value && hp.value.trim() !== ''){
@@ -45,10 +62,10 @@
       mode: 'no-cors'
     }).then(function(){
       // Redirect to success page after submission
-      window.location.href = '/success/';
+      window.location.href = successUrl;
     }).catch(function(){
       // Even if fetch fails, redirect
-      window.location.href = '/success/';
+      window.location.href = successUrl;
     });
   });
 })();

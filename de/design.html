@@ -1,0 +1,15 @@
+---
+layout: category
+title: "Design"
+description: "Gutes Design erzählt eine Geschichte. Als Art Director entwickle ich visuelle Konzepte, die verbinden, inspirieren und Bestand haben: von Markenidentitäten über Kampagnen bis zur Ausarbeitung klarer Gestaltungssysteme."
+lang: de
+translation_key: category-design
+tag_key: design
+permalink: /de/design
+---
+
+<div class="grid grid-3col">
+  {%- for post in site.tags["design"] -%}
+    {% include article.html %}
+  {%- endfor -%}
+</div>

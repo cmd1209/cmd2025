@@ -1,0 +1,15 @@
+---
+layout: category
+title: "Web"
+description: "Ich verbinde Design und Technologie, um intuitive und ansprechende digitale Erlebnisse zu gestalten. Von präzisem UI-Design bis zu sauberen Frontend-Interaktionen bringe ich Ideen mit Code zum Leben."
+lang: de
+translation_key: category-web
+tag_key: web
+permalink: /de/web
+---
+
+<div class="grid grid-3col">
+  {%- for post in site.tags["web"] -%}
+    {% include article.html %}
+  {%- endfor -%}
+</div>

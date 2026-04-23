@@ -1,0 +1,51 @@
+{%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
+{%- assign en_url = "" -%}
+{%- assign de_url = "" -%}
+
+{%- if page.translation_key -%}
+  {%- for candidate in site.pages -%}
+    {%- if candidate.translation_key == page.translation_key -%}
+      {%- if candidate.lang == "en" -%}
+        {%- assign en_url = candidate.url -%}
+      {%- elsif candidate.lang == "de" -%}
+        {%- assign de_url = candidate.url -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- for candidate in site.posts -%}
+    {%- if candidate.translation_key == page.translation_key -%}
+      {%- if candidate.lang == "en" -%}
+        {%- assign en_url = candidate.url -%}
+      {%- elsif candidate.lang == "de" -%}
+        {%- assign de_url = candidate.url -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- if en_url == "" -%}
+  {%- if page.url contains "/de/" or page.url == "/de/" -%}
+    {%- assign en_url = page.url | remove_first: "/de" -%}
+    {%- if en_url == "" -%}
+      {%- assign en_url = "/" -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign en_url = page.url -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if de_url == "" -%}
+  {%- if page.url contains "/de/" or page.url == "/de/" -%}
+    {%- assign de_url = page.url -%}
+  {%- elsif page.url == "/" -%}
+    {%- assign de_url = "/de/" -%}
+  {%- else -%}
+    {%- assign de_url = page.url | prepend: "/de" -%}
+  {%- endif -%}
+{%- endif -%}
+
+<nav class="language-toggle" aria-label="Language">
+  <a href="{{ en_url | prepend: site.baseurl }}" class="language-toggle__link{% if current_lang == 'en' %} active{% endif %}" hreflang="en" lang="en">EN</a>
+  <a href="{{ de_url | prepend: site.baseurl }}" class="language-toggle__link{% if current_lang == 'de' %} active{% endif %}" hreflang="de" lang="de">DE</a>
+</nav>

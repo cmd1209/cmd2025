@@ -8,8 +8,42 @@
   justify-content: center;
   color: var(--text-color);
   transition: color 0.3s ease;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: 36px;
+  min-height: 42px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--size-xxs);
+}
+
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.language-toggle__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--size-xxs);
+  color: inherit;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.language-toggle__link:hover,
+.language-toggle__link:focus {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.language-toggle__link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .theme-toggle:hover {

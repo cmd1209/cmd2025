@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
+  {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
+  {%- assign current_tag = page.tag_key | default: page.title | downcase -%}
   {% include head.html %}
   <body>
     <div class="wrapper">
@@ -19,9 +21,14 @@
                   </div>
                   <div class="col-4 col-md-6">
                     <div class="flex gap-xs justify-end justify-md-start wrap">
-                      <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag mb-xs">{{site.snippets.all-tags}}</a>
+                      <a href="{% if current_lang == 'de' %}/de/posts/{% else %}{{ index.url | prepend: site.baseurl}}/posts{% endif %}" class="article__tag mb-xs">{% if current_lang == "de" %}alle Arbeiten{% else %}{{site.snippets.all-tags}}{% endif %}</a>
                       {% for tag in site.tags %}
-                        <a href="/{{ tag[0] | slugify }}" class="article__tag mb-xs tag__{{tag[0]}} {% if tag[0] == page.title %} tag__active {% endif %} ">{{ tag[0] }}</a>
+                        {%- assign tag_slug = tag[0] | slugify -%}
+                        {%- assign tag_url = tag_slug | prepend: "/" -%}
+                        {%- if current_lang == "de" and tag_slug == "design" or current_lang == "de" and tag_slug == "web" or current_lang == "de" and tag_slug == "photography" or current_lang == "de" and tag_slug == "calumet" -%}
+                          {%- assign tag_url = tag_slug | prepend: "/de/" -%}
+                        {%- endif -%}
+                        <a href="{{ tag_url }}" class="article__tag mb-xs tag__{{tag[0]}} {% if tag_slug == current_tag %} tag__active {% endif %} ">{{ tag[0] }}</a>
                       {% endfor %}
                     </div>
                   </div>

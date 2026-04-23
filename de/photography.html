@@ -1,0 +1,15 @@
+---
+layout: category
+title: "Fotografie"
+description: "Fotografie habe ich während meines Grafikdesign-Studiums entdeckt und später als wichtigen Teil meiner Kreativität wiedergefunden. Für mich geht es darum, genauer hinzusehen: Licht, Details und Momente wahrzunehmen, die nur durch die Linse so erzählt werden können."
+lang: de
+translation_key: category-photography
+tag_key: photography
+permalink: /de/photography
+---
+
+<div class="grid grid-3col">
+  {%- for post in site.tags["photography"] -%}
+    {% include article.html %}
+  {%- endfor -%}
+</div>
