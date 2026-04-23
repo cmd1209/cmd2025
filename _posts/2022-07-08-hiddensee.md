@@ -1,0 +1,16 @@
+---
+layout: gallery-post
+title:  "Hiddensee Summer"
+author: Chad Matthew Danford
+date:   2022-07-08 17:00:06 +0200
+permalink: /posts/:title
+tags: ["photography"]
+image:
+  gallery: /assets/images/hiddensee-2022/
+  feature: hiddensee-01.webp
+  thumbnail: hiddensee-thumb.webp
+---
+
+Hiddensee feels like stepping out of time. The island has a quiet rhythm of its own — dunes, bicycles, and wide open horizons. Life here moves slower, more freely, and the people who come seem to shed the weight of the modern world. This series is my attempt to capture that sense of tranquility and timelessness in black and white.
+
+{% include post-grid.html %}

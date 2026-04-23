@@ -25,7 +25,7 @@
                       {% for tag in site.tags %}
                         {%- assign tag_slug = tag[0] | slugify -%}
                         {%- assign tag_url = tag_slug | prepend: "/" -%}
-                        {%- if current_lang == "de" and tag_slug == "design" or current_lang == "de" and tag_slug == "web" or current_lang == "de" and tag_slug == "photography" or current_lang == "de" and tag_slug == "calumet" -%}
+                        {%- if current_lang == "de" and tag_slug == "design" or current_lang == "de" and tag_slug == "web" or current_lang == "de" and tag_slug == "photography" or current_lang == "de"  -%}
                           {%- assign tag_url = tag_slug | prepend: "/de/" -%}
                         {%- endif -%}
                         <a href="{{ tag_url }}" class="article__tag mb-xs tag__{{tag[0]}} {% if tag_slug == current_tag %} tag__active {% endif %} ">{{ tag[0] }}</a>
