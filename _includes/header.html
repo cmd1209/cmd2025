@@ -41,7 +41,7 @@
                     {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
                     <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item_title}}</a></li>                         
                     {% endfor %}
-                    <li class="header-actions pl-md pr-md">
+                    <li class="header-actions pl-md">
                         {% include language-toggle.html %}
                         {% include theme-toggle.html %}
                     </li>

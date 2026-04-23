@@ -1,8 +1,13 @@
 <section class="pt-xxl pb-xxl break-out" id="posts">
   {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
   <div class="wrapper">
-    <div class="posts__header mb-lg">
+    <div class="posts__header mb-sm">
       <h3>{% if current_lang == "de" %}Arbeiten{% else %}Work{% endif %}</h3>
+      <div class="flex gap-xs mt-md justify-start justify-md-start wrap">
+        {% for tag in site.tags %}
+          <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
     </div>
       <div class="splide" id="postslisting" aria-labelledby="myposts">
         <div class="splide__track">
