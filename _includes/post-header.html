@@ -1,12 +1,13 @@
 <div class="post__header">
+  {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
   <div class="article__title mb-xs">
     <h2>{{ page.title }}</h2>
   </div>
   <div class="article__meta flex gap-xs align-baseline">
     <div class="article__tags flex gap-xs ">
-      <a href="{{ index.url | prepend: site.baseurl}}/posts" class="article__tag">{{site.snippets.all-tags}}</a>
+      <a href="{% if current_lang == 'de' %}/de/posts/{% else %}{{ index.url | prepend: site.baseurl}}/posts{% endif %}" class="article__tag">{% if current_lang == "de" %}alle Arbeiten{% else %}{{site.snippets.all-tags}}{% endif %}</a>
       {% for tag in page.tags %}
-      <a href="/{{ tag | downcase | replace: ' ', '-' }}" class="article__tag tag__{{tag}}">{{ tag }}</a>
+      {% include tag-link.html tag=tag lang=current_lang %}
       {% endfor %}
     </div>
     <p class="article__date">{{ page.date | date_to_long_string}}</p>

@@ -9,7 +9,8 @@ permalink: /de/calumet
 ---
 
 <div class="grid grid-3col">
-  {%- for post in site.tags["calumet"] -%}
+  {%- assign filtered_posts = site.tags["calumet"] | where: "lang", page.lang -%}
+  {%- for post in filtered_posts -%}
     {% include article.html %}
   {%- endfor -%}
 </div>

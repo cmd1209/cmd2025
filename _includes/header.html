@@ -9,10 +9,7 @@
             <span></span>
             <span></span>
         </div>
-        <div class="header-actions">
-            {% include language-toggle.html %}
-            {% include theme-toggle.html %}
-        </div>
+        {% include theme-toggle.html %}
     </div>
     <nav class="nav navhidden" role="navigation">
         <!-- Menu items for the main navigation menu go here -->
@@ -41,8 +38,7 @@
                     {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
                     <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item_title}}</a></li>                         
                     {% endfor %}
-                    <li class="header-actions pl-md">
-                        {% include language-toggle.html %}
+                    <li class="pl-md">
                         {% include theme-toggle.html %}
                     </li>
                 </ul>

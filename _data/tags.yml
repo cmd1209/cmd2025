@@ -1,0 +1,52 @@
+design:
+  label:
+    en: Design
+    de: Design
+  link:
+    en: /design
+    de: /de/design
+
+web:
+  label:
+    en: Web
+    de: Web
+  link:
+    en: /web
+    de: /de/web
+
+photography:
+  label:
+    en: Photography
+    de: Fotografie
+  link:
+    en: /photography
+    de: /de/photography
+
+calumet:
+  label:
+    en: Calumet
+    de: Calumet
+  link:
+    en: /calumet
+    de: /de/calumet
+
+css:
+  label:
+    en: CSS
+    de: CSS
+  link:
+    en: /css
+
+html:
+  label:
+    en: HTML
+    de: HTML
+  link:
+    en: /html
+
+js:
+  label:
+    en: JS
+    de: JS
+  link:
+    en: /js

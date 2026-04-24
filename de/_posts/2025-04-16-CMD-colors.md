@@ -3,16 +3,16 @@ layout: gallery-post
 title:  "OKLCH Color Scheme"
 author: Chad Matthew Danford
 date:   2025-04-16 17:00:06 +0200
-lang: en
+lang: de
 translation_key: cmd-colors
-permalink: /posts/:title
+permalink: /de/posts/:title
 tags: ["web"]
 image:
   gallery: /assets/images/oklch/
   thumbnail: oklch_colors_thumbnail.png
   feature: oklch_colors_thumbnail.png
 ---
-When I set out to define the color system for this project, I wanted something that would be both flexible and future-proof. Traditional hex or RGB values work fine for static palettes, but they become limiting when you need to adjust lightness, contrast, or accessibility on the fly. That’s why I chose to build the palette using the OKLCH color model. Unlike HSL or HEX, OKLCH is perceptually uniform — meaning that changes in lightness or chroma behave more consistently with how our eyes actually see color. This makes it much easier to fine-tune shades, generate accessible contrasts, and maintain harmony across the palette.
+Als ich das Farbsystem für dieses Projekt definiert habe, wollte ich etwas entwickeln, das flexibel und zugleich zukunftssicher ist. Klassische Hex- oder RGB-Werte funktionieren für statische Paletten gut, stoßen aber schnell an Grenzen, wenn Helligkeit, Kontrast oder Barrierefreiheit fein abgestimmt werden sollen. Deshalb habe ich die Palette auf Basis des OKLCH-Farbmodells aufgebaut. Im Unterschied zu HSL oder HEX ist OKLCH wahrnehmungsorientiert, Veränderungen bei Helligkeit und Chroma verhalten sich also deutlich näher an dem, wie wir Farbe tatsächlich sehen. Dadurch lassen sich Abstufungen, Kontraste und Harmonien wesentlich präziser steuern.
 
 
 {% highlight css %}
@@ -33,9 +33,9 @@ When I set out to define the color system for this project, I wanted something t
 
 
 
-The foundation of the palette is the primary color range, which I created by varying the lightness value from 0 to 100 while keeping chroma and hue constant. This gave me a smooth spectrum of tints and shades derived from one anchor hue. From there, I added a secondary color, an alert color for states and notifications, and a more playful accent color (teal). Each range follows the same principle — start with a base and build out a scale by adjusting lightness in OKLCH.
+Die Grundlage der Palette bildet eine Primärfarbskala, bei der ich den Helligkeitswert von 0 bis 100 variiert habe, während Chroma und Hue konstant bleiben. So entstand aus einem Ausgangston ein gleichmäßiges Spektrum aus Tints und Shades. Darauf aufbauend kamen eine Sekundärfarbe, eine Alert-Farbe für Zustände und Hinweise sowie ein spielerischerer Akzentton in Teal hinzu. Alle Skalen folgen demselben Prinzip: von einer Basisfarbe ausgehend Abstufungen über die Helligkeit in OKLCH aufbauen.
 
-To make the palette practical for development, I translated every step into CSS custom properties. Each color in the scale gets a variable name (e.g. --color-primary-30, --color-accent-70) that corresponds to its lightness step. On top of that, I created utility classes (e.g. .bg-primary-30, .text-accent-70) to apply the colors directly in markup. This approach keeps design tokens consistent, makes it easy to swap or extend colors later, and reduces guesswork when working with the palette in real-world layouts.
+Damit die Palette auch in der Entwicklung praktisch nutzbar ist, habe ich jede Stufe in CSS Custom Properties übersetzt. Jede Farbe erhält einen Variablennamen wie `--color-primary-30` oder `--color-accent-70`, der direkt ihrer Helligkeitsstufe entspricht. Ergänzend dazu habe ich Utility-Klassen wie `.bg-primary-30` oder `.text-accent-70` angelegt, damit sich die Farben direkt im Markup verwenden lassen. So bleiben die Design-Tokens konsistent, Farben lassen sich später leichter austauschen oder erweitern und die Arbeit mit der Palette in realen Layouts wird deutlich klarer.
 
 
 
@@ -90,4 +90,3 @@ To make the palette practical for development, I translated every step into CSS 
 --color-alert-90: oklch(from var(--alert-color) 40% c h);
 --color-alert-100: oklch(from var(--alert-color) 20% c h);
 {% endhighlight %}
-

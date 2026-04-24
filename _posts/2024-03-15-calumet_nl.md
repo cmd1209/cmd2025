@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "Calumet Email Newsletter"
 author: Chad Matthew Danford
 date:   2024-03-15 17:00:06 +0200
+lang: en
+translation_key: calumet-nl
 permalink: /posts/:title
 tags: ["design"]
 image:

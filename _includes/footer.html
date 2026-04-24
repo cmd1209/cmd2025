@@ -10,8 +10,9 @@
                         {% for item in site.data.menu %}
                             {%- assign item_link = item.link[current_lang] | default: item.link.en -%}
                             {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
-                            <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} footer-links pt-xs pb-xs pl-sm pr-sm">{{item_title}}</a></li>                         
+                            <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} footer-links pt-xs pb-xs pl-xs pr-xs">{{item_title}}</a></li>                         
                         {% endfor %}
+                        {% include language-toggle.html %}
                     </ul>
             </div>
             <div class="col col-2">

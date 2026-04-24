@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "Hiddensee Summer"
 author: Chad Matthew Danford
 date:   2022-07-08 17:00:06 +0200
+lang: en
+translation_key: hiddensee
 permalink: /posts/:title
 tags: ["photography"]
 image:

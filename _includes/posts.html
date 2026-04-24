@@ -1,18 +1,20 @@
 <section class="pt-xxl pb-xxl break-out" id="posts">
   {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
+  {%- assign filtered_posts = site.posts | where: "lang", current_lang -%}
   <div class="wrapper">
     <div class="posts__header mb-sm">
       <h3>{% if current_lang == "de" %}Arbeiten{% else %}Work{% endif %}</h3>
       <div class="flex gap-xs mt-md justify-start justify-md-start wrap">
         {% for tag in site.tags %}
-          <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
+          {%- assign tag_name = tag[0] -%}
+          {% include tag-link.html tag=tag_name lang=current_lang %}
         {% endfor %}
       </div>
     </div>
       <div class="splide break-out-mobile" id="postslisting" aria-labelledby="myposts">
         <div class="splide__track">
           <ul class="splide__list">
-            {% for post in site.posts %}
+            {% for post in filtered_posts %}
               <li class="splide__slide">
                 {% include article.html %}
               </li>

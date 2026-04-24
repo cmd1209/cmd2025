@@ -9,7 +9,8 @@ permalink: /de/photography
 ---
 
 <div class="grid grid-3col">
-  {%- for post in site.tags["photography"] -%}
+  {%- assign filtered_posts = site.tags["photography"] | where: "lang", page.lang -%}
+  {%- for post in filtered_posts -%}
     {% include article.html %}
   {%- endfor -%}
 </div>

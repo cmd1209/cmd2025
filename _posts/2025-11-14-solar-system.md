@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "CSS-Driven Solar System"
 author: Chad Matthew Danford
 date:   2025-11-12 17:00:06 +0200
+lang: en
+translation_key: solar-system
 permalink: /posts/:title
 tags: ["web"]
 image:

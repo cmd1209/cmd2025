@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "Calumet Rebranding"
 author: Chad Matthew Danford
 date:   2023-09-12 17:00:06 +0200
+lang: en
+translation_key: calumet-rebranding
 permalink: /posts/:title
 tags: ["design", "web"]
 image:

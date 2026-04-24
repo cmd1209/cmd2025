@@ -8,7 +8,8 @@ tag_key: web
 permalink: /web
 ---
 <div class="grid grid-3col">
-  {%- for post in site.tags["web"] -%}
+  {%- assign filtered_posts = site.tags["web"] | where: "lang", page.lang -%}
+  {%- for post in filtered_posts -%}
     {% include article.html %}
   {%- endfor -%}
 </div>

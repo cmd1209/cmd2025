@@ -45,7 +45,5 @@
   {%- endif -%}
 {%- endif -%}
 
-<nav class="language-toggle" aria-label="Language">
-  <a href="{{ en_url | prepend: site.baseurl }}" class="language-toggle__link{% if current_lang == 'en' %} active{% endif %}" hreflang="en" lang="en">EN</a>
-  <a href="{{ de_url | prepend: site.baseurl }}" class="language-toggle__link{% if current_lang == 'de' %} active{% endif %}" hreflang="de" lang="de">DE</a>
-</nav>
+<li><a href="{{ en_url | prepend: site.baseurl }}" class="footer-links pt-xs pb-xs pl-xs pr-xs{% if current_lang == 'en' %} active{% endif %}" hreflang="en" lang="en">EN</a></li>
+<li><a href="{{ de_url | prepend: site.baseurl }}" class="footer-links pt-xs pb-xs pl-xs pr-xs{% if current_lang == 'de' %} active{% endif %}" hreflang="de" lang="de">DE</a></li>

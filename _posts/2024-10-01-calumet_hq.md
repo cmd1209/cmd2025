@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "Calumet HQ"
 author: Chad Matthew Danford
 date:   2024-10-01 17:00:06 +0200
+lang: en
+translation_key: calumet-hq
 permalink: /posts/:title
 tags: ["design"]
 image:

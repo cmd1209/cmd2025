@@ -3,6 +3,8 @@ layout: gallery-post
 title:  "Calumet B2B Video"
 author: Chad Matthew Danford
 date:   2023-02-12 17:00:06 +0200
+lang: en
+translation_key: calumet-b2bvideo
 permalink: /posts/:title
 tags: ["design"]
 image:

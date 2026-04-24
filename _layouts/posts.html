@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.default_lang | default: 'en' }}">
+  {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
   {% include head.html %}
   <body>
     <div class="wrapper">
@@ -20,14 +21,16 @@
                   <div class="col-4 col-md-6">
                     <div class="flex gap-xs justify-end justify-md-start wrap">
                       {% for tag in site.tags %}
-                        <a href="/{{ tag[0] | slugify }}" class="article__tag tag__{{tag[0]}}">{{ tag[0] }}</a>
+                        {%- assign tag_name = tag[0] -%}
+                        {% include tag-link.html tag=tag_name lang=current_lang %}
                       {% endfor %}
                       </div>
                   </div>
                 </div>
               </div>
               <div class="grid grid-3col">
-                {% for post in site.posts %}
+                {% assign filtered_posts = site.posts | where: "lang", current_lang %}
+                {% for post in filtered_posts %}
                   {% include article.html %}
                 {% endfor %}
               </div>

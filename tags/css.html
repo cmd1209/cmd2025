@@ -6,10 +6,10 @@ permalink: /css
 ---
 
 <div class="grid grid-3col">
-  {%- for post in site.tags["css"] -%}
+  {%- assign filtered_posts = site.tags["css"] | where: "lang", page.lang -%}
+  {%- for post in filtered_posts -%}
     {% include article.html %}
   {%- endfor -%}
 </div>
-
 
 

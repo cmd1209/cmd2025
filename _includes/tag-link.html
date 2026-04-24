@@ -1,0 +1,12 @@
+{%- assign current_lang = include.lang | default: page.lang | default: site.default_lang | default: "en" -%}
+{%- assign tag_slug = include.tag | slugify -%}
+{%- assign tag_data = site.data.tags[tag_slug] -%}
+{%- assign tag_label = include.tag -%}
+{%- assign tag_url = tag_slug | prepend: "/" -%}
+
+{%- if tag_data -%}
+  {%- assign tag_label = tag_data.label[current_lang] | default: tag_data.label.en | default: include.tag -%}
+  {%- assign tag_url = tag_data.link[current_lang] | default: tag_data.link.en | default: tag_url -%}
+{%- endif -%}
+
+<a href="{{ tag_url }}" class="article__tag{% if include.extra_class %} {{ include.extra_class }}{% endif %} tag__{{ include.tag }}{% if include.active_slug and include.active_slug == tag_slug %} tag__active{% endif %}">{{ tag_label }}</a>
