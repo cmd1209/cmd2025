@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CMD-Design
+title: CMD-design
 email: chad.m.danford@gmail.com
 statement: <span>structure</span> <span>for</span> <span>digtal</span> <span>brands</span> <span>and</span> <span>products</span>
 default_lang: en
