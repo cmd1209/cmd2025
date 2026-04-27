@@ -206,6 +206,20 @@ header.header-desktop{
   will-change: transform, opacity, padding-top;
 }
 
+body.intro-page.header-delay-active #header-desktop,
+body.intro-page.header-delay-active #mobile-nav-header {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.intro-page.header-delay-active #header-desktop {
+  transform: translateY(calc(-100% - var(--size-sm)));
+}
+
+body.intro-page.header-delay-active #mobile-nav-header {
+  transform: translateY(-100%);
+}
+
 header.header-desktop.is-compact {
   padding-top: 12px;
 }

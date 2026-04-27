@@ -5,8 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const burgerNav = document.getElementById("mobile-nav-header");
     const desktopHeader = document.getElementById("header-desktop");
     const desktopBreakpoint = window.matchMedia("(min-width: 769px)");
+    const body = document.body;
+    const headerDelay = Number.parseInt(body?.dataset.headerDelay || "0", 10);
+    const hasHeaderDelay = Number.isFinite(headerDelay) && headerDelay > 0;
+    let headerDelayElapsed = !hasHeaderDelay;
     let lastScrollTop = 0;
     let desktopHeaderTimer;
+
+    if (hasHeaderDelay) {
+      body.classList.add("header-delay-active");
+      window.setTimeout(() => {
+        body.classList.remove("header-delay-active");
+        headerDelayElapsed = true;
+      }, headerDelay);
+    }
   
     document.addEventListener("click", (event) => {
       if ((event.target.closest(".burger") || event.target.closest(".menu-item")) && burger && overlay && nav) {
@@ -34,13 +46,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (desktopHeader) {
-      desktopHeader.classList.add("is-visible");
+      if (!hasHeaderDelay) {
+        desktopHeader.classList.add("is-visible");
+      }
       desktopHeader.classList.add("is-at-top");
     }
   
     // Scroll function, runs only if overlay is not active
     window.addEventListener("scroll", () => {
       if (overlay && overlay.style.display === "block") return; // Skip scroll handling if overlay is active
+
+      if (!headerDelayElapsed) {
+        lastScrollTop = window.scrollY || document.documentElement.scrollTop;
+        return;
+      }
   
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
   

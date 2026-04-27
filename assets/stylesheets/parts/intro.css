@@ -59,3 +59,37 @@ div{
 img.site-portrait {
   object-fit:cover;
 }
+
+.intro-logo {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .intro-logo {
+    width: 225px;
+  }
+}
+
+.intro-logo svg {
+  fill: var(--white-trans-0);
+  stroke: var(--text-color);
+  stroke-width: 1px;
+  stroke-dasharray: 769;
+  stroke-dashoffset: 769;
+  animation: intro-outline-animation 2s  ease-in-out forwards, intro-fill-animation 2s ease-in-out forwards;
+  animation-delay: 0s, 1.5s;
+}
+
+  @keyframes intro-outline-animation {
+    to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes intro-fill-animation {
+  to {
+    fill: var(--text-color);
+  }
+}
