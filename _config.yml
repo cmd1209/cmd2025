@@ -20,15 +20,14 @@
 
 title: CMD-Design
 email: chad.m.danford@gmail.com
-statement: <span>structure</span> <span>for</span> <span>digtal</span> <span>brands</span> <span>and</span> <span>products</span>           
+statement: <span>structure</span> <span>for</span> <span>digtal</span> <span>brands</span> <span>and</span> <span>products</span>
 default_lang: en
-description: Bringing structure and clarity to digital brands, products and systems.
-details: Most digital brands aren’t broken — they’re just fragmented. I bring structure to that complexity, turning disconnected design, product and communication into clear, consistent systems teams can actually use and build on. The result is less friction, better decisions and a setup that holds up over time.
+description_en: Bringing structure and clarity to digital brands, products and systems.
+description_de: Struktur und Klarheit für digitale Marken, Produkte und Systeme.
+details_en: Most digital brands aren’t broken — they’re just fragmented. I bring structure to that complexity, turning disconnected design, product and communication into clear, consistent systems teams can actually use and build on. The result is less friction, better decisions and a setup that holds up over time.
+details_de: Die meisten digitalen Marken sind nicht kaputt – sie sind fragmentiert. Ich bringe Struktur in diese Komplexität und verbinde Design, Produkt und Kommunikation zu klaren, konsistenten Systemen, mit denen Teams tatsächlich arbeiten und weiterbauen können. Weniger Reibung, bessere Entscheidungen und eine Grundlage, die langfristig funktioniert.
 url: "https://www.cmd-design.com" # the base hostname & protocol for your site
 baseurl: ""
-# url: "http://cmd1209.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 defaults:
   - scope:
