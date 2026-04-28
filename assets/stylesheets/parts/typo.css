@@ -24,6 +24,7 @@ body {
 h1,h2,blockquote,.audiowide{
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
+
 }
 /* Headline Sizes */
 h1 {
@@ -34,26 +35,31 @@ h1 {
 h2 {
     font-size: var(--font-size-3xl);
     line-height: 1.25;
+    text-wrap-style: balance;
 }
 
 h3 {
     font-size: var(--font-size-2xl);
     line-height: 1.25;
+    text-wrap-style: balance;
 }
 
 h4 {
     font-size: var(--font-size-xl);
     line-height: 1.25;
+    text-wrap-style: balance;
 }
 
 h5 {
     font-size: var(--font-size-lg);
     line-height: 1.25;
+    text-wrap-style: balance;
 }
 
 h6 {
     font-size: var(--font-size-md);
     line-height: 1.25;
+    text-wrap-style: balance;
 }
 
 p {
