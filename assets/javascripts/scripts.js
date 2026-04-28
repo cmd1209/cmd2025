@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
       // If clicking on the back button
       if (event.target.closest(".back")) {
-        window.location.href = "https://www.chadmdanford.com";
+        window.location.href = "https://www.cmd-design.com";
       }
     });
 
