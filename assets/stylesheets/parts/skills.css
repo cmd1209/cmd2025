@@ -218,14 +218,25 @@ animation-delay: 2.00s;
 
 
 
-.drop.animate{
+.drop.animate, .bottom-left-up.animate, .bottom-right-up.animate{
     opacity: 1;
-    transform: translateX(0);
+    transform: translate(0, 0);
     transition: all 0.5s ease-in-out;
   }
 
 .drop{
-    transform: translateY(200px);
+    transform: translate(0, 200px);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bottom-left-up{
+    transform: translate(-200px, 200px);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.bottom-right-up{
+    transform: translate(200px, 200px);
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }

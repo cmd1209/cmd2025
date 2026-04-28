@@ -46,6 +46,7 @@ h3 {
 
 h4 {
     font-size: var(--font-size-xl);
+    font-weight: 200;
     line-height: 1.25;
     text-wrap-style: balance;
 }
@@ -148,4 +149,17 @@ ul.list_standard{
 ul.list_standard  li {
     list-style: disc;
     margin-bottom: var(--size-xs);
+}
+
+.clamp-35 {
+    max-width: 35ch;
+    margin-inline: auto;
+}
+.clamp-40 {
+    max-width: 40ch;
+    margin-inline: auto;
+}
+.clamp-50 {
+    max-width: 50ch;
+    margin-inline: auto;
 }
