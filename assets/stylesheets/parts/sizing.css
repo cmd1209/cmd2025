@@ -103,4 +103,6 @@
   .ml-lg { margin-left: var(--size-lg); }
   .ml-xl { margin-left: var(--size-xl); }
   .ml-xxl { margin-left: var(--size-xxl); }
+
+  .mh-50 { min-height: 50dvh; }
   

@@ -13,12 +13,17 @@
     </div>
     <nav class="nav navhidden" role="navigation">
         <!-- Menu items for the main navigation menu go here -->
+         <div class="logo-wrap flex justify-center mb-md">
+            {% include svg/logo.svg %}
+        </div>
         <ul>
             {% for item in site.data.menu %}
-                            {%- assign item_link = item.link[current_lang] | default: item.link.en -%}
-                            {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
-                            <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} nav-mobile-links">{{item_title}}</a></li>                         
-                        {% endfor %}
+                {% unless item.link.en == "/imprint/" %}
+                {%- assign item_link = item.link[current_lang] | default: item.link.en -%}
+                {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
+                <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} nav-mobile-links">{{item_title}}</a></li>                         
+                {% endunless %}
+            {% endfor %}
         </ul>
     </nav>
 </header>
@@ -33,10 +38,12 @@
             </div>
             <div class="col col-10">
                 <ul class="flex justify-end align-center">
-                    {% for item in site.data.menu %}
+                    {% for item in site.data.menu  %}
+                        {% unless item.link.en == "/imprint/" %}
                     {%- assign item_link = item.link[current_lang] | default: item.link.en -%}
                     {%- assign item_title = item.title[current_lang] | default: item.title.en -%}
                     <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item_title}}</a></li>                         
+                        {% endunless %}
                     {% endfor %}
                     <li class="pl-md">
                         {% include theme-toggle.html %}
