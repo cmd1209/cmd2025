@@ -6,6 +6,11 @@
   --alert-color: oklch(80% 0.1659 119.42);
   --color-calumet: #eb1d43;
 
+  --color-system-architecture: #2C34D1;
+  --color-brand-architecture: #912447;
+  --color-founder-services: #3A7F7F;
+
+
     /* Primary Palette */
     --color-primary-0: oklch(from var(--primary-color) 90% c h);
     --color-primary-10: oklch(from var(--primary-color) 80% c h);
