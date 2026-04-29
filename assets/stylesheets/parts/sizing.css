@@ -79,6 +79,8 @@
   .mt-xl { margin-top: var(--size-xl); }
   .mt-xxl { margin-top: var(--size-xxl); }
   .mt-3xl { margin-top: var(--size-3xl); }
+
+  .mt-neg-sm { margin-top: calc(var(--size-sm) * -1); }
   
   .mr-xxs { margin-right: var(--size-xxs); }
   .mr-xs { margin-right: var(--size-xs); }

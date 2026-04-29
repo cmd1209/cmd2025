@@ -46,9 +46,12 @@ h3 {
 
 h4 {
     font-size: var(--font-size-xl);
-    font-weight: 200;
+    font-weight: 100;
     line-height: 1.25;
     text-wrap-style: balance;
+}
+.article h4 {
+    font-weight: 400;
 }
 
 h5 {
