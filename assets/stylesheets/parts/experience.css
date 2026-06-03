@@ -115,11 +115,11 @@
 }
 .hex-area-card-02{
     background: var(--color-brand-architecture);
-    transform: translateY(-25%);
+    margin-top: -29%;
 }
 .hex-area-card-03{
     background: var(--color-founder-services);
-    transform: translateY(-25%);
+    margin-top: -29%;
 }
 
 @media (max-width: 768px) {
@@ -134,7 +134,7 @@
 
   .areas-section .hex-area-card-02,
   .areas-section .hex-area-card-03 {
-    transform: translateY(-25%);
+    margin-top: -29%;
   }
 
 
