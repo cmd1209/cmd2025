@@ -108,12 +108,12 @@
 }
 .hex-area-card-02{
     background: var(--color-brand-architecture);
-    top: -25%;
+    margin-top: -29%;
 
 }
 .hex-area-card-03{
     background: var(--color-founder-services);
-    top: -25%;
+    margin-top: -29%;
 
 }
 
@@ -125,6 +125,11 @@
 
   .areas-section .hex-area-card {
     padding: var(--size-lg) var(--size-md);
+  }
+
+  .areas-section .hex-area-card-02,
+  .areas-section .hex-area-card-03 {
+    margin-top: -12%;
   }
 
 
