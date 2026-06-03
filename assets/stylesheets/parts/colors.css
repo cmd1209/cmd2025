@@ -197,6 +197,10 @@
   background-color: var(--swatch-color);
 }
 
+.ever-light{
+  color: var(--color-neutral-10);
+}
+
 .color-white { --swatch-color: var(--color-white); }
 .color-primary-0 { --swatch-color: var(--color-primary-0); }
 .color-primary-10 { --swatch-color: var(--color-primary-10); }
