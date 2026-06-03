@@ -116,3 +116,19 @@
     top: -25%;
 
 }
+
+@media (max-width: 768px) {
+  .areas-section .hex-area-cards {
+    margin-top: var(--size-sm);
+    margin-bottom: var(--size-xl);
+  }
+
+  .areas-section .hex-area-card {
+    padding: var(--size-lg) var(--size-md);
+  }
+
+
+  .areas-section .row.mt-neg-sm {
+    margin-top: 0;
+  }
+}
