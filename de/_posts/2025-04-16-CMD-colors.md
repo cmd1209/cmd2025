@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "OKLCH Color Scheme"
+title:  "OKLCH Design Tokens"
+subtitle:  "Skalierbares Farbsystem"
 author: Chad Matthew Danford
 date:   2025-04-16 17:00:06 +0200
 lang: de

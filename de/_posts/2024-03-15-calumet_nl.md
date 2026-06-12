@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet Email Newsletter"
+title:  "Calumet Newsletter System"
+subtitle:  "Wiederverwendbares E-Mail-System"
 author: Chad Matthew Danford
 date:   2024-03-15 17:00:06 +0200
 lang: de
@@ -31,8 +32,6 @@ Als ich Head of Art Direction wurde, war für mich klar, dass sich mein Designve
 Diese Beharrlichkeit zahlte sich aus. Bald saß ich direkt mit der Content-Leitung und den Entwicklern bei Emarsys am Tisch, die die Newsletter-Module umsetzten. Weil Design, Content und Entwicklung abgestimmt zusammenarbeiteten, wurden aus einzelnen Ad-hoc-Verbesserungen wiederverwendbare Module, die gut aussahen, zuverlässig funktionierten und die Marke konsistent transportierten.
 
 Das Ergebnis war ein Newsletter-System, das sich geschlossen und professionell anfühlte, weniger wie einzelne Aussendungen, mehr wie ein durchgängiges Markenerlebnis. Die Produktion wurde für das Content-Team deutlich einfacher, die Entwickler hatten klarere gestalterische Leitplanken und Stakeholder sahen konkret, welchen Mehrwert Design liefern kann.
-
-
 
 
 

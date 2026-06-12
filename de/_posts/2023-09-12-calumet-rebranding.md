@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet Rebranding"
+title:  "Calumet Markensystem"
+subtitle:  "Kanalübergreifendes Rebranding"
 author: Chad Matthew Danford
 date:   2023-09-12 17:00:06 +0200
 lang: de

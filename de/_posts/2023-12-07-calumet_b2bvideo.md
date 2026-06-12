@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet B2B Video"
+title:  "Calumet B2B Motion"
+subtitle:  "Motion für Profikunden"
 author: Chad Matthew Danford
 date:   2023-02-12 17:00:06 +0200
 lang: de

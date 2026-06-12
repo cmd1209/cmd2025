@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet Email Newsletter"
+title:  "Calumet Newsletter System"
+subtitle:  "Reusable email design system"
 author: Chad Matthew Danford
 date:   2024-03-15 17:00:06 +0200
 lang: en
@@ -31,8 +32,6 @@ When I became Head of Art Direction, I felt a responsibility to keep pushing my 
 That persistence paid off. Soon, I was sitting in on direct talks with the content lead and the developers at Emarsys, who were building the newsletter modules. With design, content, and development working in sync, we moved from ad hoc tweaks to building reusable modules that looked good, worked reliably, and represented the brand consistently.
 
 The result was a newsletter system that felt cohesive and professional — less like a series of one-off sends, more like a branded experience. Production became smoother for the content team, developers had clearer design direction, and stakeholders saw a tangible step forward in how design could add value.
-
-
 
 
 

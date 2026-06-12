@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet HQ"
+title:  "Calumet Headquarter"
+subtitle:  "Gebrandetes Arbeitsplatzkonzept"
 author: Chad Matthew Danford
 date:   2024-10-01 17:00:06 +0200
 lang: de
@@ -29,8 +30,6 @@ Das Projekt begann mit der Konzeptentwicklung. Ich erarbeitete Vorschläge, die 
 Eines der wichtigsten Ergebnisse war ein Raumbenennungs-Konzept. Auf Basis einer unternehmensweiten Umfrage entwickelte ich Namen für alle Besprechungsräume und ein visuelles System, das den Calumet-Schriftzug mit den jeweiligen Namen verband. Da viele Räume Glaswände haben, wurden diese Entwürfe als große Vinyl-Folien umgesetzt, eine einfache, aber wirkungsvolle Lösung, um Identität und Orientierung in die Räume zu bringen.
 
 Das Ergebnis war ein Headquarter, das nicht nur als Büro funktioniert, sondern Calumets Kultur verkörpert: professionell, kreativ und offen, mit einem Look and Feel, zu dem die Mitarbeiter selbst beigetragen haben.
-
-
 
 
 

@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet HQ"
+title:  "Calumet Headquarters"
+subtitle:  "Branded workplace concept"
 author: Chad Matthew Danford
 date:   2024-10-01 17:00:06 +0200
 lang: en
@@ -29,8 +30,6 @@ The project began with concept development: I created proposals that balanced fu
 One of the most important results was a room-naming concept. Using results from a company-wide survey, I created names for every meeting space and designed a visual system that combined the Calumet logo with each name. Since most rooms had glass walls, these designs were produced as large vinyl stickers — a simple but effective way to bring identity and clarity into the space.
 
 The result was a headquarters that doesn’t just function as an office, but embodies Calumet’s culture: professional, creative, and inclusive, with employees directly contributing to the look and feel of the space.
-
-
 
 
 

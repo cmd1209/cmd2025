@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "OKLCH Color Scheme"
+title:  "OKLCH Design Tokens"
+subtitle:  "Scalable color system"
 author: Chad Matthew Danford
 date:   2025-04-16 17:00:06 +0200
 lang: en
@@ -90,4 +91,3 @@ To make the palette practical for development, I translated every step into CSS 
 --color-alert-90: oklch(from var(--alert-color) 40% c h);
 --color-alert-100: oklch(from var(--alert-color) 20% c h);
 {% endhighlight %}
-

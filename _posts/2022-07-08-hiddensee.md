@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Hiddensee Summer"
+title:  "Hiddensee in Black and White"
+subtitle:  "Island calm in monochrome"
 author: Chad Matthew Danford
 date:   2022-07-08 17:00:06 +0200
 lang: en

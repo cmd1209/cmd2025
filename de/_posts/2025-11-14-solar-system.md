@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "CSS-Driven Solar System"
+title:  "CSS Sonnensystem"
+subtitle:  "Worldbuilding mit reinem CSS"
 author: Chad Matthew Danford
 date:   2025-11-12 17:00:06 +0200
 lang: de
@@ -91,5 +92,3 @@ $asteroid-end: $au * 2.9
   height: 2px
   background-color: grey
   {% endhighlight %}
-
-

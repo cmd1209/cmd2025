@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet Rebranding"
+title:  "Calumet Brand System"
+subtitle:  "Cross-channel identity redesign"
 author: Chad Matthew Danford
 date:   2023-09-12 17:00:06 +0200
 lang: en

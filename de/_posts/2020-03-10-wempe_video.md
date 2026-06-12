@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Wempe Diamond Week"
+title:  "Wempe Diamond Week Motion"
+subtitle:  "Luxusanimation für den Retail"
 author: Chad Matthew Danford
 date:   2020-03-10 17:00:06 +0200
 lang: de
@@ -25,4 +26,3 @@ Bevor ich als Senior Art Director in die Agentur kam, hatte ich bereits Erfahrun
 Ein frühes Highlight war eine Screen-Animation für Wempes „Diamond Week“, die in ausgewählten Filialen in Deutschland gezeigt wurde. Ziel war es, etwas Luxuriöses und zugleich Zurückhaltendes zu entwickeln, das im Retail-Kontext Aufmerksamkeit erzeugt und dennoch Wempes feiner Markenidentität treu bleibt.
 
 In After Effects entwickelte ich weiche Übergänge und subtile Effekte, um den Screens in den Stores eine exklusive Anmutung zu geben. Für mich zeigte das Projekt sehr deutlich, wie Motion Graphics das Erlebnis einer Luxusmarke verstärken können und wie sich Fähigkeiten aus einem Bereich wie dem Museumsumfeld in einen ganz anderen, hier Retail und High-End-Schmuck, übertragen lassen.
-

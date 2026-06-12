@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Korodin Email Newsletter"
+title:  "Korodin E-Mail-System"
+subtitle:  "Medizinisches Newsletter-System"
 author: Chad Matthew Danford
 date:   2026-05-15 17:00:06 +0200
 lang: de
@@ -24,8 +25,6 @@ Von der Konzeption und Gestaltung bis zur technischen Umsetzung und Optimierung 
 
 
 {% include post-gallery.html %}
-
-
 
 
 

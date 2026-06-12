@@ -1,6 +1,7 @@
 ---
 layout: gallery-post
-title:  "Calumet B2B Video"
+title:  "Calumet B2B Motion"
+subtitle:  "Motion for pro audiences"
 author: Chad Matthew Danford
 date:   2023-02-12 17:00:06 +0200
 lang: en
@@ -25,4 +26,3 @@ I focused on dynamic video segments that highlight the range of products while k
       <source src="{{page.image.gallery}}{{page.image.video}}" type="video/mp4">
     </video>
 </div>
-
