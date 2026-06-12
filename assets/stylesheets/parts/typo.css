@@ -3,17 +3,20 @@
 
 
 :root {
-    --scale-factor: 1.25; 
-    --small-factor: 1.125;          
-    --font-size-xs: calc(1rem / var(--scale-factor));       
-    --font-size-sm: 1rem;                                 
-    --font-size-md: calc(1rem * var(--scale-factor));     
-    --font-size-lg: calc(var(--font-size-md) * var(--small-factor)); 
+    --base-size: 1rem;
+    --scale-factor: 1.25;
+    --small-factor: 1.125;
+    /* Keep display headings on their own scale so h4-h6 tweaks do not affect h1-h3. */
+    --display-base: calc(var(--base-size) * 1.9775390625);
+    --font-size-xs: calc(var(--base-size) / var(--scale-factor));
+    --font-size-sm: var(--base-size);
+    --font-size-md: calc(var(--base-size) * var(--small-factor));
+    --font-size-lg: calc(var(--font-size-md) * var(--small-factor));
     --font-size-xl: calc(var(--font-size-lg) * var(--small-factor));
-    --font-size-2xl: calc(var(--font-size-xl) * var(--scale-factor)); 
-    --font-size-3xl: calc(var(--font-size-2xl) * var(--scale-factor)); 
-    --font-size-4xl: calc(var(--font-size-3xl) * var(--scale-factor)); 
-    --font-size-5xl: calc(var(--font-size-4xl) * var(--scale-factor)); 
+    --font-size-2xl: var(--display-base);
+    --font-size-3xl: calc(var(--font-size-2xl) * var(--scale-factor));
+    --font-size-4xl: calc(var(--font-size-3xl) * var(--scale-factor));
+    --font-size-5xl: calc(var(--font-size-4xl) * var(--scale-factor));
 }
 
 body {
