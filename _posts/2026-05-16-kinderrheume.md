@@ -11,7 +11,7 @@ tags: ["design", "web"]
 image:
   gallery: /assets/images/kinderrheume/
   thumbnail: kinderrheume-thumb.webp
-  feature: kinderrheume-thumb.webp
+  feature: kinderraume-thumb.webp
   cutout01: kinderrheume01.webp
   cutout02: kinderrheume02.webp
   cutout03: kinderrheume03.webp

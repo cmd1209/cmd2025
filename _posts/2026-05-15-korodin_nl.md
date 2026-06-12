@@ -1,7 +1,7 @@
 ---
 layout: gallery-post
 title:  "Korodin Email System"
-subtitle:  "Medical newsletter system"
+subtitle:  "Medical newsletter platform"
 author: Chad Matthew Danford
 date:   2026-05-15 17:00:06 +0200
 lang: en
