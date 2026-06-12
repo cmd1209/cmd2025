@@ -1,7 +1,8 @@
 <div class="post__header">
   {%- assign current_lang = page.lang | default: site.default_lang | default: "en" -%}
-  <div class="article__title mb-xs">
+  <div class="article__title mb-md">
     <h2>{{ page.title }}</h2>
+    <h4 class="article__subtitle mb-xs fw-light">{{ page.subtitle }}</h4>
   </div>
   <div class="article__meta flex gap-xs align-baseline">
     <div class="article__tags flex gap-xs ">

@@ -13,7 +13,7 @@
     </div>
     <div class="article__content flex flex-column">
         <h5 class="article__title mb-xs">{{ post.title | strip_html | truncatewords: 25 }}</h5>
-        <h6 class="mb-xs fw-light">A pretty powerful subheadline too would be nice</h6>
+        <h6 class="article__subtitle mb-xs fw-light">{{ post.subtitle | strip_html | truncatewords: 25 }}</h6>
         <p class="article__excerpt">{{ post.content | strip_html | truncatewords: 15 }}</p>
         <div class="article__info flex">
             <a href="{{post.url}}" class="btn-primary btn-sm article__btn">read more</a>
