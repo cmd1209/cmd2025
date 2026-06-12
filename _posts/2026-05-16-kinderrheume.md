@@ -1,7 +1,7 @@
 ---
 layout: gallery-post
 title:  "Kinderrheuma"
-subheader:  "A Modern Healthcare Website"
+subtitle:  "A Modern Healthcare Website"
 author: Chad Matthew Danford
 date:   2026-05-16 17:00:06 +0200
 lang: en
