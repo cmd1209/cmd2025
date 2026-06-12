@@ -5,22 +5,19 @@
             <img src="{{post.image:gallery}}{{post.image:thumbnail}}" class="img-responsive" alt="">
         </a>
         {% endif %}
+        <div class="article__tags flex gap-xs wrap justify-end">
+            {% for tag in post.tags %}
+                {% include tag-link.html tag=tag lang=page.lang extra_class="mb-xs mt-xs" %}
+            {% endfor %}
+        </div>
     </div>
     <div class="article__content flex flex-column">
-        <h4 class="article__title mb-sm">{{ post.title | strip_html | truncatewords: 25 }}</h4>
-        <div class="article__meta flex gap-xs align-baseline">
-            <div class="article__tags flex gap-xs wrap">
-                {% for tag in post.tags %}
-                    {% include tag-link.html tag=tag lang=page.lang extra_class="mb-sm" %}
-                {% endfor %}
-            </div>
-
-        </div>
-        <div class="article__excerpt">
-            <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-        </div>
+        <h5 class="article__title mb-xs">{{ post.title | strip_html | truncatewords: 25 }}</h5>
+        <h6 class="mb-xs fw-light">A pretty powerful subheadline too would be nice</h6>
+        <p class="article__excerpt">{{ post.content | strip_html | truncatewords: 15 }}</p>
         <div class="article__info flex">
             <a href="{{post.url}}" class="btn-primary btn-sm article__btn">read more</a>
         </div>
     </div>
 </div>
+

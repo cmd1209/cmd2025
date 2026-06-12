@@ -15,7 +15,8 @@
 }
 
 .article__content{
-    padding: var(--size-sm);
+    padding-inline: var(--size-sm);
+    padding-bottom: var(--size-sm);
 } 
 
 .article__date{
