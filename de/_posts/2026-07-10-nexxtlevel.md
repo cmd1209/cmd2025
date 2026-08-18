@@ -6,7 +6,7 @@ author: Chad Matthew Danford
 date:   2026-07-10 17:00:06 +0200
 lang: de
 translation_key: nexxtlevel
-permalink: /posts/:title
+permalink: /de/posts/:title
 tags: ["design", "web"]
 image:
   gallery: /assets/images/nexxtlevel/

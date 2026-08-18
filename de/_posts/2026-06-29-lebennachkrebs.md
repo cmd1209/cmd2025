@@ -6,7 +6,7 @@ author: Chad Matthew Danford
 date:   2026-06-29 17:00:06 +0200
 lang: de
 translation_key: lebennachkrebs
-permalink: /posts/:title
+permalink: /de/posts/:title
 tags: ["design", "web"]
 image:
   gallery: /assets/images/dlnk/
