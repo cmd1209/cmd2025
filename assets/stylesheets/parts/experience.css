@@ -85,6 +85,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--size-xs);
     margin-inline: auto;
+    overflow: hidden;
 }
 
 .hex-area-card{
