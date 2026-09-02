@@ -23,11 +23,27 @@ document.addEventListener("DOMContentLoaded", () => {
 	  });
 	});
 
+	const containerObserver = new IntersectionObserver(entries => {
+	  entries.forEach(entry => {
+		if (!entry.isIntersecting) {
+		  return;
+		}
+
+		entry.target.querySelectorAll('.static').forEach(element => {
+		  element.classList.add('animate');
+		});
+
+		containerObserver.unobserve(entry.target);
+	  });
+	}, { threshold: 0.2 });
+
 	// Get all the elements with the .animate class applied
 	const allAnimatedElements = document.querySelectorAll('.static');
+	const animatedContainers = document.querySelectorAll('.hex-area-cards');
 
 	// Add the observer to each of those elements
 	allAnimatedElements.forEach((element) => observer.observe(element));
+	animatedContainers.forEach((container) => containerObserver.observe(container));
 
 }); 
 
