@@ -45,5 +45,5 @@
   {%- endif -%}
 {%- endif -%}
   <li><a href="{{ en_url | prepend: site.baseurl }}" class="header-links pt-xs pb-xs pl-xs pr-xs ml-sm {% if current_lang == 'en' %} active{% endif %}" hreflang="en" lang="en">EN</a></li>
-  <li><a href="{{ de_url | prepend: site.baseurl }}" class="header-links pt-xs pb-xs pl-xs pr-xs{% if current_lang == 'de' %} active{% endif %}" hreflang="de" lang="de">DE</a></li>
+  <li><a href="{{ de_url | prepend: site.baseurl }}" class="header-links pt-xs pb-xs pl-xs pr-xs ml-xs {% if current_lang == 'de' %} active{% endif %}" hreflang="de" lang="de">DE</a></li>
 
