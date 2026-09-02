@@ -9,7 +9,10 @@
             <span></span>
             <span></span>
         </div>
-        {% include theme-toggle.html %}
+        <ul class="nav-utility flex justify-end align-center">
+            {% include language-toggle.html %}
+            {% include theme-toggle.html %}
+        </ul>
     </div>
     <nav class="nav navhidden" role="navigation">
         <!-- Menu items for the main navigation menu go here -->
@@ -45,7 +48,8 @@
                     <li><a href="{{item_link}}" class="{% if page.url == item_link %} active {% endif %} header-links pt-xs pb-xs pl-md pr-md">{{item_title}}</a></li>                         
                         {% endunless %}
                     {% endfor %}
-                    <li class="pl-md">
+                    {% include language-toggle.html %}
+                    <li class="header-links pt-xs pb-xs pl-xs pr-m">
                         {% include theme-toggle.html %}
                     </li>
                 </ul>
