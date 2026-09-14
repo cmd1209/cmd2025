@@ -1,0 +1,27 @@
+{% assign grid_lang = page.lang | default: 'en' %}
+<figure class="oklch-grid" aria-labelledby="oklch-caption">
+  <figcaption id="oklch-caption">
+    <span class="oklch-grid__eyebrow">OKLCH / 04 × 11</span>
+    <h3>{% if grid_lang == 'de' %}Vier Farbtöne. Ein System.{% else %}Four hues. One system.{% endif %}</h3>
+    <p>{% if grid_lang == 'de' %}Von hell nach dunkel: Jede Reihe behält Chroma und Farbton bei. Nur die Helligkeit (L) verändert sich. Die markierte Stufe 50 ist die Basisfarbe.{% else %}From light to dark: each row keeps its chroma and hue. Only lightness (L) changes. The outlined step 50 is the base color.{% endif %}</p>
+  </figcaption>
+  {% for palette in site.data.oklch %}
+  <div class="oklch-grid__family">
+    <div class="oklch-grid__heading">
+      <strong>{{ palette[grid_lang] }}</strong>
+      <span>C {{ palette.chroma }} · H {{ palette.hue }}°</span>
+    </div>
+    <ol class="oklch-grid__scale" aria-label="{{ palette[grid_lang] }}">
+      {% for lightness in palette.lightness %}
+      {% assign step = forloop.index0 | times: 10 %}
+      <li class="oklch-grid__token{% if step == 50 %} oklch-grid__token--base{% endif %}" title="--color-{{ palette.key }}-{{ step }}: oklch({{ lightness }}% {{ palette.chroma }} {{ palette.hue }})">
+        <span class="oklch-grid__swatch" style="background: var(--color-{{ palette.key }}-{{ step }});" aria-hidden="true"></span>
+        <span class="oklch-grid__step">{{ step }}{% if step == 50 %}<span class="oklch-grid__base">{% if grid_lang == 'de' %}Basis{% else %}Base{% endif %}</span>{% endif %}</span>
+        <span class="oklch-grid__lightness">L {{ lightness | round: 0 }}%</span>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endfor %}
+  <p class="oklch-grid__note">{% if grid_lang == 'de' %}0–100 bezeichnet die Token-Stufen, nicht den L-Wert. Farben außerhalb des darstellbaren Farbraums werden vom Browser angepasst; Kontraste müssen für die jeweilige Kombination geprüft werden.{% else %}0–100 names the token steps, not the L value. The browser maps out-of-gamut colors to the display; contrast still needs checking for each pairing.{% endif %}</p>
+</figure>

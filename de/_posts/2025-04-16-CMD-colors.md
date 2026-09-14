@@ -10,11 +10,15 @@ permalink: /de/posts/:title
 tags: ["web"]
 image:
   gallery: /assets/images/oklch/
-  thumbnail: oklch_colors_thumbnail.png
-  feature: oklch_colors_thumbnail.png
+  thumbnail: oklch_colors_thumbnail.svg
+  feature: oklch_colors_thumbnail.svg
 ---
 Als ich das Farbsystem für dieses Projekt definiert habe, wollte ich etwas entwickeln, das flexibel und zugleich zukunftssicher ist. Klassische Hex- oder RGB-Werte funktionieren für statische Paletten gut, stoßen aber schnell an Grenzen, wenn Helligkeit, Kontrast oder Barrierefreiheit fein abgestimmt werden sollen. Deshalb habe ich die Palette auf Basis des OKLCH-Farbmodells aufgebaut. Im Unterschied zu HSL oder HEX ist OKLCH wahrnehmungsorientiert, Veränderungen bei Helligkeit und Chroma verhalten sich also deutlich näher an dem, wie wir Farbe tatsächlich sehen. Dadurch lassen sich Abstufungen, Kontraste und Harmonien wesentlich präziser steuern.
 
+
+<!--end_excerpt-->
+
+{% include oklch-grid.html %}
 
 {% highlight css %}
 /* Primary Palette */
@@ -34,9 +38,9 @@ Als ich das Farbsystem für dieses Projekt definiert habe, wollte ich etwas entw
 
 
 
-Die Grundlage der Palette bildet eine Primärfarbskala, bei der ich den Helligkeitswert von 0 bis 100 variiert habe, während Chroma und Hue konstant bleiben. So entstand aus einem Ausgangston ein gleichmäßiges Spektrum aus Tints und Shades. Darauf aufbauend kamen eine Sekundärfarbe, eine Alert-Farbe für Zustände und Hinweise sowie ein spielerischerer Akzentton in Teal hinzu. Alle Skalen folgen demselben Prinzip: von einer Basisfarbe ausgehend Abstufungen über die Helligkeit in OKLCH aufbauen.
+Die Grundlage der Palette bildet eine Primärfarbskala, bei der ich den Helligkeitswert von 90 % bis auf 0 % variiert habe, während Chroma und Hue konstant bleiben. So entstand aus einem Ausgangston ein gleichmäßiges Spektrum aus Tints und Shades. Darauf aufbauend kamen eine Sekundärfarbe, eine Alert-Farbe für Zustände und Hinweise sowie ein spielerischerer Akzentton in Teal hinzu. Alle Skalen folgen demselben Prinzip: von einer Basisfarbe ausgehend Abstufungen über die Helligkeit in OKLCH aufbauen.
 
-Damit die Palette auch in der Entwicklung praktisch nutzbar ist, habe ich jede Stufe in CSS Custom Properties übersetzt. Jede Farbe erhält einen Variablennamen wie `--color-primary-30` oder `--color-accent-70`, der direkt ihrer Helligkeitsstufe entspricht. Ergänzend dazu habe ich Utility-Klassen wie `.bg-primary-30` oder `.text-accent-70` angelegt, damit sich die Farben direkt im Markup verwenden lassen. So bleiben die Design-Tokens konsistent, Farben lassen sich später leichter austauschen oder erweitern und die Arbeit mit der Palette in realen Layouts wird deutlich klarer.
+Damit die Palette auch in der Entwicklung praktisch nutzbar ist, habe ich jede Stufe in CSS Custom Properties übersetzt. Jede Farbe erhält einen Variablennamen wie `--color-primary-30` oder `--color-teal-70`, der ihre Position in der Skala bezeichnet, nicht ihren Helligkeitswert in Prozent. Ergänzend dazu habe ich Utility-Klassen wie `.bg-primary-30` oder `.text-teal-70` angelegt, damit sich die Farben direkt im Markup verwenden lassen. So bleiben die Design-Tokens konsistent, Farben lassen sich später leichter austauschen oder erweitern und die Arbeit mit der Palette in realen Layouts wird deutlich klarer.
 
 
 

@@ -10,11 +10,15 @@ permalink: /posts/:title
 tags: ["web"]
 image:
   gallery: /assets/images/oklch/
-  thumbnail: oklch_colors_thumbnail.png
-  feature: oklch_colors_thumbnail.png
+  thumbnail: oklch_colors_thumbnail.svg
+  feature: oklch_colors_thumbnail.svg
 ---
 When I set out to define the color system for this project, I wanted something that would be both flexible and future-proof. Traditional hex or RGB values work fine for static palettes, but they become limiting when you need to adjust lightness, contrast, or accessibility on the fly. That’s why I chose to build the palette using the OKLCH color model. Unlike HSL or HEX, OKLCH is perceptually uniform — meaning that changes in lightness or chroma behave more consistently with how our eyes actually see color. This makes it much easier to fine-tune shades, generate accessible contrasts, and maintain harmony across the palette.
 
+
+<!--end_excerpt-->
+
+{% include oklch-grid.html %}
 
 {% highlight css %}
 /* Primary Palette */
@@ -34,9 +38,9 @@ When I set out to define the color system for this project, I wanted something t
 
 
 
-The foundation of the palette is the primary color range, which I created by varying the lightness value from 0 to 100 while keeping chroma and hue constant. This gave me a smooth spectrum of tints and shades derived from one anchor hue. From there, I added a secondary color, an alert color for states and notifications, and a more playful accent color (teal). Each range follows the same principle — start with a base and build out a scale by adjusting lightness in OKLCH.
+The foundation of the palette is the primary color range, which I created by varying lightness from 90% down to 0% while keeping chroma and hue constant. This gave me a smooth spectrum of tints and shades derived from one anchor hue. From there, I added a secondary color, an alert color for states and notifications, and a more playful accent color (teal). Each range follows the same principle — start with a base and build out a scale by adjusting lightness in OKLCH.
 
-To make the palette practical for development, I translated every step into CSS custom properties. Each color in the scale gets a variable name (e.g. --color-primary-30, --color-accent-70) that corresponds to its lightness step. On top of that, I created utility classes (e.g. .bg-primary-30, .text-accent-70) to apply the colors directly in markup. This approach keeps design tokens consistent, makes it easy to swap or extend colors later, and reduces guesswork when working with the palette in real-world layouts.
+To make the palette practical for development, I translated every step into CSS custom properties. Each color in the scale gets a variable name (e.g. --color-primary-30, --color-teal-70) that identifies its position in the scale, rather than its lightness percentage. On top of that, I created utility classes (e.g. .bg-primary-30, .text-teal-70) to apply the colors directly in markup. This approach keeps design tokens consistent, makes it easy to swap or extend colors later, and reduces guesswork when working with the palette in real-world layouts.
 
 
 
